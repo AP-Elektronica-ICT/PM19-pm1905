@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Business_Layer
 {
-    class Utility
+    class Utility : Item
     {
     }
 }
