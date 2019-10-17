@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Business_Layer
 {
-    class Character
+    public class Character
     {
         public Character()
         {
@@ -12,10 +12,10 @@ namespace Business_Layer
             Inventory = new List<Item>();
             SpellList = new List<Spell>();
         }
-        public List<Class> Class;
-        public List<Item> Inventory;
-        public List<Spell> SpellList;
-        public Background background;
+        List<Class> Class;
+        List<Item> Inventory;
+        List<Spell> SpellList;
+        Background Background;
 
     }
 }
