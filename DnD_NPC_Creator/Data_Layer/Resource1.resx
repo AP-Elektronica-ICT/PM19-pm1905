@@ -117,134 +117,134 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="comboBox_class.Barbarian" xml:space="preserve">
+  <data name="comboBox_class.Item" xml:space="preserve">
     <value>Barbarian</value>
   </data>
-  <data name="comboBox_class.Cleric" xml:space="preserve">
-    <value>Cleric</value>
+  <data name="comboBox_class.Item1" xml:space="preserve">
+    <value>Bard</value>
   </data>
-  <data name="comboBox_class.Druid" xml:space="preserve">
+  <data name="comboBox_class.Item2" xml:space="preserve">
+    <value>Ceric</value>
+  </data>
+  <data name="comboBox_class.Item3" xml:space="preserve">
     <value>Druid</value>
   </data>
-  <data name="comboBox_class.Fighter" xml:space="preserve">
+  <data name="comboBox_class.Item4" xml:space="preserve">
     <value>Fighter</value>
   </data>
-  <data name="comboBox_class.Hunter" xml:space="preserve">
-    <value>Hunter</value>
-  </data>
-  <data name="comboBox_class.Monk" xml:space="preserve">
+  <data name="comboBox_class.Item5" xml:space="preserve">
     <value>Monk</value>
   </data>
-  <data name="comboBox_class.Paladin" xml:space="preserve">
+  <data name="comboBox_class.Item6" xml:space="preserve">
     <value>Paladin</value>
   </data>
-  <data name="comboBox_class.Sorcorer" xml:space="preserve">
+  <data name="comboBox_class.Item7" xml:space="preserve">
+    <value>Ranger</value>
+  </data>
+  <data name="comboBox_class.Item8" xml:space="preserve">
+    <value>Rogue</value>
+  </data>
+  <data name="comboBox_class.Item9" xml:space="preserve">
     <value>Sorcorer</value>
   </data>
-  <data name="comboBox_class.Warlock" xml:space="preserve">
-    <value>Warlock</value>
-  </data>
-  <data name="comboBox_class.Wizard" xml:space="preserve">
-    <value>Wizard</value>
-  </data>
-  <data name="comboBox_race.Dragonborn" xml:space="preserve">
-    <value>Dragonborn</value>
-  </data>
-  <data name="comboBox_race.Dwarf" xml:space="preserve">
+  <data name="comboBox_race.Item" xml:space="preserve">
     <value>Dwarf</value>
   </data>
-  <data name="comboBox_race.Elf" xml:space="preserve">
+  <data name="comboBox_race.Item1" xml:space="preserve">
     <value>Elf</value>
   </data>
-  <data name="comboBox_race.Gnome" xml:space="preserve">
-    <value>Gnome</value>
-  </data>
-  <data name="comboBox_race.HalfElf" xml:space="preserve">
-    <value>Half-Elf</value>
-  </data>
-  <data name="comboBox_race.Halfling" xml:space="preserve">
+  <data name="comboBox_race.Item2" xml:space="preserve">
     <value>Halfling</value>
   </data>
-  <data name="comboBox_race.HalfOrc" xml:space="preserve">
-    <value>Half-Orc</value>
-  </data>
-  <data name="comboBox_race.Human" xml:space="preserve">
+  <data name="comboBox_race.Item3" xml:space="preserve">
     <value>Human</value>
   </data>
-  <data name="comboBox_race.Tiefling" xml:space="preserve">
+  <data name="comboBox_race.Item4" xml:space="preserve">
+    <value>Dragonborn</value>
+  </data>
+  <data name="comboBox_race.Item5" xml:space="preserve">
+    <value>Gnome</value>
+  </data>
+  <data name="comboBox_race.Item6" xml:space="preserve">
+    <value>Half-Elf</value>
+  </data>
+  <data name="comboBox_race.Item7" xml:space="preserve">
+    <value>Half-Orc</value>
+  </data>
+  <data name="comboBox_race.Item8" xml:space="preserve">
     <value>Tiefling</value>
   </data>
-  <data name="comboBox_subrace.Calishite" xml:space="preserve">
-    <value>Calishite</value>
-    <comment>Human</comment>
-  </data>
-  <data name="comboBox_subrace.Chondathan" xml:space="preserve">
-    <value>Chondathan</value>
-    <comment>Human</comment>
-  </data>
-  <data name="comboBox_subrace.Damaran" xml:space="preserve">
-    <value>Damaran</value>
-    <comment>Human</comment>
-  </data>
-  <data name="comboBox_subrace.DarkElf" xml:space="preserve">
-    <value>Dark Elf</value>
-    <comment>Elf</comment>
-  </data>
-  <data name="comboBox_subrace.ForestGnome" xml:space="preserve">
-    <value>Forest Gnome</value>
-    <comment>Gnome</comment>
-  </data>
-  <data name="comboBox_subrace.HighElf" xml:space="preserve">
-    <value>High Elf</value>
-    <comment>Elf</comment>
-  </data>
-  <data name="comboBox_subrace.HillDwarf" xml:space="preserve">
+  <data name="comboBox_subrace.Item" xml:space="preserve">
     <value>Hill Dwarf</value>
     <comment>Dwarf</comment>
   </data>
-  <data name="comboBox_subrace.Illuskan" xml:space="preserve">
-    <value>Illuskan</value>
-    <comment>Human</comment>
-  </data>
-  <data name="comboBox_subrace.Lightfoot" xml:space="preserve">
-    <value>Lightfoot</value>
-    <comment>Halfling</comment>
-  </data>
-  <data name="comboBox_subrace.MountainDwarf" xml:space="preserve">
+  <data name="comboBox_subrace.Item1" xml:space="preserve">
     <value>Mountain Dwarf</value>
     <comment>Dwarf</comment>
   </data>
-  <data name="comboBox_subrace.Mulan" xml:space="preserve">
-    <value>Mulan</value>
-    <comment>Human</comment>
+  <data name="comboBox_subrace.Item2" xml:space="preserve">
+    <value>High Elf</value>
+    <comment>Elf</comment>
   </data>
-  <data name="comboBox_subrace.Rashemi" xml:space="preserve">
-    <value>Rashemi</value>
-    <comment>Human</comment>
+  <data name="comboBox_subrace.Item3" xml:space="preserve">
+    <value>Wood Elf</value>
+    <comment>Elf</comment>
   </data>
-  <data name="comboBox_subrace.RockGnome" xml:space="preserve">
-    <value>Rock Gnome</value>
-    <comment>Gnome</comment>
+  <data name="comboBox_subrace.Item4" xml:space="preserve">
+    <value>Dark Elf</value>
+    <comment>Elf</comment>
   </data>
-  <data name="comboBox_subrace.Shou" xml:space="preserve">
-    <value>Shou</value>
-    <comment>Human</comment>
+  <data name="comboBox_subrace.Item5" xml:space="preserve">
+    <value>Lightfoot</value>
+    <comment>Halfling</comment>
   </data>
-  <data name="comboBox_subrace.Stout" xml:space="preserve">
+  <data name="comboBox_subrace.Item6" xml:space="preserve">
     <value>Stout</value>
     <comment>Halfling</comment>
   </data>
-  <data name="comboBox_subrace.Tethyrian" xml:space="preserve">
+  <data name="comboBox_subrace.Item7" xml:space="preserve">
+    <value>Calishite</value>
+    <comment>Human</comment>
+  </data>
+  <data name="comboBox_subrace.Item8" xml:space="preserve">
+    <value>Chondathan</value>
+    <comment>Human</comment>
+  </data>
+  <data name="comboBox_subrace.Item9" xml:space="preserve">
+    <value>Damaran</value>
+    <comment>Human</comment>
+  </data>
+  <data name="comboBox_subrace.Item10" xml:space="preserve">
+    <value>Illuskan</value>
+    <comment>Human</comment>
+  </data>
+  <data name="comboBox_subrace.Item11" xml:space="preserve">
+    <value>Mulan</value>
+    <comment>Human</comment>
+  </data>
+  <data name="comboBox_subrace.Item12" xml:space="preserve">
+    <value>Rashemi</value>
+    <comment>Human</comment>
+  </data>
+  <data name="comboBox_subrace.Item13" xml:space="preserve">
+    <value>Shou</value>
+    <comment>Human</comment>
+  </data>
+  <data name="comboBox_subrace.Item14" xml:space="preserve">
     <value>Tethyrian</value>
     <comment>Human</comment>
   </data>
-  <data name="comboBox_subrace.Turami" xml:space="preserve">
+  <data name="comboBox_subrace.Item15" xml:space="preserve">
     <value>Turami</value>
     <comment>Human</comment>
   </data>
-  <data name="comboBox_subrace.WoodElf" xml:space="preserve">
-    <value>Wood Elf</value>
-    <comment>Elf</comment>
+  <data name="comboBox_subrace.Item16" xml:space="preserve">
+    <value>Forest Gnome</value>
+    <comment>Gnome</comment>
+  </data>
+  <data name="comboBox_subrace.Item17" xml:space="preserve">
+    <value>Rock Gnome</value>
+    <comment>Gnome</comment>
   </data>
   <data name="label_charisma.Text" xml:space="preserve">
     <value>Charisma</value>
@@ -296,5 +296,402 @@
   </data>
   <data name="textBox_wisdom.Text" xml:space="preserve">
     <value />
+  </data>
+  <data name="comboBox_class.Item10" xml:space="preserve">
+    <value>Warlock</value>
+  </data>
+  <data name="comboBox_class.Item11" xml:space="preserve">
+    <value>Wizard</value>
+  </data>
+  <data name="textBox_raceDescription_dwarf.Text" xml:space="preserve">
+    <value>Kingdoms rich in ancient grandeur, halls carved into the
+roots of mountains, the echoing of picks and hammers
+in deep mines and blazing forges, a commitment to
+clan and tradition, and a burning hatred of goblins and
+orcs-these common threads unite all dwarves.</value>
+  </data>
+  <data name="textBox_raceDescription_elf.Text" xml:space="preserve">
+    <value>Elves are a magical people of otherworldly grace, living
+in the world but not entirely part of it. They live in
+places of ethereal beauty, in the midst of ancient forests
+or in silvery spires glittering with faerie light, where
+soft music drifts through the air and gentle fragrances
+waft on the breeze. Elves love nature and magic, art
+and artistry, music and poetry, and the good things
+of the world.</value>
+  </data>
+  <data name="textBox_subraceDescription_highElf.Text" xml:space="preserve">
+    <value>As a high elf, you have a keep mind and a mastery of
+at least the basics of magic. In many of the worlds
+of D&amp;D, there are two kinds of high elves. One type
+(which includes the gray elves and valley elves of
+Greyhawk, the Silvanesti of Dragonlance, and the
+sun elves of the Forgotten Realms) is haughty and
+reclusive, believing themselves to be superior to
+non-elves and even other elves. The other type
+(including the high elves of Greyhawk. the
+Qualinesti of Dragonlance, and the moon elves
+of the Forgotten Realms) are more common
+and more friendly, and often encountered
+among humans and other races.
+The sun elves of Faerûn (also called gold
+elves or sunrise elves) have bronze skin and
+hair of copper, black, or golden blood. Their
+eyes are golden, silver, or black. Moon elves (also
+called silver elves or gray elves) are much paler,
+with alabaster skin sometimes tinged with blue.
+They oflen have hair of silver-white, black, or blue,
+but various shades of blond, brown, and red are
+not uncommon. Their eyes are blue or green and
+flecked with gold.</value>
+  </data>
+  <data name="textBox_subraceDescription_hillDwarf.Text" xml:space="preserve">
+    <value>As a hill dwarf, you have keen senses, deep intuition,
+and remarkable resilience. The gold dwarves of Faenûn
+in their mighty southern kingdom are hill dwarves, as
+are the exiled Neidar and the debased Klar of Krynn in
+the Oragonlance setting.</value>
+  </data>
+  <data name="textBox_subraceDescription_mountainDwarf.Text" xml:space="preserve">
+    <value>As a mountain dwarf, you're strong and hardy,
+accustomed to a difficult life in rugged terrain. You're
+probably on the tall side (for a dwarf), and tend toward
+lighter coloration, The shield dwarves of northern
+Faerûn, as well as the ruling Hylar clan and the noble
+Oaewar clan of Oragonlance, are mountain dwarves.</value>
+  </data>
+  <data name="textBox_raceDescription_dragonborn.Text" xml:space="preserve">
+    <value>Born of dragons, as their name proclaims, the
+dragonborn walk proudly through a world that greets
+them with fearful incomprehension. Shaped by draconic
+gods or the dragons themselves, dragonborn originally
+hatched from dragon eggs as a unique race, combining
+the best attributes of dragons and humanoids. Some
+dragonborn are faithful servants to true dragons, others
+form the ranks of soldiers in great wars, and still others
+find themselves adrift, with no clear calling in life.</value>
+  </data>
+  <data name="textBox_raceDescription_gnome.Text" xml:space="preserve">
+    <value>A constant hum of busy activity pervades the warrens
+and neighborhoods where gnomes form their closeknit
+communities. Louder sounds punctuate the hum:
+a crunch of grinding gears here, a minor explosion
+there, a yelp of surprise or triumph, and especially
+bursts of laughter. Gnomes take delight in life, enjoying
+every moment of invention, exploration, investigation,
+creation, and play.</value>
+  </data>
+  <data name="textBox_raceDescription_halfElf.Text" xml:space="preserve">
+    <value>Walking in two worlds but truly belonging to neither,
+half-elves combine what some say are the best qualities
+of their elf and human parents: human curiosity,
+inventiveness, and ambition tempered by the refined
+senses, love of nature, and artistic tastes of the elves.
+Some half-elves Iive among humans, set apart by their
+emotional and physical differences, watching friends
+and loved ones age while time barely touches them.
+Others Iive with the elves, growing restless as they
+reach adulthood in the timeless elven realms, while
+their peers continue to Iive as children. Many half-elves,
+unable to fit into either society, choose Iives of solitary
+wandering or join with other misfits and outcasts in
+the adventuring life.</value>
+  </data>
+  <data name="textBox_raceDescription_halfling.Text" xml:space="preserve">
+    <value>The comforts of home are the goals of most halflings'
+lives: a place to settle in peace and quiet, far from
+marauding monsters and clashing armies; a blazing fire
+and a generous meal; fine drink and fine conversation.
+Though some halflings live out their days in remote
+agricultural communities, others form nomadic bands
+that travel constantly, lured by the open road and the
+wide horizon to discover the wonders of new lands and
+peoples. But even these wanderers love peace, food,
+hearth, and home, though home might be a wagon
+jostling along an dirt road or a raft floating downriver.</value>
+  </data>
+  <data name="textBox_raceDescription_halfOrc.Text" xml:space="preserve">
+    <value>Whether united under the leadership of a mighty
+warlock or having fought to a standstill after years
+of conflict, orc and human tribes sometimes form
+alliances, joining forces into a larger horde to the terror
+of civilized lands nearby. When these alliances are
+sealed by marriages, half-orcs are born. Some half-ores
+rise to become proud chiefs of orc tribes, their human
+blood giving them an edge over their full-blooded orc
+rivaIs. Some venture into the world to prove their worth
+among humans and other more civilized races. Many of
+these become adventurers, achieving greatness for their
+mighty deeds and notoriety for their barbaric customs
+and savage fury.</value>
+  </data>
+  <data name="textBox_raceDescription_human.Text" xml:space="preserve">
+    <value>In the reckonings of most worlds. humans are the
+youngest of the common races, late to arrive on the
+world scene and short-lived in comparison to dwarves.
+elves, and dragons. Perhaps it is because of their shorter
+lives that they strive to achieve as much as they can in
+the years they are given. Or maybe they feel they have
+something to prove to the elder races. and that's why
+they build their mighty empires on the foundation of
+conquest and trade. Whatever drives them, humans
+are the innovators, the achievers, and the pioneers
+of the worlds.</value>
+  </data>
+  <data name="textBox_raceDescription_tiefling.Text" xml:space="preserve">
+    <value>To be greeted with stares and whispers, to suffer
+violence and insult on the street, to see mistrust and
+fear in every eye: this is the lot of the tiefling. And to
+twist the knife, tieflings know that this is because a
+pact struck generations ago infused the essence of
+Asmodeus-overlord of the Nine Hells-into their
+bloodline. Their appearance and their nature are not
+their fault but the result of an ancient sin, for which
+they and their children and their children's children
+will always be held accountable.</value>
+  </data>
+  <data name="textBox_subraceDescription_calishite.Text" xml:space="preserve">
+    <value>Shorter and slighter in build than most other humans,
+Calishites have dusky brown skin, hair, and eyes.
+They're found primarily in southwest Faerûn.</value>
+  </data>
+  <data name="textBox_subraceDescription_chondathan.Text" xml:space="preserve">
+    <value>Chondathans are slender, tawny-skinned folk with
+brown hair that ranges from almost blond to almost
+black. Most are tall and have green or brown eyes,
+but these trails are hardly universal. Humans of
+Chondalhan descent dominate the centrallands of
+Faerûn, around the Inner Sea.</value>
+  </data>
+  <data name="textBox_subraceDescription_damaran.Text" xml:space="preserve">
+    <value>Found primarily in the northwest of Faerûn, Damarans
+are of moderate height and build, with skin hues
+ranging from tawny to fair. Their hair is usually brown
+or black, and their eye color varies widely, though brown
+is most common.</value>
+  </data>
+  <data name="textBox_subraceDescription_darkElf.Text" xml:space="preserve">
+    <value>Descended from an earlier subrace of dark-skinned
+elves, the drow were banished from the surface world
+for following the goddess Lolth down the path to
+evil and corruption. Now they have built their own
+civilizalion in the depths of the Underdark, patterned
+after the Way of Lolth. Also called dark elves, the drow
+have black skin that resembles polished obsidian and
+stark white or pale yellow hair. They commonly have
+very pale eyes (so pale as to be mistaken for white) in
+shades of lilac, silver, pink, red, and blue. They tend to
+be smaller and thinner than most elves.
+Drow adventurers are rare, and the race does not exist
+in all worlds. Check wilh your Dungeon Master to see
+if you can play a drow character.</value>
+  </data>
+  <data name="textBox_subraceDescription_forestGnome.Text" xml:space="preserve">
+    <value>As a forest gnome, you have a natural knack for iIlusion
+and inherent quickness and stealth. In the worlds of
+D&amp;D, forest gnomes are rare and secretive. They gather
+in hidden communities in sylvan forests, using iIlusions
+and trickery to conceal themselves from threats or
+to mask their escape should they be detected. Forest
+gnomes tend to be friendly with other good-spirited
+woodland folk, and they regard elves and good fey as
+their most important allies. These gnomes also befriend
+small forest animals and rely on them for information
+about threats that might prowl their lands.</value>
+  </data>
+  <data name="textBox_subraceDescription_illuskan.Text" xml:space="preserve">
+    <value>IIluskans are tall, fair-skinned folk with blue or steely
+gray eyes. Most have raven-black hair, but those who
+inhabit the extreme northwest have blond, red, or
+light brown hair.</value>
+  </data>
+  <data name="textBox_subraceDescription_lightfoot.Text" xml:space="preserve">
+    <value>As a lightfoot halfling, you can easily hide from notice,
+even using other people as cover. You're inclined to be
+affable and get along well with others. In the Forgotten
+Realms, lightfoot halflings have spread the farthest and
+thus are the most common variety.
+Lightfoots are more prone to wanderlust than other
+halflings. and often dwell alongside other races or take
+up a nomadic life. In the world of Greyhawk. these
+halflings are called hairfeet or tallfellows.</value>
+  </data>
+  <data name="textBox_subraceDescription_mulan.Text" xml:space="preserve">
+    <value>Dominant in the eastern and southeastern shores of
+the lnner Sea, the Mulan are generally tall, slim, and
+amber-skinned, with eyes of hazel or brown. Their hair
+ranges from black to dark brown, but in the lands where
+the Mulan are most prominent, nobles and many other
+Mulan shave off all their hair.</value>
+  </data>
+  <data name="textBox_subraceDescription_rashemi.Text" xml:space="preserve">
+    <value>Most often found east of the Inner Sea and often
+intermingled with the Mulan, Rashemis tend to be short,
+stout, and muscular. They usually have dusky skin, dark
+eyes, and thick black hair.</value>
+  </data>
+  <data name="textBox_subraceDescription_rockGnome.Text" xml:space="preserve">
+    <value>As a rock gnome, you have a natural inventiveness and
+hardiness beyond that of other gnomes. Most gnomes
+in the worlds of D&amp;D are rock gnomes, including the
+tinker gnomes of the Dragonlance setting.</value>
+  </data>
+  <data name="textBox_subraceDescription_shou.Text" xml:space="preserve">
+    <value>The Shou are the most numerous and powerful ethnic
+group in Kara-Tur, far to the east of Faerûn. They are
+yellowish-bronze in hue, with black hair and dark
+eyes. Shou surnames are usually presented before
+the given name.</value>
+  </data>
+  <data name="textBox_subraceDescription_stout.Text" xml:space="preserve">
+    <value>As a stout halfling. you're hardier than average and have
+some resistance to poison. Some say that stouts have
+dwarven blood. In the Forgotten Realms, these halflings
+are called stronghearts. and they're most common
+in the south.</value>
+  </data>
+  <data name="textBox_subraceDescription_tethyrian.Text" xml:space="preserve">
+    <value>Widespread along the entire Sword Coast at the
+western edge of Faerûn, Tethyrians are of medium build
+and height, with dusky skin that tends to grow fairer
+the farther north they dwell. Their hair and eye color
+varies widely, but brown hair and blue eyes are the most
+common. Tethyrians primarily use Chondathan names.</value>
+  </data>
+  <data name="textBox_subraceDescription_turami.Text" xml:space="preserve">
+    <value>Native to the southern shore of the Inner Sea, the
+Turami people are generally tall and muscular, with
+dark mahogany skin, curly black hair, and dark eyes.</value>
+  </data>
+  <data name="textBox_subraceDescription_woodElf.Text" xml:space="preserve">
+    <value>As a wood elf, you have keen senses and intuition, and
+your fleet feet carry you quickly and stealthily through
+your nalive forests. This category includes the wild
+elves (grugach) of Greyhawk and lhe Kagonesti of
+Dragonlance, as well as the races called wood elves in
+Greyhawk and the Forgotten Realms. In Faenûn, wood
+elves (also called wild elves, green elves, or forest elves)
+are reclusive and distrusting of non-elves.
+Wood elves' skin lends to be copperish in hue,
+sometimes with traces of green. Their hair tends toward
+browns and blacks, bul it is occasionally blond or
+copper-colored. Their eyes are green, brown, or hazel.</value>
+  </data>
+  <data name="textBox_classDescription_" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBox_classDescription_barbarian.Text" xml:space="preserve">
+    <value>A tall human tribesman strides through a blizzard,draped in fur and hefting his axe. He laughs as he
+charges toward the frost giant who dared poach his
+people's elk herdo
+A half-orc snarls at the latest challenger to her
+authority over their savage tribe, ready to break his neck
+with her bare hands as she did to the last six rivaIs.
+Frothing at the mouth, a dwarf slams his helmet into
+the face of his drow foe, then turns to drive his armored
+elbow into the gut of another.
+
+These barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury. More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm, the churning turmoil of the sea.
+
+For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also uncanny reflexes, resilience, and feats of strength.</value>
+  </data>
+  <data name="textBox_classDescription_bard.Text" xml:space="preserve">
+    <value>Humming as she traces her fingers over an ancient monument in a long-forgotten ruin, a half-elf in rugged leathers finds knowledge springing into her mind, conjured forth by the magic of her song — knowledge of the people who constructed the monument and the mythic saga it depicts.
+
+A stern human warrior bangs his sword rhythmically against his scale mail, setting the tempo for his war chant and exhorting his companions to bravery and heroism. The magic of his song fortifies and emboldens them.
+
+Laughing as she tunes her cittern, a gnome weaves her subtle magic over the assembled nobles, ensuring that her companions’ words will be well received.
+
+Whether scholar, skald, or scoundrel, a bard weaves magic through words and music to inspire allies, demoralize foes, manipulate minds, create illusions, and even heal wounds.</value>
+  </data>
+  <data name="textBox_classDescription_cleric.Text" xml:space="preserve">
+    <value>Arms and eyes upraised toward the sun and a prayer on his lips, an elf begins to glow with an inner light that spills out to heal his battle-worn companions.
+
+Chanting a song of glory, a dwarf swings his axe in wide swaths to cut through the ranks of orcs arrayed against him, shouting praise to the gods with every foe’s fall.
+
+Calling down a curse upon the forces of undeath, a human lifts her holy symbol as light pours from it to drive back the zombies crowding in on her companions.
+
+Clerics are intermediaries between the mortal world and the distant planes of the gods. As varied as the gods they serve, clerics strive to embody the handiwork of their deities. No ordinary priest, a cleric is imbued with divine magic.</value>
+  </data>
+  <data name="textBox_classDescription_druid.Text" xml:space="preserve">
+    <value>Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.
+
+Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists’ activities.
+
+Swinging a blade formed of pure fire, a half-elf charges into a mass of skeletal soldiers, sundering the unnatural magic that gives the foul creatures the mocking semblance of life.
+
+Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an embodiment of nature’s resilience, cunning, and fury. They claim no mastery over nature. Instead, they see themselves as extensions of nature’s indomitable will.</value>
+  </data>
+  <data name="textBox_classDescription_fighter.Text" xml:space="preserve">
+    <value>A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.
+
+A dwarf in chain mail interposes his shield between the ogre’s club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a blinding whirl as she circles the ogre, looking for a blind spot in its defenses.
+
+A gladiator fights for sport in an arena, a master with his trident and net, skilled at toppling foes and moving them around for the crowd’s delight — and his own tactical advantage. His opponent’s sword flares with blue light an instant before she sends lightning flashing forth to smite him.
+
+All of these heroes are fighters, perhaps the most diverse class of characters in the worlds of Dungeons &amp; Dragons. Questing knights, conquering overlords, royal champions, elite foot soldiers, hardened mercenaries, and bandit kings — as fighters, they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat. And they are well acquainted with death, both meting it out and staring it defiantly in the face.</value>
+  </data>
+  <data name="textBox_classDescription_monk.Text" xml:space="preserve">
+    <value>Her fists a blur as they deflect an incoming hail of arrows, a half-elf springs over a barricade and throws herself into the massed ranks of hobgoblins on the other side. She whirls among them, knocking their blows aside and sending them reeling, until at last she stands alone.
+
+Taking a deep breath, a human covered in tattoos settles into a battle stance. As the first charging orcs reach him, he exhales and a blast of fire roars from his mouth, engulfing his foes.
+
+Moving with the silence of the night, a black-clad halfling steps into a shadow beneath an arch and emerges from another inky shadow on a balcony a stone’s throw away. She slides her blade free of its cloth-wrapped scabbard and peers through the open window at the tyrant prince, so vulnerable in the grip of sleep.
+
+Whatever their discipline, monks are united in their ability to magically harness the energy that flows in their bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed, this energy infuses all that a monk does.</value>
+  </data>
+  <data name="textBox_classDescription_paladin.Text" xml:space="preserve">
+    <value>Clad in plate armor that gleams in the sunlight despite the dust and grime of long travel, a human lays down her sword and shield and places her hands on a mortally wounded man. Divine radiance shines from her hands, the man’s wounds knit closed, and his eyes open wide with amazement.
+
+A dwarf crouches behind an outcrop, his black cloak making him nearly invisible in the night, and watches an orc war band celebrating its recent victory. Silently, he stalks into their midst and whispers an oath, and two orcs are dead before they even realize he is there.
+
+Silver hair shining in a shaft of light that seems to illuminate only him, an elf laughs with exultation. His spear flashes like his eyes as he jabs again and again at a twisted giant, until at last his light overcomes its hideous darkness.
+
+Whatever their origin and their mission, paladins are united by their oaths to stand against the forces of evil. Whether sworn before a god’s altar and the witness of a priest, in a sacred glade before nature spirits and fey beings, or in a moment of desperation and grief with the dead as the only witness, a paladin’s oath is a powerful bond. It is a source of power that turns a devout warrior into a blessed champion.</value>
+  </data>
+  <data name="textBox_classDescription_ranger.Text" xml:space="preserve">
+    <value>Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.
+
+After tumbling away from a cone of freezing air, an elf finds her feet and draws back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to find the gaps between the dragon’s thick scales.
+
+Holding his hand high, a half-elf whistles to the hawk that circles high above him, calling the bird back to his side. Whispering instructions in Elvish, he points to the owlbear he’s been tracking and sends the hawk to distract the creature while he readies his bow.
+
+Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.</value>
+  </data>
+  <data name="textBox_classDescription_rogue.Text" xml:space="preserve">
+    <value>Signaling for her companions to wait, a halfling creeps forward through the dungeon hall. She presses an ear to the door, then pulls out a set of tools and picks the lock in the blink of an eye. Then she disappears into the shadows as her fighter friend moves forward to kick the door open.
+
+A human lurks in the shadows of an alley while his accomplice prepares for her part in the ambush. When their target — a notorious slaver — passes the alleyway, the accomplice cries out, the slaver comes to investigate, and the assassin’s blade cuts his throat before he can make a sound.
+
+Suppressing a giggle, a gnome waggles her fingers and magically lifts the key ring from the guard’s belt. In a moment, the keys are in her hand, the cell door is open, and she and her companions are free to make their escape.
+
+Rogues rely on skill, stealth, and their foes’ vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.</value>
+  </data>
+  <data name="textBox_classDescription_sorcorer.Text" xml:space="preserve">
+    <value>Golden eyes flashing, a human stretches out her hand and unleashes the dragonfire that burns in her veins. As an inferno rages around her foes, leathery wings spread from her back and she takes to the air.
+
+Long hair whipped by a conjured wind, a half-elf spreads his arms wide and throws his head back. Lifting him momentarily off the ground, a wave of magic surges up in him, through him, and out from him in a mighty blast of lightning.
+
+Crouching behind a stalagmite, a halfling points a finger at a charging troglodyte. A blast of fire springs from her finger to strike the creature. She ducks back behind the rock formation with a grin, unaware that her wild magic has turned her skin bright blue.
+
+Sorcerers carry a magical birthright conferred upon them by an exotic bloodline, some otherworldly influence, or exposure to unknown cosmic forces. One can’t study sorcery as one learns a language, any more than one can learn to live a legendary life. No one chooses sorcery; the power chooses the sorcerer.</value>
+  </data>
+  <data name="textBox_classDescription_warlock.Text" xml:space="preserve">
+    <value>With a pseudodragon curled on his shoulder, a young elf in golden robes smiles warmly, weaving a magical charm into his honeyed words and bending the palace sentinel to his will.
+
+As flames spring to life in her hands, a wizened human whispers the secret name of her demonic patron, infusing her spell with fiendish magic.
+
+Shifting his gaze between a battered tome and the odd alignment of the stars overhead, a wild-eyed tiefling chants the mystic ritual that will open a doorway to a distant world.
+
+Warlocks are seekers of the knowledge that lies hidden in the fabric of the multiverse. Through pacts made with mysterious beings of supernatural power, warlocks unlock magical effects both subtle and spectacular. Drawing on the ancient knowledge of beings such as fey nobles, demons, devils, hags, and alien entities of the Far Realm, warlocks piece together arcane secrets to bolster their own power.</value>
+  </data>
+  <data name="textBox_classDescription_wizard.Text" xml:space="preserve">
+    <value>Clad in the silver robes that denote her station, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.
+
+Checking and rechecking his work, a human scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When the circle is complete, he drones a long incantation. A hole opens in space inside the circle, bringing a whiff of brimstone from the otherworldly plane beyond.
+
+Crouching on the floor in a dungeon intersection, a gnome tosses a handful of small bones inscribed with mystic symbols, muttering a few words of power over them. Closing his eyes to see the visions more clearly, he nods slowly, then opens his eyes and points down the passage to his left.
+
+Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.</value>
   </data>
 </root>

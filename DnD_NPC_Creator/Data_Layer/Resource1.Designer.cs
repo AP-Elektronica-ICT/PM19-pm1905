@@ -63,333 +63,351 @@ namespace Data_Layer {
         /// <summary>
         ///   Looks up a localized string similar to Barbarian.
         /// </summary>
-        internal static string comboBox_class_Barbarian {
+        internal static string comboBox_class_Item {
             get {
-                return ResourceManager.GetString("comboBox_class.Barbarian", resourceCulture);
+                return ResourceManager.GetString("comboBox_class.Item", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cleric.
+        ///   Looks up a localized string similar to Bard.
         /// </summary>
-        internal static string comboBox_class_Cleric {
+        internal static string comboBox_class_Item1 {
             get {
-                return ResourceManager.GetString("comboBox_class.Cleric", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Druid.
-        /// </summary>
-        internal static string comboBox_class_Druid {
-            get {
-                return ResourceManager.GetString("comboBox_class.Druid", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Fighter.
-        /// </summary>
-        internal static string comboBox_class_Fighter {
-            get {
-                return ResourceManager.GetString("comboBox_class.Fighter", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Hunter.
-        /// </summary>
-        internal static string comboBox_class_Hunter {
-            get {
-                return ResourceManager.GetString("comboBox_class.Hunter", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Monk.
-        /// </summary>
-        internal static string comboBox_class_Monk {
-            get {
-                return ResourceManager.GetString("comboBox_class.Monk", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Paladin.
-        /// </summary>
-        internal static string comboBox_class_Paladin {
-            get {
-                return ResourceManager.GetString("comboBox_class.Paladin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sorcorer.
-        /// </summary>
-        internal static string comboBox_class_Sorcorer {
-            get {
-                return ResourceManager.GetString("comboBox_class.Sorcorer", resourceCulture);
+                return ResourceManager.GetString("comboBox_class.Item1", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Warlock.
         /// </summary>
-        internal static string comboBox_class_Warlock {
+        internal static string comboBox_class_Item10 {
             get {
-                return ResourceManager.GetString("comboBox_class.Warlock", resourceCulture);
+                return ResourceManager.GetString("comboBox_class.Item10", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Wizard.
         /// </summary>
-        internal static string comboBox_class_Wizard {
+        internal static string comboBox_class_Item11 {
             get {
-                return ResourceManager.GetString("comboBox_class.Wizard", resourceCulture);
+                return ResourceManager.GetString("comboBox_class.Item11", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dragonborn.
+        ///   Looks up a localized string similar to Ceric.
         /// </summary>
-        internal static string comboBox_race_Dragonborn {
+        internal static string comboBox_class_Item2 {
             get {
-                return ResourceManager.GetString("comboBox_race.Dragonborn", resourceCulture);
+                return ResourceManager.GetString("comboBox_class.Item2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Druid.
+        /// </summary>
+        internal static string comboBox_class_Item3 {
+            get {
+                return ResourceManager.GetString("comboBox_class.Item3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fighter.
+        /// </summary>
+        internal static string comboBox_class_Item4 {
+            get {
+                return ResourceManager.GetString("comboBox_class.Item4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monk.
+        /// </summary>
+        internal static string comboBox_class_Item5 {
+            get {
+                return ResourceManager.GetString("comboBox_class.Item5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paladin.
+        /// </summary>
+        internal static string comboBox_class_Item6 {
+            get {
+                return ResourceManager.GetString("comboBox_class.Item6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ranger.
+        /// </summary>
+        internal static string comboBox_class_Item7 {
+            get {
+                return ResourceManager.GetString("comboBox_class.Item7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rogue.
+        /// </summary>
+        internal static string comboBox_class_Item8 {
+            get {
+                return ResourceManager.GetString("comboBox_class.Item8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sorcorer.
+        /// </summary>
+        internal static string comboBox_class_Item9 {
+            get {
+                return ResourceManager.GetString("comboBox_class.Item9", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Dwarf.
         /// </summary>
-        internal static string comboBox_race_Dwarf {
+        internal static string comboBox_race_Item {
             get {
-                return ResourceManager.GetString("comboBox_race.Dwarf", resourceCulture);
+                return ResourceManager.GetString("comboBox_race.Item", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Elf.
         /// </summary>
-        internal static string comboBox_race_Elf {
+        internal static string comboBox_race_Item1 {
             get {
-                return ResourceManager.GetString("comboBox_race.Elf", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Gnome.
-        /// </summary>
-        internal static string comboBox_race_Gnome {
-            get {
-                return ResourceManager.GetString("comboBox_race.Gnome", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Half-Elf.
-        /// </summary>
-        internal static string comboBox_race_HalfElf {
-            get {
-                return ResourceManager.GetString("comboBox_race.HalfElf", resourceCulture);
+                return ResourceManager.GetString("comboBox_race.Item1", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Halfling.
         /// </summary>
-        internal static string comboBox_race_Halfling {
+        internal static string comboBox_race_Item2 {
             get {
-                return ResourceManager.GetString("comboBox_race.Halfling", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Half-Orc.
-        /// </summary>
-        internal static string comboBox_race_HalfOrc {
-            get {
-                return ResourceManager.GetString("comboBox_race.HalfOrc", resourceCulture);
+                return ResourceManager.GetString("comboBox_race.Item2", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Human.
         /// </summary>
-        internal static string comboBox_race_Human {
+        internal static string comboBox_race_Item3 {
             get {
-                return ResourceManager.GetString("comboBox_race.Human", resourceCulture);
+                return ResourceManager.GetString("comboBox_race.Item3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dragonborn.
+        /// </summary>
+        internal static string comboBox_race_Item4 {
+            get {
+                return ResourceManager.GetString("comboBox_race.Item4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gnome.
+        /// </summary>
+        internal static string comboBox_race_Item5 {
+            get {
+                return ResourceManager.GetString("comboBox_race.Item5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Half-Elf.
+        /// </summary>
+        internal static string comboBox_race_Item6 {
+            get {
+                return ResourceManager.GetString("comboBox_race.Item6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Half-Orc.
+        /// </summary>
+        internal static string comboBox_race_Item7 {
+            get {
+                return ResourceManager.GetString("comboBox_race.Item7", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Tiefling.
         /// </summary>
-        internal static string comboBox_race_Tiefling {
+        internal static string comboBox_race_Item8 {
             get {
-                return ResourceManager.GetString("comboBox_race.Tiefling", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Calishite.
-        /// </summary>
-        internal static string comboBox_subrace_Calishite {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.Calishite", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Chondathan.
-        /// </summary>
-        internal static string comboBox_subrace_Chondathan {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.Chondathan", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Damaran.
-        /// </summary>
-        internal static string comboBox_subrace_Damaran {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.Damaran", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Dark Elf.
-        /// </summary>
-        internal static string comboBox_subrace_DarkElf {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.DarkElf", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Forest Gnome.
-        /// </summary>
-        internal static string comboBox_subrace_ForestGnome {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.ForestGnome", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to High Elf.
-        /// </summary>
-        internal static string comboBox_subrace_HighElf {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.HighElf", resourceCulture);
+                return ResourceManager.GetString("comboBox_race.Item8", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Hill Dwarf.
         /// </summary>
-        internal static string comboBox_subrace_HillDwarf {
+        internal static string comboBox_subrace_Item {
             get {
-                return ResourceManager.GetString("comboBox_subrace.HillDwarf", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Illuskan.
-        /// </summary>
-        internal static string comboBox_subrace_Illuskan {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.Illuskan", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Lightfoot.
-        /// </summary>
-        internal static string comboBox_subrace_Lightfoot {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.Lightfoot", resourceCulture);
+                return ResourceManager.GetString("comboBox_subrace.Item", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Mountain Dwarf.
         /// </summary>
-        internal static string comboBox_subrace_MountainDwarf {
+        internal static string comboBox_subrace_Item1 {
             get {
-                return ResourceManager.GetString("comboBox_subrace.MountainDwarf", resourceCulture);
+                return ResourceManager.GetString("comboBox_subrace.Item1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Illuskan.
+        /// </summary>
+        internal static string comboBox_subrace_Item10 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item10", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Mulan.
         /// </summary>
-        internal static string comboBox_subrace_Mulan {
+        internal static string comboBox_subrace_Item11 {
             get {
-                return ResourceManager.GetString("comboBox_subrace.Mulan", resourceCulture);
+                return ResourceManager.GetString("comboBox_subrace.Item11", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Rashemi.
         /// </summary>
-        internal static string comboBox_subrace_Rashemi {
+        internal static string comboBox_subrace_Item12 {
             get {
-                return ResourceManager.GetString("comboBox_subrace.Rashemi", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Rock Gnome.
-        /// </summary>
-        internal static string comboBox_subrace_RockGnome {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.RockGnome", resourceCulture);
+                return ResourceManager.GetString("comboBox_subrace.Item12", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Shou.
         /// </summary>
-        internal static string comboBox_subrace_Shou {
+        internal static string comboBox_subrace_Item13 {
             get {
-                return ResourceManager.GetString("comboBox_subrace.Shou", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Stout.
-        /// </summary>
-        internal static string comboBox_subrace_Stout {
-            get {
-                return ResourceManager.GetString("comboBox_subrace.Stout", resourceCulture);
+                return ResourceManager.GetString("comboBox_subrace.Item13", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Tethyrian.
         /// </summary>
-        internal static string comboBox_subrace_Tethyrian {
+        internal static string comboBox_subrace_Item14 {
             get {
-                return ResourceManager.GetString("comboBox_subrace.Tethyrian", resourceCulture);
+                return ResourceManager.GetString("comboBox_subrace.Item14", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Turami.
         /// </summary>
-        internal static string comboBox_subrace_Turami {
+        internal static string comboBox_subrace_Item15 {
             get {
-                return ResourceManager.GetString("comboBox_subrace.Turami", resourceCulture);
+                return ResourceManager.GetString("comboBox_subrace.Item15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forest Gnome.
+        /// </summary>
+        internal static string comboBox_subrace_Item16 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rock Gnome.
+        /// </summary>
+        internal static string comboBox_subrace_Item17 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to High Elf.
+        /// </summary>
+        internal static string comboBox_subrace_Item2 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item2", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Wood Elf.
         /// </summary>
-        internal static string comboBox_subrace_WoodElf {
+        internal static string comboBox_subrace_Item3 {
             get {
-                return ResourceManager.GetString("comboBox_subrace.WoodElf", resourceCulture);
+                return ResourceManager.GetString("comboBox_subrace.Item3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dark Elf.
+        /// </summary>
+        internal static string comboBox_subrace_Item4 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lightfoot.
+        /// </summary>
+        internal static string comboBox_subrace_Item5 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stout.
+        /// </summary>
+        internal static string comboBox_subrace_Item6 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calishite.
+        /// </summary>
+        internal static string comboBox_subrace_Item7 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chondathan.
+        /// </summary>
+        internal static string comboBox_subrace_Item8 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Damaran.
+        /// </summary>
+        internal static string comboBox_subrace_Item9 {
+            get {
+                return ResourceManager.GetString("comboBox_subrace.Item9", resourceCulture);
             }
         }
         
@@ -495,6 +513,171 @@ namespace Data_Layer {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        internal static string textBox_classDescription_ {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A tall human tribesman strides through a blizzard,draped in fur and hefting his axe. He laughs as he
+        ///charges toward the frost giant who dared poach his
+        ///people&apos;s elk herdo
+        ///A half-orc snarls at the latest challenger to her
+        ///authority over their savage tribe, ready to break his neck
+        ///with her bare hands as she did to the last six rivaIs.
+        ///Frothing at the mouth, a dwarf slams his helmet into
+        ///the face of his drow foe, then turns to drive his armored
+        ///elbow into the gut of another.
+        ///
+        ///These barbarians, differ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_barbarian_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_barbarian.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Humming as she traces her fingers over an ancient monument in a long-forgotten ruin, a half-elf in rugged leathers finds knowledge springing into her mind, conjured forth by the magic of her song — knowledge of the people who constructed the monument and the mythic saga it depicts.
+        ///
+        ///A stern human warrior bangs his sword rhythmically against his scale mail, setting the tempo for his war chant and exhorting his companions to bravery and heroism. The magic of his song fortifies and emboldens them.
+        ///
+        ///Laughin [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_bard_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_bard.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arms and eyes upraised toward the sun and a prayer on his lips, an elf begins to glow with an inner light that spills out to heal his battle-worn companions.
+        ///
+        ///Chanting a song of glory, a dwarf swings his axe in wide swaths to cut through the ranks of orcs arrayed against him, shouting praise to the gods with every foe’s fall.
+        ///
+        ///Calling down a curse upon the forces of undeath, a human lifts her holy symbol as light pours from it to drive back the zombies crowding in on her companions.
+        ///
+        ///Clerics are inter [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_cleric_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_cleric.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Holding high a gnarled staff wreathed with holly, an elf summons the fury of the storm and calls down explosive bolts of lightning to smite the torch-carrying orcs who threaten her forest.
+        ///
+        ///Crouching out of sight on a high tree branch in the form of a leopard, a human peers out of the jungle at the strange construction of a temple of Evil Elemental Air, keeping a close eye on the cultists’ activities.
+        ///
+        ///Swinging a blade formed of pure fire, a half-elf charges into a mass of skeletal soldiers, sundering t [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_druid_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_druid.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.
+        ///
+        ///A dwarf in chain mail interposes his shield between the ogre’s club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_fighter_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_fighter.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Her fists a blur as they deflect an incoming hail of arrows, a half-elf springs over a barricade and throws herself into the massed ranks of hobgoblins on the other side. She whirls among them, knocking their blows aside and sending them reeling, until at last she stands alone.
+        ///
+        ///Taking a deep breath, a human covered in tattoos settles into a battle stance. As the first charging orcs reach him, he exhales and a blast of fire roars from his mouth, engulfing his foes.
+        ///
+        ///Moving with the silence of the night, [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_monk_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_monk.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clad in plate armor that gleams in the sunlight despite the dust and grime of long travel, a human lays down her sword and shield and places her hands on a mortally wounded man. Divine radiance shines from her hands, the man’s wounds knit closed, and his eyes open wide with amazement.
+        ///
+        ///A dwarf crouches behind an outcrop, his black cloak making him nearly invisible in the night, and watches an orc war band celebrating its recent victory. Silently, he stalks into their midst and whispers an oath, and two or [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_paladin_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_paladin.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.
+        ///
+        ///After tumbling away from a cone of freezing air, an elf finds her feet and draws back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to fi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_ranger_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_ranger.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Signaling for her companions to wait, a halfling creeps forward through the dungeon hall. She presses an ear to the door, then pulls out a set of tools and picks the lock in the blink of an eye. Then she disappears into the shadows as her fighter friend moves forward to kick the door open.
+        ///
+        ///A human lurks in the shadows of an alley while his accomplice prepares for her part in the ambush. When their target — a notorious slaver — passes the alleyway, the accomplice cries out, the slaver comes to investigate [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_rogue_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_rogue.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Golden eyes flashing, a human stretches out her hand and unleashes the dragonfire that burns in her veins. As an inferno rages around her foes, leathery wings spread from her back and she takes to the air.
+        ///
+        ///Long hair whipped by a conjured wind, a half-elf spreads his arms wide and throws his head back. Lifting him momentarily off the ground, a wave of magic surges up in him, through him, and out from him in a mighty blast of lightning.
+        ///
+        ///Crouching behind a stalagmite, a halfling points a finger at a char [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_sorcorer_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_sorcorer.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to With a pseudodragon curled on his shoulder, a young elf in golden robes smiles warmly, weaving a magical charm into his honeyed words and bending the palace sentinel to his will.
+        ///
+        ///As flames spring to life in her hands, a wizened human whispers the secret name of her demonic patron, infusing her spell with fiendish magic.
+        ///
+        ///Shifting his gaze between a battered tome and the odd alignment of the stars overhead, a wild-eyed tiefling chants the mystic ritual that will open a doorway to a distant world.
+        ///
+        ///War [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_warlock_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_warlock.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clad in the silver robes that denote her station, an elf closes her eyes to shut out the distractions of the battlefield and begins her quiet chant. Fingers weaving in front of her, she completes her spell and launches a tiny bead of fire toward the enemy ranks, where it erupts into a conflagration that engulfs the soldiers.
+        ///
+        ///Checking and rechecking his work, a human scribes an intricate magic circle in chalk on the bare stone floor, then sprinkles powdered iron along every line and graceful curve. When t [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_classDescription_wizard_Text {
+            get {
+                return ResourceManager.GetString("textBox_classDescription_wizard.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         internal static string textBox_constitution_Text {
             get {
                 return ResourceManager.GetString("textBox_constitution.Text", resourceCulture);
@@ -529,11 +712,419 @@ namespace Data_Layer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Born of dragons, as their name proclaims, the
+        ///dragonborn walk proudly through a world that greets
+        ///them with fearful incomprehension. Shaped by draconic
+        ///gods or the dragons themselves, dragonborn originally
+        ///hatched from dragon eggs as a unique race, combining
+        ///the best attributes of dragons and humanoids. Some
+        ///dragonborn are faithful servants to true dragons, others
+        ///form the ranks of soldiers in great wars, and still others
+        ///find themselves adrift, with no clear calling in life..
+        /// </summary>
+        internal static string textBox_raceDescription_dragonborn_Text {
+            get {
+                return ResourceManager.GetString("textBox_raceDescription_dragonborn.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kingdoms rich in ancient grandeur, halls carved into the
+        ///roots of mountains, the echoing of picks and hammers
+        ///in deep mines and blazing forges, a commitment to
+        ///clan and tradition, and a burning hatred of goblins and
+        ///orcs-these common threads unite all dwarves..
+        /// </summary>
+        internal static string textBox_raceDescription_dwarf_Text {
+            get {
+                return ResourceManager.GetString("textBox_raceDescription_dwarf.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Elves are a magical people of otherworldly grace, living
+        ///in the world but not entirely part of it. They live in
+        ///places of ethereal beauty, in the midst of ancient forests
+        ///or in silvery spires glittering with faerie light, where
+        ///soft music drifts through the air and gentle fragrances
+        ///waft on the breeze. Elves love nature and magic, art
+        ///and artistry, music and poetry, and the good things
+        ///of the world..
+        /// </summary>
+        internal static string textBox_raceDescription_elf_Text {
+            get {
+                return ResourceManager.GetString("textBox_raceDescription_elf.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A constant hum of busy activity pervades the warrens
+        ///and neighborhoods where gnomes form their closeknit
+        ///communities. Louder sounds punctuate the hum:
+        ///a crunch of grinding gears here, a minor explosion
+        ///there, a yelp of surprise or triumph, and especially
+        ///bursts of laughter. Gnomes take delight in life, enjoying
+        ///every moment of invention, exploration, investigation,
+        ///creation, and play..
+        /// </summary>
+        internal static string textBox_raceDescription_gnome_Text {
+            get {
+                return ResourceManager.GetString("textBox_raceDescription_gnome.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Walking in two worlds but truly belonging to neither,
+        ///half-elves combine what some say are the best qualities
+        ///of their elf and human parents: human curiosity,
+        ///inventiveness, and ambition tempered by the refined
+        ///senses, love of nature, and artistic tastes of the elves.
+        ///Some half-elves Iive among humans, set apart by their
+        ///emotional and physical differences, watching friends
+        ///and loved ones age while time barely touches them.
+        ///Others Iive with the elves, growing restless as they
+        ///reach adulthood in the  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_raceDescription_halfElf_Text {
+            get {
+                return ResourceManager.GetString("textBox_raceDescription_halfElf.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The comforts of home are the goals of most halflings&apos;
+        ///lives: a place to settle in peace and quiet, far from
+        ///marauding monsters and clashing armies; a blazing fire
+        ///and a generous meal; fine drink and fine conversation.
+        ///Though some halflings live out their days in remote
+        ///agricultural communities, others form nomadic bands
+        ///that travel constantly, lured by the open road and the
+        ///wide horizon to discover the wonders of new lands and
+        ///peoples. But even these wanderers love peace, food,
+        ///hearth, and home, th [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_raceDescription_halfling_Text {
+            get {
+                return ResourceManager.GetString("textBox_raceDescription_halfling.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether united under the leadership of a mighty
+        ///warlock or having fought to a standstill after years
+        ///of conflict, orc and human tribes sometimes form
+        ///alliances, joining forces into a larger horde to the terror
+        ///of civilized lands nearby. When these alliances are
+        ///sealed by marriages, half-orcs are born. Some half-ores
+        ///rise to become proud chiefs of orc tribes, their human
+        ///blood giving them an edge over their full-blooded orc
+        ///rivaIs. Some venture into the world to prove their worth
+        ///among humans and ot [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_raceDescription_halfOrc_Text {
+            get {
+                return ResourceManager.GetString("textBox_raceDescription_halfOrc.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In the reckonings of most worlds. humans are the
+        ///youngest of the common races, late to arrive on the
+        ///world scene and short-lived in comparison to dwarves.
+        ///elves, and dragons. Perhaps it is because of their shorter
+        ///lives that they strive to achieve as much as they can in
+        ///the years they are given. Or maybe they feel they have
+        ///something to prove to the elder races. and that&apos;s why
+        ///they build their mighty empires on the foundation of
+        ///conquest and trade. Whatever drives them, humans
+        ///are the innovators, t [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_raceDescription_human_Text {
+            get {
+                return ResourceManager.GetString("textBox_raceDescription_human.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To be greeted with stares and whispers, to suffer
+        ///violence and insult on the street, to see mistrust and
+        ///fear in every eye: this is the lot of the tiefling. And to
+        ///twist the knife, tieflings know that this is because a
+        ///pact struck generations ago infused the essence of
+        ///Asmodeus-overlord of the Nine Hells-into their
+        ///bloodline. Their appearance and their nature are not
+        ///their fault but the result of an ancient sin, for which
+        ///they and their children and their children&apos;s children
+        ///will always be held acc [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_raceDescription_tiefling_Text {
+            get {
+                return ResourceManager.GetString("textBox_raceDescription_tiefling.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string textBox_strength_Text {
             get {
                 return ResourceManager.GetString("textBox_strength.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shorter and slighter in build than most other humans,
+        ///Calishites have dusky brown skin, hair, and eyes.
+        ///They&apos;re found primarily in southwest Faerûn..
+        /// </summary>
+        internal static string textBox_subraceDescription_calishite_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_calishite.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chondathans are slender, tawny-skinned folk with
+        ///brown hair that ranges from almost blond to almost
+        ///black. Most are tall and have green or brown eyes,
+        ///but these trails are hardly universal. Humans of
+        ///Chondalhan descent dominate the centrallands of
+        ///Faerûn, around the Inner Sea..
+        /// </summary>
+        internal static string textBox_subraceDescription_chondathan_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_chondathan.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Found primarily in the northwest of Faerûn, Damarans
+        ///are of moderate height and build, with skin hues
+        ///ranging from tawny to fair. Their hair is usually brown
+        ///or black, and their eye color varies widely, though brown
+        ///is most common..
+        /// </summary>
+        internal static string textBox_subraceDescription_damaran_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_damaran.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Descended from an earlier subrace of dark-skinned
+        ///elves, the drow were banished from the surface world
+        ///for following the goddess Lolth down the path to
+        ///evil and corruption. Now they have built their own
+        ///civilizalion in the depths of the Underdark, patterned
+        ///after the Way of Lolth. Also called dark elves, the drow
+        ///have black skin that resembles polished obsidian and
+        ///stark white or pale yellow hair. They commonly have
+        ///very pale eyes (so pale as to be mistaken for white) in
+        ///shades of lilac, silver, pi [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_subraceDescription_darkElf_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_darkElf.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As a forest gnome, you have a natural knack for iIlusion
+        ///and inherent quickness and stealth. In the worlds of
+        ///D&amp;D, forest gnomes are rare and secretive. They gather
+        ///in hidden communities in sylvan forests, using iIlusions
+        ///and trickery to conceal themselves from threats or
+        ///to mask their escape should they be detected. Forest
+        ///gnomes tend to be friendly with other good-spirited
+        ///woodland folk, and they regard elves and good fey as
+        ///their most important allies. These gnomes also befriend
+        ///small forest ani [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_subraceDescription_forestGnome_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_forestGnome.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As a high elf, you have a keep mind and a mastery of
+        ///at least the basics of magic. In many of the worlds
+        ///of D&amp;D, there are two kinds of high elves. One type
+        ///(which includes the gray elves and valley elves of
+        ///Greyhawk, the Silvanesti of Dragonlance, and the
+        ///sun elves of the Forgotten Realms) is haughty and
+        ///reclusive, believing themselves to be superior to
+        ///non-elves and even other elves. The other type
+        ///(including the high elves of Greyhawk. the
+        ///Qualinesti of Dragonlance, and the moon elves
+        ///of the Fo [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_subraceDescription_highElf_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_highElf.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As a hill dwarf, you have keen senses, deep intuition,
+        ///and remarkable resilience. The gold dwarves of Faenûn
+        ///in their mighty southern kingdom are hill dwarves, as
+        ///are the exiled Neidar and the debased Klar of Krynn in
+        ///the Oragonlance setting..
+        /// </summary>
+        internal static string textBox_subraceDescription_hillDwarf_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_hillDwarf.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IIluskans are tall, fair-skinned folk with blue or steely
+        ///gray eyes. Most have raven-black hair, but those who
+        ///inhabit the extreme northwest have blond, red, or
+        ///light brown hair..
+        /// </summary>
+        internal static string textBox_subraceDescription_illuskan_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_illuskan.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As a lightfoot halfling, you can easily hide from notice,
+        ///even using other people as cover. You&apos;re inclined to be
+        ///affable and get along well with others. In the Forgotten
+        ///Realms, lightfoot halflings have spread the farthest and
+        ///thus are the most common variety.
+        ///Lightfoots are more prone to wanderlust than other
+        ///halflings. and often dwell alongside other races or take
+        ///up a nomadic life. In the world of Greyhawk. these
+        ///halflings are called hairfeet or tallfellows..
+        /// </summary>
+        internal static string textBox_subraceDescription_lightfoot_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_lightfoot.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As a mountain dwarf, you&apos;re strong and hardy,
+        ///accustomed to a difficult life in rugged terrain. You&apos;re
+        ///probably on the tall side (for a dwarf), and tend toward
+        ///lighter coloration, The shield dwarves of northern
+        ///Faerûn, as well as the ruling Hylar clan and the noble
+        ///Oaewar clan of Oragonlance, are mountain dwarves..
+        /// </summary>
+        internal static string textBox_subraceDescription_mountainDwarf_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_mountainDwarf.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dominant in the eastern and southeastern shores of
+        ///the lnner Sea, the Mulan are generally tall, slim, and
+        ///amber-skinned, with eyes of hazel or brown. Their hair
+        ///ranges from black to dark brown, but in the lands where
+        ///the Mulan are most prominent, nobles and many other
+        ///Mulan shave off all their hair..
+        /// </summary>
+        internal static string textBox_subraceDescription_mulan_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_mulan.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Most often found east of the Inner Sea and often
+        ///intermingled with the Mulan, Rashemis tend to be short,
+        ///stout, and muscular. They usually have dusky skin, dark
+        ///eyes, and thick black hair..
+        /// </summary>
+        internal static string textBox_subraceDescription_rashemi_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_rashemi.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As a rock gnome, you have a natural inventiveness and
+        ///hardiness beyond that of other gnomes. Most gnomes
+        ///in the worlds of D&amp;D are rock gnomes, including the
+        ///tinker gnomes of the Dragonlance setting..
+        /// </summary>
+        internal static string textBox_subraceDescription_rockGnome_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_rockGnome.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Shou are the most numerous and powerful ethnic
+        ///group in Kara-Tur, far to the east of Faerûn. They are
+        ///yellowish-bronze in hue, with black hair and dark
+        ///eyes. Shou surnames are usually presented before
+        ///the given name..
+        /// </summary>
+        internal static string textBox_subraceDescription_shou_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_shou.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As a stout halfling. you&apos;re hardier than average and have
+        ///some resistance to poison. Some say that stouts have
+        ///dwarven blood. In the Forgotten Realms, these halflings
+        ///are called stronghearts. and they&apos;re most common
+        ///in the south..
+        /// </summary>
+        internal static string textBox_subraceDescription_stout_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_stout.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Widespread along the entire Sword Coast at the
+        ///western edge of Faerûn, Tethyrians are of medium build
+        ///and height, with dusky skin that tends to grow fairer
+        ///the farther north they dwell. Their hair and eye color
+        ///varies widely, but brown hair and blue eyes are the most
+        ///common. Tethyrians primarily use Chondathan names..
+        /// </summary>
+        internal static string textBox_subraceDescription_tethyrian_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_tethyrian.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Native to the southern shore of the Inner Sea, the
+        ///Turami people are generally tall and muscular, with
+        ///dark mahogany skin, curly black hair, and dark eyes..
+        /// </summary>
+        internal static string textBox_subraceDescription_turami_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_turami.Text", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to As a wood elf, you have keen senses and intuition, and
+        ///your fleet feet carry you quickly and stealthily through
+        ///your nalive forests. This category includes the wild
+        ///elves (grugach) of Greyhawk and lhe Kagonesti of
+        ///Dragonlance, as well as the races called wood elves in
+        ///Greyhawk and the Forgotten Realms. In Faenûn, wood
+        ///elves (also called wild elves, green elves, or forest elves)
+        ///are reclusive and distrusting of non-elves.
+        ///Wood elves&apos; skin lends to be copperish in hue,
+        ///sometimes with traces of green. [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string textBox_subraceDescription_woodElf_Text {
+            get {
+                return ResourceManager.GetString("textBox_subraceDescription_woodElf.Text", resourceCulture);
             }
         }
         
