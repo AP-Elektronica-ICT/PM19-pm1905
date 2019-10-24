@@ -2,10 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business_Layer
+namespace Business_Layer.Model
 {
     class Skill
     {
+        public Skill(string name, string relatedStat)
+        {
+            Name = name;
+            RelatedStat = relatedStat;
+        }
+
         private int _bonus;
         private int _proficiencyBonus;
 
@@ -16,7 +22,12 @@ namespace Business_Layer
 
         public int getBonus()
         {
-            return _bonus;
+            if (_hasExpertice)
+                return _bonus + _proficiencyBonus * 2;
+            else if (_hasProficiency)
+                return _bonus + _proficiencyBonus;
+            else
+                return _bonus;
         } 
         public void setProficiencyBonus(int proficiencyBonus)
         {

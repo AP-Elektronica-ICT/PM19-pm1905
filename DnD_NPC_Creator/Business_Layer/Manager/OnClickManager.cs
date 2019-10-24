@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business_Layer
+namespace Business_Layer.Manager
 {
-    class Item
+    class OnClickManager
     {
     }
 }
