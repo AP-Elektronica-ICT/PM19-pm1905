@@ -694,4 +694,405 @@ Crouching on the floor in a dungeon intersection, a gnome tosses a handful of sm
 
 Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, and brute-force mind control. Their magic conjures monsters from other planes of existence, glimpses the future, or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from the sky, or open portals to other worlds.</value>
   </data>
+  <data name="comboBox_background.Item" xml:space="preserve">
+    <value>Acolyte</value>
+  </data>
+  <data name="comboBox_background.Item1" xml:space="preserve">
+    <value>Charlatan</value>
+  </data>
+  <data name="comboBox_background.Item10" xml:space="preserve">
+    <value>Sailor</value>
+  </data>
+  <data name="comboBox_background.Item11" xml:space="preserve">
+    <value>Soldier</value>
+  </data>
+  <data name="comboBox_background.Item12" xml:space="preserve">
+    <value>Urchin</value>
+  </data>
+  <data name="comboBox_background.Item2" xml:space="preserve">
+    <value>Criminal</value>
+  </data>
+  <data name="comboBox_background.Item3" xml:space="preserve">
+    <value>Entertainer</value>
+  </data>
+  <data name="comboBox_background.Item4" xml:space="preserve">
+    <value>Folk Hero</value>
+  </data>
+  <data name="comboBox_background.Item5" xml:space="preserve">
+    <value>Guild Artisan</value>
+  </data>
+  <data name="comboBox_background.Item6" xml:space="preserve">
+    <value>Hermit</value>
+  </data>
+  <data name="comboBox_background.Item7" xml:space="preserve">
+    <value>Noble</value>
+  </data>
+  <data name="comboBox_background.Item8" xml:space="preserve">
+    <value>Outlander</value>
+  </data>
+  <data name="comboBox_background.Item9" xml:space="preserve">
+    <value>Sage</value>
+  </data>
+  <data name="comboBox_specialization.Item" xml:space="preserve">
+    <value>I cheat at games of chance.</value>
+    <comment>Charlatan</comment>
+  </data>
+  <data name="comboBox_specialization.Item1" xml:space="preserve">
+    <value>I shave coins or forge documents.</value>
+    <comment>Charlatan</comment>
+  </data>
+  <data name="comboBox_specialization.Item10" xml:space="preserve">
+    <value>Highway robber</value>
+    <comment>Criminal</comment>
+  </data>
+  <data name="comboBox_specialization.Item11" xml:space="preserve">
+    <value>Hired killer</value>
+    <comment>Criminal</comment>
+  </data>
+  <data name="comboBox_specialization.Item12" xml:space="preserve">
+    <value>Pickpocket</value>
+    <comment>Criminal</comment>
+  </data>
+  <data name="comboBox_specialization.Item13" xml:space="preserve">
+    <value>Smuggler</value>
+    <comment>Criminal</comment>
+  </data>
+  <data name="comboBox_specialization.Item14" xml:space="preserve">
+    <value>Actor</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item15" xml:space="preserve">
+    <value>Dancer</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item16" xml:space="preserve">
+    <value>Fire-eater</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item17" xml:space="preserve">
+    <value>Jester</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item18" xml:space="preserve">
+    <value>Juggler</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item19" xml:space="preserve">
+    <value>Instrumentalist</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item2" xml:space="preserve">
+    <value>I insinuate myself into people's lives to prey on their
+weakness and secure their fortunes.</value>
+    <comment>Charlatan</comment>
+  </data>
+  <data name="comboBox_specialization.Item20" xml:space="preserve">
+    <value>Poet</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item21" xml:space="preserve">
+    <value>Singer</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item22" xml:space="preserve">
+    <value>Storyteller</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item23" xml:space="preserve">
+    <value>Tumbler</value>
+    <comment>Entertainer</comment>
+  </data>
+  <data name="comboBox_specialization.Item24" xml:space="preserve">
+    <value>I stood up to a tyrant's agents.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item25" xml:space="preserve">
+    <value>I saved people during a natural disaster.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item26" xml:space="preserve">
+    <value>I stood alone against a terrible monster.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item27" xml:space="preserve">
+    <value>I stole from a corrupt merchant to help the poor.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item28" xml:space="preserve">
+    <value>I led a militia to fight off an invading army.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item29" xml:space="preserve">
+    <value>I broke into a tyrant's castle and stole weapons to arm
+the people.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item3" xml:space="preserve">
+    <value>I put on new identities like clothes.</value>
+    <comment>Charlatan</comment>
+  </data>
+  <data name="comboBox_specialization.Item30" xml:space="preserve">
+    <value>I trained the peasantry to use farm implements as
+weapons against a tyrant's soldiers.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item31" xml:space="preserve">
+    <value>A lord rescinded an unpopular decree after I led a
+symbolic act of protect against it.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item32" xml:space="preserve">
+    <value>A celestial, fey, or similar creature gave me a blessing
+or revealed my secret origin.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item33" xml:space="preserve">
+    <value>Recruited into a lord's army, I rose to leadership and
+was commended for my heroism.</value>
+    <comment>Folk Hero</comment>
+  </data>
+  <data name="comboBox_specialization.Item34" xml:space="preserve">
+    <value>Alchemists and apothecaries</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item35" xml:space="preserve">
+    <value>Armorers, locksmiths, and finesmiths</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item36" xml:space="preserve">
+    <value>Brewers, distillers, and vintners</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item37" xml:space="preserve">
+    <value>Calligraphers, scribes, and scriveners</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item38" xml:space="preserve">
+    <value>Carpenters, roofers, and plasterers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item39" xml:space="preserve">
+    <value>Cartographers, surveyors, and chart-makers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item4" xml:space="preserve">
+    <value>I run sleight-of-hand cons on street corners.</value>
+    <comment>Charlatan</comment>
+  </data>
+  <data name="comboBox_specialization.Item40" xml:space="preserve">
+    <value>Cobblers and shoemakers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item41" xml:space="preserve">
+    <value>Cooks and bakers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item42" xml:space="preserve">
+    <value>Glassblowers and glaziers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item43" xml:space="preserve">
+    <value>Jewelers and gemcutters</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item44" xml:space="preserve">
+    <value>Leatherworkers, skinners, and tanners</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item45" xml:space="preserve">
+    <value>Masons and stonecutters</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item46" xml:space="preserve">
+    <value>Painters, Iimners, and sign-makers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item47" xml:space="preserve">
+    <value>Potters and tile-makers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item48" xml:space="preserve">
+    <value>Shipwrights and sailmakers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item49" xml:space="preserve">
+    <value>Smiths and metal-forgers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item5" xml:space="preserve">
+    <value>I convince people that worthless junk is worth their
+hard-earned money.</value>
+    <comment>Charlatan</comment>
+  </data>
+  <data name="comboBox_specialization.Item50" xml:space="preserve">
+    <value>Tinkers, pewterers, and casters</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item51" xml:space="preserve">
+    <value>Wagon-makers and wheelwrights</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item52" xml:space="preserve">
+    <value>Weavers and dyers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item53" xml:space="preserve">
+    <value>Woodcarvers, coopers, and bowyers</value>
+    <comment>Guild Artisan</comment>
+  </data>
+  <data name="comboBox_specialization.Item54" xml:space="preserve">
+    <value>I was searching for spiritual enlightenment.</value>
+    <comment>Hermit</comment>
+  </data>
+  <data name="comboBox_specialization.Item55" xml:space="preserve">
+    <value>I was partaking of communal living in accordance with
+the dictates of a religious order.</value>
+    <comment>Hermit</comment>
+  </data>
+  <data name="comboBox_specialization.Item56" xml:space="preserve">
+    <value>I was exiled for a crime I didn't commit.</value>
+    <comment>Hermit</comment>
+  </data>
+  <data name="comboBox_specialization.Item57" xml:space="preserve">
+    <value>I retreated from society after a life-altering event.</value>
+    <comment>Hermit</comment>
+  </data>
+  <data name="comboBox_specialization.Item58" xml:space="preserve">
+    <value>I needed a quiet place to work on my art, literature,
+music, or manifesto.</value>
+    <comment>Hermit</comment>
+  </data>
+  <data name="comboBox_specialization.Item59" xml:space="preserve">
+    <value>I needed to commune with nature, far from civilization.</value>
+    <comment>Hermit</comment>
+  </data>
+  <data name="comboBox_specialization.Item6" xml:space="preserve">
+    <value>Blackmailer</value>
+    <comment>Criminal</comment>
+  </data>
+  <data name="comboBox_specialization.Item60" xml:space="preserve">
+    <value>I was the caretaker of an ancient ruin or relic.</value>
+    <comment>Hermit</comment>
+  </data>
+  <data name="comboBox_specialization.Item61" xml:space="preserve">
+    <value>I was a pilgrim in search of a person, place, or relic of
+spiritual significance.</value>
+    <comment>Hermit</comment>
+  </data>
+  <data name="comboBox_specialization.Item62" xml:space="preserve">
+    <value>Forester</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item63" xml:space="preserve">
+    <value>Trapper</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item64" xml:space="preserve">
+    <value>Homesteader</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item65" xml:space="preserve">
+    <value>Guide</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item66" xml:space="preserve">
+    <value>Exile or outcast</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item67" xml:space="preserve">
+    <value>Bounty hunter</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item68" xml:space="preserve">
+    <value>Pilgrim</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item69" xml:space="preserve">
+    <value>Tribal nomad</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item7" xml:space="preserve">
+    <value>Burglar</value>
+    <comment>Criminal</comment>
+  </data>
+  <data name="comboBox_specialization.Item70" xml:space="preserve">
+    <value>Hunter-gatherer</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item71" xml:space="preserve">
+    <value>Tribal marauder</value>
+    <comment>Outlander</comment>
+  </data>
+  <data name="comboBox_specialization.Item72" xml:space="preserve">
+    <value>Alchemist</value>
+    <comment>Sage</comment>
+  </data>
+  <data name="comboBox_specialization.Item73" xml:space="preserve">
+    <value>Astronomer</value>
+    <comment>Sage</comment>
+  </data>
+  <data name="comboBox_specialization.Item74" xml:space="preserve">
+    <value>Discredited academic</value>
+    <comment>Sage</comment>
+  </data>
+  <data name="comboBox_specialization.Item75" xml:space="preserve">
+    <value>librarian</value>
+    <comment>Sage</comment>
+  </data>
+  <data name="comboBox_specialization.Item76" xml:space="preserve">
+    <value>Professor</value>
+    <comment>Sage</comment>
+  </data>
+  <data name="comboBox_specialization.Item77" xml:space="preserve">
+    <value>Researcher</value>
+    <comment>Sage</comment>
+  </data>
+  <data name="comboBox_specialization.Item78" xml:space="preserve">
+    <value>Wizard's apprentice</value>
+    <comment>Sage</comment>
+  </data>
+  <data name="comboBox_specialization.Item79" xml:space="preserve">
+    <value>Scribe</value>
+    <comment>Sage</comment>
+  </data>
+  <data name="comboBox_specialization.Item8" xml:space="preserve">
+    <value>Enforcer</value>
+    <comment>Criminal</comment>
+  </data>
+  <data name="comboBox_specialization.Item80" xml:space="preserve">
+    <value>Officer</value>
+    <comment>Soldier</comment>
+  </data>
+  <data name="comboBox_specialization.Item81" xml:space="preserve">
+    <value>Scout</value>
+    <comment>Soldier</comment>
+  </data>
+  <data name="comboBox_specialization.Item82" xml:space="preserve">
+    <value>Infantry</value>
+    <comment>Soldier</comment>
+  </data>
+  <data name="comboBox_specialization.Item83" xml:space="preserve">
+    <value>Calvary</value>
+    <comment>Soldier</comment>
+  </data>
+  <data name="comboBox_specialization.Item84" xml:space="preserve">
+    <value>Healer</value>
+    <comment>Soldier</comment>
+  </data>
+  <data name="comboBox_specialization.Item85" xml:space="preserve">
+    <value>Quartermaster</value>
+    <comment>Soldier</comment>
+  </data>
+  <data name="comboBox_specialization.Item86" xml:space="preserve">
+    <value>Standard bearer</value>
+    <comment>Soldier</comment>
+  </data>
+  <data name="comboBox_specialization.Item87" xml:space="preserve">
+    <value>Support staff (cook, blacksmith, or the like)</value>
+    <comment>Soldier</comment>
+  </data>
+  <data name="comboBox_specialization.Item9" xml:space="preserve">
+    <value>Fence</value>
+    <comment>Criminal</comment>
+  </data>
 </root>

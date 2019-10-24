@@ -61,6 +61,123 @@ namespace Data_Layer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Acolyte.
+        /// </summary>
+        internal static string comboBox_background_Item {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Charlatan.
+        /// </summary>
+        internal static string comboBox_background_Item1 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sailor.
+        /// </summary>
+        internal static string comboBox_background_Item10 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Soldier.
+        /// </summary>
+        internal static string comboBox_background_Item11 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Urchin.
+        /// </summary>
+        internal static string comboBox_background_Item12 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Criminal.
+        /// </summary>
+        internal static string comboBox_background_Item2 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entertainer.
+        /// </summary>
+        internal static string comboBox_background_Item3 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Folk Hero.
+        /// </summary>
+        internal static string comboBox_background_Item4 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Guild Artisan.
+        /// </summary>
+        internal static string comboBox_background_Item5 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hermit.
+        /// </summary>
+        internal static string comboBox_background_Item6 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Noble.
+        /// </summary>
+        internal static string comboBox_background_Item7 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Outlander.
+        /// </summary>
+        internal static string comboBox_background_Item8 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sage.
+        /// </summary>
+        internal static string comboBox_background_Item9 {
+            get {
+                return ResourceManager.GetString("comboBox_background.Item9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Barbarian.
         /// </summary>
         internal static string comboBox_class_Item {
@@ -246,6 +363,808 @@ namespace Data_Layer {
         internal static string comboBox_race_Item8 {
             get {
                 return ResourceManager.GetString("comboBox_race.Item8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I cheat at games of chance..
+        /// </summary>
+        internal static string comboBox_specialization_Item {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I shave coins or forge documents..
+        /// </summary>
+        internal static string comboBox_specialization_Item1 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Highway robber.
+        /// </summary>
+        internal static string comboBox_specialization_Item10 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hired killer.
+        /// </summary>
+        internal static string comboBox_specialization_Item11 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pickpocket.
+        /// </summary>
+        internal static string comboBox_specialization_Item12 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Smuggler.
+        /// </summary>
+        internal static string comboBox_specialization_Item13 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Actor.
+        /// </summary>
+        internal static string comboBox_specialization_Item14 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dancer.
+        /// </summary>
+        internal static string comboBox_specialization_Item15 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fire-eater.
+        /// </summary>
+        internal static string comboBox_specialization_Item16 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jester.
+        /// </summary>
+        internal static string comboBox_specialization_Item17 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Juggler.
+        /// </summary>
+        internal static string comboBox_specialization_Item18 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Instrumentalist.
+        /// </summary>
+        internal static string comboBox_specialization_Item19 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I insinuate myself into people&apos;s lives to prey on their
+        ///weakness and secure their fortunes..
+        /// </summary>
+        internal static string comboBox_specialization_Item2 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Poet.
+        /// </summary>
+        internal static string comboBox_specialization_Item20 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Singer.
+        /// </summary>
+        internal static string comboBox_specialization_Item21 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Storyteller.
+        /// </summary>
+        internal static string comboBox_specialization_Item22 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tumbler.
+        /// </summary>
+        internal static string comboBox_specialization_Item23 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item23", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I stood up to a tyrant&apos;s agents..
+        /// </summary>
+        internal static string comboBox_specialization_Item24 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I saved people during a natural disaster..
+        /// </summary>
+        internal static string comboBox_specialization_Item25 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I stood alone against a terrible monster..
+        /// </summary>
+        internal static string comboBox_specialization_Item26 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item26", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I stole from a corrupt merchant to help the poor..
+        /// </summary>
+        internal static string comboBox_specialization_Item27 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item27", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I led a militia to fight off an invading army..
+        /// </summary>
+        internal static string comboBox_specialization_Item28 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item28", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I broke into a tyrant&apos;s castle and stole weapons to arm
+        ///the people..
+        /// </summary>
+        internal static string comboBox_specialization_Item29 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item29", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I put on new identities like clothes..
+        /// </summary>
+        internal static string comboBox_specialization_Item3 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I trained the peasantry to use farm implements as
+        ///weapons against a tyrant&apos;s soldiers..
+        /// </summary>
+        internal static string comboBox_specialization_Item30 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A lord rescinded an unpopular decree after I led a
+        ///symbolic act of protect against it..
+        /// </summary>
+        internal static string comboBox_specialization_Item31 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item31", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A celestial, fey, or similar creature gave me a blessing
+        ///or revealed my secret origin..
+        /// </summary>
+        internal static string comboBox_specialization_Item32 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recruited into a lord&apos;s army, I rose to leadership and
+        ///was commended for my heroism..
+        /// </summary>
+        internal static string comboBox_specialization_Item33 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item33", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alchemists and apothecaries.
+        /// </summary>
+        internal static string comboBox_specialization_Item34 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item34", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Armorers, locksmiths, and finesmiths.
+        /// </summary>
+        internal static string comboBox_specialization_Item35 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item35", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brewers, distillers, and vintners.
+        /// </summary>
+        internal static string comboBox_specialization_Item36 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item36", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calligraphers, scribes, and scriveners.
+        /// </summary>
+        internal static string comboBox_specialization_Item37 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item37", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Carpenters, roofers, and plasterers.
+        /// </summary>
+        internal static string comboBox_specialization_Item38 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item38", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cartographers, surveyors, and chart-makers.
+        /// </summary>
+        internal static string comboBox_specialization_Item39 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item39", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I run sleight-of-hand cons on street corners..
+        /// </summary>
+        internal static string comboBox_specialization_Item4 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cobblers and shoemakers.
+        /// </summary>
+        internal static string comboBox_specialization_Item40 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item40", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cooks and bakers.
+        /// </summary>
+        internal static string comboBox_specialization_Item41 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item41", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Glassblowers and glaziers.
+        /// </summary>
+        internal static string comboBox_specialization_Item42 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item42", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jewelers and gemcutters.
+        /// </summary>
+        internal static string comboBox_specialization_Item43 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item43", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Leatherworkers, skinners, and tanners.
+        /// </summary>
+        internal static string comboBox_specialization_Item44 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item44", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Masons and stonecutters.
+        /// </summary>
+        internal static string comboBox_specialization_Item45 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item45", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Painters, Iimners, and sign-makers.
+        /// </summary>
+        internal static string comboBox_specialization_Item46 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item46", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Potters and tile-makers.
+        /// </summary>
+        internal static string comboBox_specialization_Item47 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item47", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shipwrights and sailmakers.
+        /// </summary>
+        internal static string comboBox_specialization_Item48 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item48", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Smiths and metal-forgers.
+        /// </summary>
+        internal static string comboBox_specialization_Item49 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item49", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I convince people that worthless junk is worth their
+        ///hard-earned money..
+        /// </summary>
+        internal static string comboBox_specialization_Item5 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tinkers, pewterers, and casters.
+        /// </summary>
+        internal static string comboBox_specialization_Item50 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item50", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wagon-makers and wheelwrights.
+        /// </summary>
+        internal static string comboBox_specialization_Item51 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item51", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weavers and dyers.
+        /// </summary>
+        internal static string comboBox_specialization_Item52 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item52", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Woodcarvers, coopers, and bowyers.
+        /// </summary>
+        internal static string comboBox_specialization_Item53 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item53", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I was searching for spiritual enlightenment..
+        /// </summary>
+        internal static string comboBox_specialization_Item54 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item54", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I was partaking of communal living in accordance with
+        ///the dictates of a religious order..
+        /// </summary>
+        internal static string comboBox_specialization_Item55 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item55", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I was exiled for a crime I didn&apos;t commit..
+        /// </summary>
+        internal static string comboBox_specialization_Item56 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item56", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I retreated from society after a life-altering event..
+        /// </summary>
+        internal static string comboBox_specialization_Item57 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item57", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I needed a quiet place to work on my art, literature,
+        ///music, or manifesto..
+        /// </summary>
+        internal static string comboBox_specialization_Item58 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item58", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I needed to commune with nature, far from civilization..
+        /// </summary>
+        internal static string comboBox_specialization_Item59 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item59", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blackmailer.
+        /// </summary>
+        internal static string comboBox_specialization_Item6 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I was the caretaker of an ancient ruin or relic..
+        /// </summary>
+        internal static string comboBox_specialization_Item60 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item60", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I was a pilgrim in search of a person, place, or relic of
+        ///spiritual significance..
+        /// </summary>
+        internal static string comboBox_specialization_Item61 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item61", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forester.
+        /// </summary>
+        internal static string comboBox_specialization_Item62 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item62", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trapper.
+        /// </summary>
+        internal static string comboBox_specialization_Item63 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item63", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Homesteader.
+        /// </summary>
+        internal static string comboBox_specialization_Item64 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item64", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Guide.
+        /// </summary>
+        internal static string comboBox_specialization_Item65 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item65", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exile or outcast.
+        /// </summary>
+        internal static string comboBox_specialization_Item66 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item66", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bounty hunter.
+        /// </summary>
+        internal static string comboBox_specialization_Item67 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item67", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pilgrim.
+        /// </summary>
+        internal static string comboBox_specialization_Item68 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item68", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tribal nomad.
+        /// </summary>
+        internal static string comboBox_specialization_Item69 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item69", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Burglar.
+        /// </summary>
+        internal static string comboBox_specialization_Item7 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hunter-gatherer.
+        /// </summary>
+        internal static string comboBox_specialization_Item70 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item70", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tribal marauder.
+        /// </summary>
+        internal static string comboBox_specialization_Item71 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item71", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Alchemist.
+        /// </summary>
+        internal static string comboBox_specialization_Item72 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item72", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Astronomer.
+        /// </summary>
+        internal static string comboBox_specialization_Item73 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item73", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Discredited academic.
+        /// </summary>
+        internal static string comboBox_specialization_Item74 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item74", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to librarian.
+        /// </summary>
+        internal static string comboBox_specialization_Item75 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item75", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Professor.
+        /// </summary>
+        internal static string comboBox_specialization_Item76 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item76", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Researcher.
+        /// </summary>
+        internal static string comboBox_specialization_Item77 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item77", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wizard&apos;s apprentice.
+        /// </summary>
+        internal static string comboBox_specialization_Item78 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item78", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scribe.
+        /// </summary>
+        internal static string comboBox_specialization_Item79 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item79", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enforcer.
+        /// </summary>
+        internal static string comboBox_specialization_Item8 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Officer.
+        /// </summary>
+        internal static string comboBox_specialization_Item80 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item80", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scout.
+        /// </summary>
+        internal static string comboBox_specialization_Item81 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item81", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Infantry.
+        /// </summary>
+        internal static string comboBox_specialization_Item82 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item82", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calvary.
+        /// </summary>
+        internal static string comboBox_specialization_Item83 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item83", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Healer.
+        /// </summary>
+        internal static string comboBox_specialization_Item84 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item84", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quartermaster.
+        /// </summary>
+        internal static string comboBox_specialization_Item85 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item85", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Standard bearer.
+        /// </summary>
+        internal static string comboBox_specialization_Item86 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item86", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Support staff (cook, blacksmith, or the like).
+        /// </summary>
+        internal static string comboBox_specialization_Item87 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item87", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fence.
+        /// </summary>
+        internal static string comboBox_specialization_Item9 {
+            get {
+                return ResourceManager.GetString("comboBox_specialization.Item9", resourceCulture);
             }
         }
         
