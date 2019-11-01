@@ -16,5 +16,10 @@ namespace Business_Layer.Model
         List<string> FeatureNames;
         List<string> SkillProficiencies;
         List<string> Languages;
+
+
+      
+
+
     }
 }
