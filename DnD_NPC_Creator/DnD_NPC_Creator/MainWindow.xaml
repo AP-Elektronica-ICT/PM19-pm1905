@@ -6,14 +6,14 @@
         
         xmlns:local="clr-namespace:DnD_NPC_Creator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800">
-    <Grid>
-        <Label Content="Race" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
-        <ComboBox Loaded="ComboBoxRace_Loaded" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="153"/>
-        <Label Content="Class" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
-        <ComboBox Loaded="ComboBoxClass_Loaded" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="155"/>
-        <Label Content="Background Feature" HorizontalAlignment="Left" Margin="28,280,0,0" VerticalAlignment="Top"/>
-        <ComboBox Loaded="ComboBoxBackground_Loaded" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Width="153"/>
+        Title="MainWindow" Height="700" Width="800">
+    <Grid Loaded="ComboBoxSubClass_Loaded">
+        <Label Content="Race" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ComboBoxRace"  Loaded="ComboBoxRace_Loaded" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="153"/>
+        <Label Content="Class" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ComboClass" Loaded="ComboBoxClass_Loaded" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="155" SelectionChanged="Class_SelectionChanged"/>
+        <Label Content="Background Feature" HorizontalAlignment="Left" Margin="28,330,0,0" VerticalAlignment="Top"/>
+        <ComboBox Loaded="ComboBoxBackground_Loaded" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="153"/>
         <Button  Content="Create" HorizontalAlignment="Left" Margin="711,443,0,0" VerticalAlignment="Top" Width="75" Click="OpenWidow"/>
         <Label Content="Strength" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,71,0,0" Height="24" Width="61"/>
         <Label Content="Dexterity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,105,0,0" Width="79" Height="25"/>
@@ -28,8 +28,8 @@
         <TextBox x:Name="Intelligencebox"  MaxLength="2" HorizontalAlignment="Left" Height="23" Margin="287,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Intelligencebox_PreviewTextInput"/>
         <TextBox x:Name="Wisdombox" MaxLength="2" HorizontalAlignment="Left" Height="24" Margin="287,212,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Wisdombox_PreviewTextInput"/>
         <TextBox  x:Name="Charisma" MaxLength="2" HorizontalAlignment="Left" Height="22" Margin="287,249,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Charisma_PreviewTextInput"/>
-        <TextBox HorizontalAlignment="Left" Height="80" Margin="10,200,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="153"/>
-        <Label Content="Feature name:" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="80" Margin="10,250,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="153"/>
+        <Label Content="Feature name:" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top"/>
         <Label Content="Add features" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="449,10,0,0" RenderTransformOrigin="4.429,0.312"/>
         <Label Content="Character name:" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.647,-0.696"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="106,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
@@ -41,8 +41,8 @@
         <Label Content="Bonds" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="469,270,0,0" RenderTransformOrigin="4.429,0.312"/>
         <TextBox HorizontalAlignment="Left" Height="60" Margin="398,296,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="182"/>
         <Label Content="Flaws" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="474,356,0,0" RenderTransformOrigin="4.429,0.312"/>
-        <Label Content="Notes:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,311,0,0" RenderTransformOrigin="4.429,0.312"/>
-        <TextBox HorizontalAlignment="Left" Height="121" Margin="10,342,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="383"/>
+        <Label Content="Notes:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,361,0,0" RenderTransformOrigin="4.429,0.312"/>
+        <TextBox HorizontalAlignment="Left" Height="121" Margin="10,392,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="383"/>
         <CheckBox  HorizontalAlignment="Left" Margin="628,45,0,0" VerticalAlignment="Top"/>
         <Label Content="Acrobatics" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="679,38,0,0" Height="24" Width="61"/>
         <Label Content="Animal Handling" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="679,62,0,0" Width="79" Height="25"/>
@@ -115,6 +115,8 @@
         <Label Content="Survival" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="679,392,0,0" Width="79" Height="25"/>
         <Label Content="prof" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="619,15,0,0" RenderTransformOrigin="4.429,0.312"/>
         <Label Content="exp" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="651,15,0,0" RenderTransformOrigin="4.429,0.312"/>
+        <ComboBox x:Name="SublassCombo" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Width="153" />
+        <Label Content="Subclass" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

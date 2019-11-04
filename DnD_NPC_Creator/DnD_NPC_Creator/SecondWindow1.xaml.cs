@@ -22,6 +22,10 @@ namespace DnD_NPC_Creator
         public SecondWindow1()
         {
             InitializeComponent();
+             
+
+            
+
         }
     }
 }

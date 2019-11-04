@@ -21,14 +21,17 @@ namespace DnD_NPC_Creator
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
             
         }
-        public string lol;
-        private void ComboBoxRace_Loaded(object sender, RoutedEventArgs e)
+        
+        private void ComboBoxRace_Loaded(object sender, RoutedEventArgs e )
         {
+            
+
             List<string> races = new List<string>();
             races.Add(" ");
             races.Add("Dwarf");
@@ -41,14 +44,17 @@ namespace DnD_NPC_Creator
             races.Add("Half-Orc");
             races.Add("Tiefling");
 
+            
+
             var race = sender as ComboBox;
             race.ItemsSource = races;
             race.SelectedIndex = 0;
             
         }
-
+        
         private void ComboBoxClass_Loaded(object sender, RoutedEventArgs e)
         {
+
             List<string> Classes = new List<string>();
             Classes.Add(" ");
             Classes.Add("Barbarian");
@@ -65,8 +71,104 @@ namespace DnD_NPC_Creator
             var Class = sender as ComboBox;
             Class.ItemsSource = Classes;
             Class.SelectedIndex = 0;
+            
+        }
+        private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string[] SubBarb = new string[] {"item1", "item1", "item1", "item1", "item1"};
+            string[] Cleric = new string[] { "item2", "item2", "item2", "item2", "item2" };
+            string[] Druid = new string[] { "item3", "item3", "item3", "item3", "item3" };
+            string[] Fighter = new string[] { "item4", "item4", "item4", "item4", "item4" };
+            string[] Hunter = new string[] { "item5", "item5", "item5", "item5", "item5" };
+            string[] Monk = new string[] { "item6", "item6", "item6", "item6", "item6" };
+            string[] Paladin = new string[] { "item7", "item7", "item7", "item7", "item7" };
+            string[] Sorcorer = new string[] { "item8", "item8", "item8", "item8", "item8" };
+            string[] Warlock = new string[] { "item9", "item9", "item9", "item9", "item9" };
+            string[] Wizard = new string[] { "item10", "item10", "item10", "item10", "item10" };
+
+            
+            SublassCombo.Items.Clear();
+            switch (Convert.ToString(ComboClass.SelectedItem))
+            {
+                case "Barbarian":
+
+                    for (int i = 0; i < SubBarb.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubBarb[i]);
+                    }
+                   
+                    break;
+
+                case "Cleric":
+                    for (int i = 0; i < Cleric.Length; i++)
+                    {
+                        SublassCombo.Items.Add(Cleric[i]);
+                    }
+                    break;
+
+                case "Druid":
+                    for (int i = 0; i < Druid.Length; i++)
+                    {
+                        SublassCombo.Items.Add(Druid[i]);
+                    }
+                    break;
+
+                case "Fighter":
+                    for (int i = 0; i < Fighter.Length; i++)
+                    {
+                        SublassCombo.Items.Add(Fighter[i]);
+                    }
+                    break;
+
+                case "Hunter":
+                    for (int i = 0; i < Hunter.Length; i++)
+                    {
+                        SublassCombo.Items.Add(Hunter[i]);
+                    }
+                    break;
+                case "Monk":
+                    for (int i = 0; i < Monk.Length; i++)
+                    {
+                        SublassCombo.Items.Add(Monk[i]);
+                    }
+                    break;
+                case "Paladin":
+                    for (int i = 0; i < Paladin.Length; i++)
+                    {
+                        SublassCombo.Items.Add(Paladin[i]);
+                    }
+                    break;
+                case "Sorcorer":
+                    for (int i = 0; i < Sorcorer.Length; i++)
+                    {
+                        SublassCombo.Items.Add(Sorcorer[i]);
+                    }
+                    break;
+                case "Warlock":
+                    for (int i = 0; i < Warlock.Length; i++)
+                    {
+                        SublassCombo.Items.Add(Warlock[i]);
+                    }
+                    break;
+                case "Wizard":
+                    for (int i = 0; i < Wizard.Length; i++)
+                    {
+                        SublassCombo.Items.Add(Wizard[i]);
+                    }
+                    break;
+
+                default:
+                    break;
+            }
+
         }
 
+        private void ComboBoxSubClass_Loaded(object sender, RoutedEventArgs e)
+        {
+
+           
+            
+        }
         private void ComboBoxBackground_Loaded(object sender, RoutedEventArgs e)
         {
             List<string> Backgrounds = new List<string>();
@@ -137,8 +239,12 @@ namespace DnD_NPC_Creator
         {
             // todo: geselecteerde dada in nieuw tabalad zien 
 
-
+           
+            SecondWindow1 next  = new SecondWindow1();
+            
+            next.raceResult.Text = "lol";
             // openen van nieuw tablad
+            
             SecondWindow1 objsecondwindow = new SecondWindow1();
             this.Visibility = Visibility.Hidden;
             objsecondwindow.Show();
@@ -175,5 +281,7 @@ namespace DnD_NPC_Creator
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
 
         }
+
+        
     }
 }

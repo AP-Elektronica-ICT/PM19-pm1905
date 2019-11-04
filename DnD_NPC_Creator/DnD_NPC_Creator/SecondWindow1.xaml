@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="SecondWindow1" Height="450" Width="800">
     <Grid>
-        <Label Content="Secondwindow" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="5.407,6.475" Height="72" Width="137" Margin="352,131,0,0"/>
+        <Label Content="Second info window --> todo" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="5.407,6.475" Height="72" Width="137" Margin="352,131,0,0"/>
+        <Label Content="Race" HorizontalAlignment="Left" Margin="42,38,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="label"  HorizontalAlignment="Left" Margin="42,64,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="21" Width="65"/>
+        <TextBox x:Name="raceResult" HorizontalAlignment="Left" Height="75" Margin="333,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167"/>
 
     </Grid>
 </Window>
