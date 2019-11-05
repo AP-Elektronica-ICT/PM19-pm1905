@@ -22,12 +22,12 @@
         <Label Content="Wisdom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,210,0,0" Width="79" RenderTransformOrigin="0.66,-0.483" Height="24"/>
         <Label Content="Charisma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,249,0,0" Width="79" Height="25"/>
         <Label Content="Points" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="287,45,0,0" Height="25" Width="46"/>
-        <TextBox x:Name="Scorebox" MaxLength="2" HorizontalAlignment="Left" Height="21" Margin="287,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" PreviewTextInput="Scorebox_previewTextInput" RenderTransformOrigin="-3.5,-1.351"/>
-        <TextBox x:Name="Dexteriybox" MaxLength="2" HorizontalAlignment="Left" Height="21" Margin="287,105,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Dexteriybox_previewTextInput"/>
-        <TextBox x:Name="Constitutiorbox" MaxLength="2" HorizontalAlignment="Left" Height="22" Margin="287,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" PreviewTextInput="Constitutiorbox_previewTextBox"/>
-        <TextBox x:Name="Intelligencebox"  MaxLength="2" HorizontalAlignment="Left" Height="23" Margin="287,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Intelligencebox_PreviewTextInput"/>
-        <TextBox x:Name="Wisdombox" MaxLength="2" HorizontalAlignment="Left" Height="24" Margin="287,212,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Wisdombox_PreviewTextInput"/>
-        <TextBox  x:Name="Charisma" MaxLength="2" HorizontalAlignment="Left" Height="22" Margin="287,249,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Charisma_PreviewTextInput"/>
+        <TextBox x:Name="StrengthBox" MaxLength="2" HorizontalAlignment="Left" Height="21" Margin="287,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" PreviewTextInput="Scorebox_previewTextInput" RenderTransformOrigin="-3.5,-1.351" KeyDown="Strength_KeyDown"/>
+        <TextBox x:Name="Dexteritybox" MaxLength="2" HorizontalAlignment="Left" Height="21" Margin="287,105,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Dexteriybox_previewTextInput" KeyDown="Dexterity_KeyDown"/>
+        <TextBox x:Name="Constitutiorbox" MaxLength="2" HorizontalAlignment="Left" Height="22" Margin="287,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" PreviewTextInput="Constitutiorbox_previewTextBox" KeyDown="Constitution_KeyDown"/>
+        <TextBox x:Name="Intelligencebox"  MaxLength="2" HorizontalAlignment="Left" Height="23" Margin="287,177,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Intelligencebox_PreviewTextInput" KeyDown="Intelligence_KeyDown"/>
+        <TextBox x:Name="Wisdombox" MaxLength="2" HorizontalAlignment="Left" Height="24" Margin="287,212,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Wisdombox_PreviewTextInput" KeyDown="Wisdom_KeyDown"/>
+        <TextBox  x:Name="Charismabox" MaxLength="2" HorizontalAlignment="Left" Height="22" Margin="287,249,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Charisma_PreviewTextInput" KeyDown="Charisma_KeyDown"/>
         <TextBox HorizontalAlignment="Left" Height="80" Margin="10,250,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="153"/>
         <Label Content="Feature name:" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top"/>
         <Label Content="Add features" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="449,10,0,0" RenderTransformOrigin="4.429,0.312"/>
@@ -117,6 +117,11 @@
         <Label Content="exp" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="651,15,0,0" RenderTransformOrigin="4.429,0.312"/>
         <ComboBox x:Name="SublassCombo" HorizontalAlignment="Left" Margin="10,162,0,0" VerticalAlignment="Top" Width="153" />
         <Label Content="Subclass" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top"/>
-
+        <Label x:Name="StrengthLabel" Content=" " HorizontalAlignment="Left" Margin="338,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label x:Name="DexterityLabel" Content=" " HorizontalAlignment="Left" Margin="338,106,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label x:Name="ConstitutionLabel" Content=" " HorizontalAlignment="Left" Margin="338,139,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label x:Name="IntelligenceLabel" Content=" " HorizontalAlignment="Left" Margin="338,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label x:Name="WisdomLabel" Content=" " HorizontalAlignment="Left" Margin="338,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label x:Name="CharismaLabel" Content=" " HorizontalAlignment="Left" Margin="338,249,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
     </Grid>
 </Window>

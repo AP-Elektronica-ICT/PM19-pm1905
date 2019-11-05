@@ -27,6 +27,8 @@ namespace DnD_NPC_Creator
             InitializeComponent();
             
         }
+
+       
         
         private void ComboBoxRace_Loaded(object sender, RoutedEventArgs e )
         {
@@ -76,15 +78,15 @@ namespace DnD_NPC_Creator
         private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string[] SubBarb = new string[] {"item1", "item1", "item1", "item1", "item1"};
-            string[] Cleric = new string[] { "item2", "item2", "item2", "item2", "item2" };
-            string[] Druid = new string[] { "item3", "item3", "item3", "item3", "item3" };
-            string[] Fighter = new string[] { "item4", "item4", "item4", "item4", "item4" };
-            string[] Hunter = new string[] { "item5", "item5", "item5", "item5", "item5" };
-            string[] Monk = new string[] { "item6", "item6", "item6", "item6", "item6" };
-            string[] Paladin = new string[] { "item7", "item7", "item7", "item7", "item7" };
-            string[] Sorcorer = new string[] { "item8", "item8", "item8", "item8", "item8" };
-            string[] Warlock = new string[] { "item9", "item9", "item9", "item9", "item9" };
-            string[] Wizard = new string[] { "item10", "item10", "item10", "item10", "item10" };
+            string[] SubCleric = new string[] { "item2", "item2", "item2", "item2", "item2" };
+            string[] SubDruid = new string[] { "item3", "item3", "item3", "item3", "item3" };
+            string[] SubFighter = new string[] { "item4", "item4", "item4", "item4", "item4" };
+            string[] SubHunter = new string[] { "item5", "item5", "item5", "item5", "item5" };
+            string[] SubMonk = new string[] { "item6", "item6", "item6", "item6", "item6" };
+            string[] SubPaladin = new string[] { "item7", "item7", "item7", "item7", "item7" };
+            string[] SubSorcorer = new string[] { "item8", "item8", "item8", "item8", "item8" };
+            string[] SubWarlock = new string[] { "item9", "item9", "item9", "item9", "item9" };
+            string[] SubWizard = new string[] { "item10", "item10", "item10", "item10", "item10" };
 
             
             SublassCombo.Items.Clear();
@@ -100,60 +102,60 @@ namespace DnD_NPC_Creator
                     break;
 
                 case "Cleric":
-                    for (int i = 0; i < Cleric.Length; i++)
+                    for (int i = 0; i < SubCleric.Length; i++)
                     {
-                        SublassCombo.Items.Add(Cleric[i]);
+                        SublassCombo.Items.Add(SubCleric[i]);
                     }
                     break;
 
                 case "Druid":
-                    for (int i = 0; i < Druid.Length; i++)
+                    for (int i = 0; i < SubDruid.Length; i++)
                     {
-                        SublassCombo.Items.Add(Druid[i]);
+                        SublassCombo.Items.Add(SubDruid[i]);
                     }
                     break;
 
                 case "Fighter":
-                    for (int i = 0; i < Fighter.Length; i++)
+                    for (int i = 0; i < SubFighter.Length; i++)
                     {
-                        SublassCombo.Items.Add(Fighter[i]);
+                        SublassCombo.Items.Add(SubFighter[i]);
                     }
                     break;
 
                 case "Hunter":
-                    for (int i = 0; i < Hunter.Length; i++)
+                    for (int i = 0; i < SubHunter.Length; i++)
                     {
-                        SublassCombo.Items.Add(Hunter[i]);
+                        SublassCombo.Items.Add(SubHunter[i]);
                     }
                     break;
                 case "Monk":
-                    for (int i = 0; i < Monk.Length; i++)
+                    for (int i = 0; i < SubMonk.Length; i++)
                     {
-                        SublassCombo.Items.Add(Monk[i]);
+                        SublassCombo.Items.Add(SubMonk[i]);
                     }
                     break;
                 case "Paladin":
-                    for (int i = 0; i < Paladin.Length; i++)
+                    for (int i = 0; i < SubPaladin.Length; i++)
                     {
-                        SublassCombo.Items.Add(Paladin[i]);
+                        SublassCombo.Items.Add(SubPaladin[i]);
                     }
                     break;
                 case "Sorcorer":
-                    for (int i = 0; i < Sorcorer.Length; i++)
+                    for (int i = 0; i < SubSorcorer.Length; i++)
                     {
-                        SublassCombo.Items.Add(Sorcorer[i]);
+                        SublassCombo.Items.Add(SubSorcorer[i]);
                     }
                     break;
                 case "Warlock":
-                    for (int i = 0; i < Warlock.Length; i++)
+                    for (int i = 0; i < SubWarlock.Length; i++)
                     {
-                        SublassCombo.Items.Add(Warlock[i]);
+                        SublassCombo.Items.Add(SubWarlock[i]);
                     }
                     break;
                 case "Wizard":
-                    for (int i = 0; i < Wizard.Length; i++)
+                    for (int i = 0; i < SubWizard.Length; i++)
                     {
-                        SublassCombo.Items.Add(Wizard[i]);
+                        SublassCombo.Items.Add(SubWizard[i]);
                     }
                     break;
 
@@ -237,9 +239,9 @@ namespace DnD_NPC_Creator
 
         private void OpenWidow(object sender, RoutedEventArgs e)
         {
-            // todo: geselecteerde dada in nieuw tabalad zien 
+            // todo: Data in 2de window laten zien
 
-           
+           //example, nog af te maken
             SecondWindow1 next  = new SecondWindow1();
             
             next.raceResult.Text = "lol";
@@ -282,6 +284,84 @@ namespace DnD_NPC_Creator
 
         }
 
-        
+        private void Strength_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal; 
+
+            if (e.Key == Key.Enter)
+            {
+                
+                getal = int.Parse(StrengthBox.Text);
+                //schrijf hier berkening voor +points
+                StrengthLabel.Content = "+"+getal;
+            }
+        }
+
+        private void Dexterity_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Dexteritybox.Text);
+                DexterityLabel.Content = "+"+getal;
+
+                
+            }
+        }
+
+        private void Constitution_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Constitutiorbox.Text);
+                ConstitutionLabel.Content = "+" + getal;
+
+
+            }
+        }
+
+        private void Intelligence_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Intelligencebox.Text);
+                IntelligenceLabel.Content = "+" + getal;
+
+
+            }
+        }
+
+        private void Wisdom_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Wisdombox.Text);
+                WisdomLabel.Content = "+" + getal;
+
+
+            }
+
+        }
+
+        private void Charisma_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Charismabox.Text);
+                CharismaLabel.Content = "+" + getal;
+
+
+            }
+        }
     }
+    
 }
