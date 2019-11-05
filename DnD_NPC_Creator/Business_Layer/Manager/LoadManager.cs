@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business_Layer.Model
+namespace Business_Layer.Manager
 {
-    class Spell
+    class LoadManager
     {
-        string Name;
-        int Level;
+
     }
 }

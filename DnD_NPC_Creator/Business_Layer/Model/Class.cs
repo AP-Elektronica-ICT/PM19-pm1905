@@ -9,7 +9,7 @@ namespace Business_Layer.Model
     {
         public string ClassName;
         public string SubClass;
-        public int Hitdice;
+        //public int Hitdice;
         
     }
 }
