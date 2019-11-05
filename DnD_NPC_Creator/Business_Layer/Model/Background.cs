@@ -7,8 +7,11 @@ namespace Business_Layer.Model
     class Background
     {
         string Name;
-        string FeatureName;
-        string Feature;
-        List<string> Proficiencies;
+        string Specialisation;
+
+        //string FeatureName;
+        //string Feature;
+        //List<string> Proficiencies;
+
     }
 }

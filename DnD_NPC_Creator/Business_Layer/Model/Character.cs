@@ -27,7 +27,8 @@ namespace Business_Layer.Model
         Background Background;
         //0: Strength, 1: Dexterity, 2: Constitution, 3: Intellignece, 4: Wisdom, 5: Charisma
         Stat[] Stats;
-        Race Race;
+        //Race Race;
+        string Race;
         Personality Personality;
 
         //If copper, silver, elektrum, gold, platinum are all wanted to kep track of.

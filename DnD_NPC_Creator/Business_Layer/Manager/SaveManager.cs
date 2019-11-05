@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Business_Layer.Model
+namespace Business_Layer.Manager
 {
-    class Spell
+    class SaveManager
     {
-        string Name;
-        int Level;
     }
 }
