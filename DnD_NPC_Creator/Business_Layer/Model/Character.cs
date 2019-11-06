@@ -8,9 +8,9 @@ namespace Business_Layer.Model
     {
         public Character()
         {
-            Class = new List<Class>();
-            Inventory = new List<Item>();
-            SpellList = new List<Spell>();
+            //Class = new List<Class>();
+            //Inventory = new List<Item>();
+            //SpellList = new List<Spell>();
             Stats = new Stat[6];
 
             Stats[0].Name = "Strenght";
@@ -21,19 +21,21 @@ namespace Business_Layer.Model
             Stats[5].Name = "Charisma";
         }
 
-        List<Class> Class;
-        List<Item> Inventory;
-        List<Spell> SpellList;
-        Background Background;
+        //List<Class> Class;
+        //List<Item> Inventory;
+        //List<Spell> SpellList;
+        ///Background Background;
         //0: Strength, 1: Dexterity, 2: Constitution, 3: Intellignece, 4: Wisdom, 5: Charisma
         Stat[] Stats;
         //Race Race;
-        string Race;
-        Personality Personality;
+        //string Race;
+        //Personality Personality;
 
         //If copper, silver, elektrum, gold, platinum are all wanted to kep track of.
-        int[] Money;
+        //int[] Money;
         //If there is only one gold kind to keep track of.
-        Double Gold;
+        //Double Gold;
+
+        //=>Because of rewriting of perimitters of project lots of models have become obsolete. Won't delete them yet until sure that they are useless.
     }
 }

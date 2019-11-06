@@ -20,7 +20,7 @@ namespace Business_Layer.Model
         private bool _hasExpertice;
         public string RelatedStat;
 
-        public int getBonus()
+        public int GetBonus()
         {
             if (_hasExpertice)
                 return _bonus + _proficiencyBonus * 2;
@@ -36,6 +36,10 @@ namespace Business_Layer.Model
         public void setExpertise(bool hasExpertise)
         {
             _hasExpertice = hasExpertise;
+        }
+        public void setProficiency(bool hasProficiency)
+        {
+            _hasProficiency = hasProficiency;
         }
     }
 }
