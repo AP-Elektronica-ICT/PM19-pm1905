@@ -380,6 +380,19 @@ namespace DnD_NPC_Creator
             Tool.SelectedIndex = 0;
             */
         }
+
+        
+
+        private void InstrumentsCombobox_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] IntsrumentsItems = new string[] { "Bagpipes", "Drum", "Dulcimer", "Flute", "Lute", "Lyre", "Horn", "Pan Flute", "Shawn", "Viol", "Navigator's tool", "Thieves' tools" };
+            List<string> Instruments = new List<string>();
+      
+            for (int i = 0; i < IntsrumentsItems.Length; i++)
+            {
+                InstrumentsCombobox.Items.Add(IntsrumentsItems[i]);
+            }
+        }
     }
     
 }

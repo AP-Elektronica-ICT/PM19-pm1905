@@ -124,7 +124,9 @@
         <Label x:Name="WisdomLabel" Content=" " HorizontalAlignment="Left" Margin="338,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
         <Label x:Name="CharismaLabel" Content=" " HorizontalAlignment="Left" Margin="338,249,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
         <Label Content="Proficiencies:" HorizontalAlignment="Left" Margin="255,364,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <ComboBox x:Name="ToolsCombobox"  HorizontalAlignment="Left" Margin="246,403,0,0" VerticalAlignment="Top" Width="120" Loaded="ToolsCombobox_Loaded" RenderTransformOrigin="0.594,-0.012"/>
+        <ComboBox x:Name="ToolsCombobox"  HorizontalAlignment="Left" Margin="277,403,0,0" VerticalAlignment="Top" Width="120" Loaded="ToolsCombobox_Loaded" RenderTransformOrigin="0.594,-0.012"/>
         <Label Content="Tools:" HorizontalAlignment="Left" Margin="201,399,0,0" VerticalAlignment="Top"/>
+        <Label Content="Instruments:" HorizontalAlignment="Left" Margin="165,436,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,2.457"/>
+        <ComboBox x:Name="InstrumentsCombobox" HorizontalAlignment="Left" Margin="277,440,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.237,-0.03" Loaded="InstrumentsCombobox_Loaded" />
     </Grid>
 </Window>
