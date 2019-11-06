@@ -362,6 +362,24 @@ namespace DnD_NPC_Creator
 
             }
         }
+
+        private void ToolsCombobox_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] ToolItems = new string[] {"Alchemist's suplies", "Brewer's supplies", "Calligrapher's Supplies", "Carpenters's tools", "cortographer's tools", "Cobbler's tools", "Cook's utensils", "Glassblower's tools", "jeweler's tools", "leatherworker's tools", "Mason's tools", "Potter's tools", "Smith's tools", "Tinker's tools", "Weaver's tools", "Woodcarver's tools" };
+            List<string> Tools = new List<string>();
+            for (int i = 0; i < ToolItems.Length; i++)
+            {
+                ToolsCombobox.Items.Add(ToolItems[i]);
+            }
+            
+
+            /*
+
+            var Tool = sender as ComboBox;
+            Tool.ItemsSource = Tools;
+            Tool.SelectedIndex = 0;
+            */
+        }
     }
     
 }
