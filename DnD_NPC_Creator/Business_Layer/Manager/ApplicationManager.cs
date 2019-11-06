@@ -1,17 +1,33 @@
-﻿using System;
+﻿using Business_Layer.Model;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Business_Layer.Manager
 {
-    class ApplicationManager
+    public class ApplicationManager
     {
-        LoadManager LoadManager;
-        SaveManager SaveManager;
+        LoadManager loadManager;
+        SaveManager saveManager;
+        Character character; 
+        //ContentLoader contentLoader;
         public ApplicationManager()
         {
-            LoadManager = new LoadManager();
-            SaveManager = new SaveManager();
+            loadManager = new LoadManager();
+            saveManager = new SaveManager();
+            character = new Character();
+        }
+        public void SaveCharacter()
+        {
+            saveManager.SaveCharacter(character);
+        }
+        public void LoadCharacter(string characterDocName)
+        {
+            InitialiseCharacter(saveManager.LoadCharacter(characterDocName));
+        }
+        public void InitialiseCharacter(List<string> charInfo)
+        {
+
         }
     }
 }

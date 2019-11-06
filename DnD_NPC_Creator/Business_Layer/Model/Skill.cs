@@ -6,40 +6,28 @@ namespace Business_Layer.Model
 {
     class Skill
     {
-        public Skill(string name, string relatedStat)
+        public Skill(string name, string relatedStat, int statBonus = 0)
         {
             Name = name;
             RelatedStat = relatedStat;
+            Bonus = statBonus;
         }
-
-        private int _bonus;
-        private int _proficiencyBonus;
-
+    
         public string Name;
-        private bool _hasProficiency;
-        private bool _hasExpertice;
+        public bool HasProficiency { get; set; }
+        public bool HasExpertise { get; set; }
+        public int ProficiencyBonus { get; set; }
         public string RelatedStat;
+        public int Bonus { get; set; }
 
         public int GetBonus()
         {
-            if (_hasExpertice)
-                return _bonus + _proficiencyBonus * 2;
-            else if (_hasProficiency)
-                return _bonus + _proficiencyBonus;
+            if (HasExpertise)
+                return Bonus + ProficiencyBonus * 2;
+            else if (HasProficiency)
+                return Bonus + ProficiencyBonus;
             else
-                return _bonus;
+                return Bonus;
         } 
-        public void setProficiencyBonus(int proficiencyBonus)
-        {
-            _proficiencyBonus = proficiencyBonus;
-        }
-        public void setExpertise(bool hasExpertise)
-        {
-            _hasExpertice = hasExpertise;
-        }
-        public void setProficiency(bool hasProficiency)
-        {
-            _hasProficiency = hasProficiency;
-        }
     }
 }

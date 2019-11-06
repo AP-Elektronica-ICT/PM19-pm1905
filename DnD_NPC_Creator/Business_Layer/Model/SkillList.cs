@@ -6,7 +6,7 @@ namespace Business_Layer.Model
 {
     class SkillList
     {
-        List<Skill> Skills;
+        public List<Skill> Skills;
         //List<String> Languages;
         //List<Skill> Tools;
 
@@ -42,7 +42,30 @@ namespace Business_Layer.Model
             Skills.Add(new Skill("stealth", "dex"));
             Skills.Add(new Skill("survival", "wis"));
         }
-
+        public void SetSkillBonusses(Stat[] stats)
+        {
+            foreach (var skill in Skills)
+            {
+                if (skill.RelatedStat == "str")
+                    skill.Bonus = stats[0].StatModifier;
+                else if (skill.RelatedStat == "dex")
+                    skill.Bonus = stats[1].StatModifier;
+                else if(skill.RelatedStat == "int")
+                    skill.Bonus = stats[3].StatModifier;
+                else if (skill.RelatedStat == "wis")
+                    skill.Bonus = stats[4].StatModifier;
+                else if(skill.RelatedStat == "cha")
+                    skill.Bonus = stats[5].StatModifier;
+            }
+        }
+        public void UpdateStatBonus(Stat stat)
+        {
+            foreach (var skill in Skills)
+            {
+                if (skill.RelatedStat == stat.Name.Substring(0, 3).ToLower())
+                    skill.Bonus = stat.StatModifier;
+            }
+        }
         public List<int> GetAllSkillBonusses()
         {
             List<int> bonusses = new List<int>();
@@ -68,32 +91,32 @@ namespace Business_Layer.Model
         {
             foreach (var skill in Skills)
             {
-                skill.setProficiencyBonus(proficiencyBonus);
+                skill.ProficiencyBonus = proficiencyBonus;
             }
         }
 
         public void UpdateSkillProficiency(bool hasProficiency, string skillName)
         {
             Skill skill = GetSkill(skillName);
-            skill.setProficiency(hasProficiency);
+            skill.HasProficiency = hasProficiency;
         }
         public void UpdateSkillProficiency(bool hasProficiency, int skillId)
         {
             Skill skill = GetSkill(skillId);
-            skill.setProficiency(hasProficiency);
+            skill.HasProficiency = hasProficiency;
         }
 
 
         public void UpdateSkillExpertise(bool hasExpertise, string skillName)
         {
             Skill skill = GetSkill(skillName);
-            skill.setExpertise(hasExpertise);
+            skill.HasExpertise = hasExpertise;
         }
 
         public void UpdateSkillExpertise(bool hasExpertise, int skillId)
         {
             Skill skill = GetSkill(skillId);
-            skill.setExpertise(hasExpertise);
+            skill.HasExpertise = hasExpertise;
         }
 
         
