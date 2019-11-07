@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Business_Layer.Model
 {
-    class Skill
+    public class Skill
     {
         public Skill(string name, string relatedStat, int statBonus = 0)
         {
             Name = name;
             RelatedStat = relatedStat;
-            Bonus = statBonus;
+            StatModifier = statBonus;
         }
     
         public string Name;
@@ -18,16 +18,16 @@ namespace Business_Layer.Model
         public bool HasExpertise { get; set; }
         public int ProficiencyBonus { get; set; }
         public string RelatedStat;
-        public int Bonus { get; set; }
+        public int StatModifier { get; set; }
 
-        public int GetBonus()
+        public int GetSkillBonus()
         {
-            if (HasExpertise)
-                return Bonus + ProficiencyBonus * 2;
+            if (HasExpertise & HasProficiency)
+                return StatModifier + ProficiencyBonus * 2;
             else if (HasProficiency)
-                return Bonus + ProficiencyBonus;
+                return StatModifier + ProficiencyBonus;
             else
-                return Bonus;
+                return StatModifier;
         } 
     }
 }

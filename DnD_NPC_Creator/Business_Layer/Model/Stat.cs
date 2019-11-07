@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Business_Layer.Model
 {
-    class Stat
+    public class Stat
     {
         public Stat(string name)
         {
@@ -17,7 +17,7 @@ namespace Business_Layer.Model
         {
             get
             {
-                return (int)Math.Ceiling(((decimal)TotalStat - 10m) / 2);
+                return (int)Math.Floor((TotalStat - 10m) / 2);
             }
         }
     }

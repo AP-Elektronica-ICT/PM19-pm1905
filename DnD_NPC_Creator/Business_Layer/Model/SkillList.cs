@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Business_Layer.Model
 {
-    class SkillList
+    public class SkillList
     {
         public List<Skill> Skills;
         //List<String> Languages;
@@ -23,39 +23,39 @@ namespace Business_Layer.Model
         {
             Skills = new List<Skill>();
 
-            Skills.Add(new Skill("acrobatics", "dex"));
-            Skills.Add(new Skill("animal handling", "wis"));
-            Skills.Add(new Skill("arcana", "int"));
-            Skills.Add(new Skill("athletics", "str"));
-            Skills.Add(new Skill("deceptions", "cha"));
-            Skills.Add(new Skill("history", "int"));
-            Skills.Add(new Skill("insight", "wis"));
-            Skills.Add(new Skill("intimidation", "cha"));
-            Skills.Add(new Skill("investigation", "int"));
-            Skills.Add(new Skill("medicine", "wis"));
-            Skills.Add(new Skill("nature", "int"));
-            Skills.Add(new Skill("perception", "wis"));
-            Skills.Add(new Skill("performance", "cha"));
-            Skills.Add(new Skill("persuation", "cha"));
-            Skills.Add(new Skill("religion", "int"));
-            Skills.Add(new Skill("sleight of hand", "dex"));
-            Skills.Add(new Skill("stealth", "dex"));
-            Skills.Add(new Skill("survival", "wis"));
+            Skills.Add(new Skill("acrobatics", "dex"));         //0
+            Skills.Add(new Skill("animal handling", "wis"));    //1
+            Skills.Add(new Skill("arcana", "int"));             //2
+            Skills.Add(new Skill("athletics", "str"));          //3
+            Skills.Add(new Skill("deceptions", "cha"));         //4
+            Skills.Add(new Skill("history", "int"));            //5
+            Skills.Add(new Skill("insight", "wis"));            //6
+            Skills.Add(new Skill("intimidation", "cha"));       //7
+            Skills.Add(new Skill("investigation", "int"));      //8
+            Skills.Add(new Skill("medicine", "wis"));           //9
+            Skills.Add(new Skill("nature", "int"));             //10
+            Skills.Add(new Skill("perception", "wis"));         //11
+            Skills.Add(new Skill("performance", "cha"));        //12
+            Skills.Add(new Skill("persuation", "cha"));         //13
+            Skills.Add(new Skill("religion", "int"));           //14
+            Skills.Add(new Skill("sleight of hand", "dex"));    //15
+            Skills.Add(new Skill("stealth", "dex"));            //16
+            Skills.Add(new Skill("survival", "wis"));           //17
         }
-        public void SetSkillBonusses(Stat[] stats)
+        public void SetStatBonusses(Stat[] stats)
         {
             foreach (var skill in Skills)
             {
                 if (skill.RelatedStat == "str")
-                    skill.Bonus = stats[0].StatModifier;
+                    skill.StatModifier = stats[0].StatModifier;
                 else if (skill.RelatedStat == "dex")
-                    skill.Bonus = stats[1].StatModifier;
+                    skill.StatModifier = stats[1].StatModifier;
                 else if(skill.RelatedStat == "int")
-                    skill.Bonus = stats[3].StatModifier;
+                    skill.StatModifier = stats[3].StatModifier;
                 else if (skill.RelatedStat == "wis")
-                    skill.Bonus = stats[4].StatModifier;
+                    skill.StatModifier = stats[4].StatModifier;
                 else if(skill.RelatedStat == "cha")
-                    skill.Bonus = stats[5].StatModifier;
+                    skill.StatModifier = stats[5].StatModifier;
             }
         }
         public void UpdateStatBonus(Stat stat)
@@ -63,7 +63,7 @@ namespace Business_Layer.Model
             foreach (var skill in Skills)
             {
                 if (skill.RelatedStat == stat.Name.Substring(0, 3).ToLower())
-                    skill.Bonus = stat.StatModifier;
+                    skill.StatModifier = stat.StatModifier;
             }
         }
         public List<int> GetAllSkillBonusses()
@@ -72,7 +72,7 @@ namespace Business_Layer.Model
 
             foreach (var skill in Skills)
             {
-                bonusses.Add(skill.GetBonus());
+                bonusses.Add(skill.GetSkillBonus());
             }
 
             return bonusses;
@@ -80,11 +80,11 @@ namespace Business_Layer.Model
 
         public int GetSkillBonus(string skillName)
         {
-            return GetSkill(skillName).GetBonus();
+            return GetSkill(skillName).GetSkillBonus();
         }
         public int GetSkillBonus(int skillId)
         {
-            return GetSkill(skillId).GetBonus();
+            return GetSkill(skillId).GetSkillBonus();
         }
 
         public void UpdateSkillProficiencyBonus(int proficiencyBonus)
