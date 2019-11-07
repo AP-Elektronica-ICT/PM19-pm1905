@@ -56,7 +56,7 @@ namespace DnD_NPC_Creator
         
         private void ComboBoxClass_Loaded(object sender, RoutedEventArgs e)
         {
-
+            
             List<string> Classes = new List<string>();
             Classes.Add(" ");
             Classes.Add("Barbarian");
@@ -239,15 +239,35 @@ namespace DnD_NPC_Creator
 
         private void OpenWidow(object sender, RoutedEventArgs e)
         {
-            // todo: Data in 2de window laten zien
+            
 
            //example, nog af te maken
             SecondWindow1 next  = new SecondWindow1();
             
-            next.raceResult.Text = "lol";
+            
             // openen van nieuw tablad
             
             SecondWindow1 objsecondwindow = new SecondWindow1();
+            objsecondwindow.RaceSecond.Content = Convert.ToString(ComboBoxRace.SelectedItem);
+            objsecondwindow.Namesecond.Content = Convert.ToString(NameInput.Text);
+            objsecondwindow.StrengthSecond.Content = Convert.ToString(StrengthBox.Text + "" + StrengthLabel.Content);
+            objsecondwindow.DexSecond.Content = Convert.ToString(Dexteritybox.Text + DexterityLabel.Content);
+            objsecondwindow.ConSecond.Content = Convert.ToString(Constitutiorbox.Text + ConstitutionLabel.Content);
+            objsecondwindow.Intsecond.Content = Convert.ToString(Intelligencebox.Text + IntelligenceLabel.Content);
+            objsecondwindow.WisSecond.Content = Convert.ToString(Wisdombox.Text + WisdomLabel.Content);
+            objsecondwindow.ChaSecond.Content = Convert.ToString(Charismabox.Text + CharismaLabel.Content);
+            objsecondwindow.FeatureNameSecond.Content = Convert.ToString(FeatureName.Text);
+            objsecondwindow.BackGroundSecond.Content = Convert.ToString(BackGroundBox.Text);
+            objsecondwindow.ClassSecond.Content = Convert.ToString(ComboClass.SelectedItem);
+            objsecondwindow.SubClassSecond.Content = Convert.ToString(SublassCombo.SelectedItem);
+            objsecondwindow.PersonalSecond.Text = Convert.ToString(PersonalBox.Text);
+            objsecondwindow.IdealsSecond.Text = Convert.ToString(IdealsBox.Text);
+            objsecondwindow.BondsSecond.Text = Convert.ToString(BondsBox.Text);
+            objsecondwindow.FlawsSecond.Text = Convert.ToString(FlawsBox.Text);
+            objsecondwindow.ToolsSecond.Content = Convert.ToString(ToolsCombobox.SelectedItem);
+            objsecondwindow.InstrumentsSecond.Content = Convert.ToString(InstrumentsCombobox.SelectedItem);
+
+
             this.Visibility = Visibility.Hidden;
             objsecondwindow.Show();
         }
@@ -380,9 +400,7 @@ namespace DnD_NPC_Creator
             Tool.SelectedIndex = 0;
             */
         }
-
         
-
         private void InstrumentsCombobox_Loaded(object sender, RoutedEventArgs e)
         {
             string[] IntsrumentsItems = new string[] { "Bagpipes", "Drum", "Dulcimer", "Flute", "Lute", "Lyre", "Horn", "Pan Flute", "Shawn", "Viol", "Navigator's tool", "Thieves' tools" };
