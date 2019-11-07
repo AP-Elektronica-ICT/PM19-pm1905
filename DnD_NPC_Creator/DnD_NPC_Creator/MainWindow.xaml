@@ -41,8 +41,8 @@
         <Label Content="Bonds" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="469,270,0,0" RenderTransformOrigin="4.429,0.312"/>
         <TextBox HorizontalAlignment="Left" Height="60" Margin="398,296,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="182"/>
         <Label Content="Flaws" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="474,356,0,0" RenderTransformOrigin="4.429,0.312"/>
-        <Label Content="Notes:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,361,0,0" RenderTransformOrigin="4.429,0.312"/>
-        <TextBox HorizontalAlignment="Left" Height="121" Margin="10,392,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="383"/>
+        <Label Content="Notes:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,361,0,0" RenderTransformOrigin="4.429,0.312" FontSize="14"/>
+        <TextBox HorizontalAlignment="Left" Height="183" Margin="10,392,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="155"/>
         <CheckBox  HorizontalAlignment="Left" Margin="628,45,0,0" VerticalAlignment="Top"/>
         <Label Content="Acrobatics" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="679,38,0,0" Height="24" Width="61"/>
         <Label Content="Animal Handling" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="679,62,0,0" Width="79" Height="25"/>
@@ -123,5 +123,10 @@
         <Label x:Name="IntelligenceLabel" Content=" " HorizontalAlignment="Left" Margin="338,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
         <Label x:Name="WisdomLabel" Content=" " HorizontalAlignment="Left" Margin="338,212,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
         <Label x:Name="CharismaLabel" Content=" " HorizontalAlignment="Left" Margin="338,249,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label Content="Proficiencies:" HorizontalAlignment="Left" Margin="255,364,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <ComboBox x:Name="ToolsCombobox"  HorizontalAlignment="Left" Margin="277,403,0,0" VerticalAlignment="Top" Width="120" Loaded="ToolsCombobox_Loaded" RenderTransformOrigin="0.594,-0.012"/>
+        <Label Content="Tools:" HorizontalAlignment="Left" Margin="201,399,0,0" VerticalAlignment="Top"/>
+        <Label Content="Instruments:" HorizontalAlignment="Left" Margin="165,436,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,2.457"/>
+        <ComboBox x:Name="InstrumentsCombobox" HorizontalAlignment="Left" Margin="277,440,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.237,-0.03" Loaded="InstrumentsCombobox_Loaded" />
     </Grid>
 </Window>
