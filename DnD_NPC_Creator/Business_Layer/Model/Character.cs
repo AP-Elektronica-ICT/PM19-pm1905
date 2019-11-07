@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Business_Layer.Model
 {
-    class Character
+    public class Character
     {
         public string Name;
         public int Level;
