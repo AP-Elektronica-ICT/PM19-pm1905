@@ -32,10 +32,10 @@ namespace DnD_NPC_Creator
         
         private void ComboBoxRace_Loaded(object sender, RoutedEventArgs e )
         {
-            
+            ComboBoxRace.Text = "";
 
             List<string> races = new List<string>();
-            races.Add(" ");
+            races.Add("race ");
             races.Add("Dwarf");
             races.Add("Elf");
             races.Add("Halfling");
@@ -56,7 +56,7 @@ namespace DnD_NPC_Creator
         
         private void ComboBoxClass_Loaded(object sender, RoutedEventArgs e)
         {
-            
+          
             List<string> Classes = new List<string>();
             Classes.Add(" ");
             Classes.Add("Barbarian");
@@ -77,6 +77,7 @@ namespace DnD_NPC_Creator
         }
         private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            
             string[] SubBarb = new string[] {"item1", "item1", "item1", "item1", "item1"};
             string[] SubCleric = new string[] { "item2", "item2", "item2", "item2", "item2" };
             string[] SubDruid = new string[] { "item3", "item3", "item3", "item3", "item3" };
@@ -257,7 +258,7 @@ namespace DnD_NPC_Creator
             objsecondwindow.WisSecond.Content = Convert.ToString(Wisdombox.Text + WisdomLabel.Content);
             objsecondwindow.ChaSecond.Content = Convert.ToString(Charismabox.Text + CharismaLabel.Content);
             objsecondwindow.FeatureNameSecond.Content = Convert.ToString(FeatureName.Text);
-            objsecondwindow.BackGroundSecond.Content = Convert.ToString(BackGroundBox.Text);
+            
             objsecondwindow.ClassSecond.Content = Convert.ToString(ComboClass.SelectedItem);
             objsecondwindow.SubClassSecond.Content = Convert.ToString(SublassCombo.SelectedItem);
             objsecondwindow.PersonalSecond.Text = Convert.ToString(PersonalBox.Text);
@@ -410,6 +411,47 @@ namespace DnD_NPC_Creator
             {
                 InstrumentsCombobox.Items.Add(IntsrumentsItems[i]);
             }
+        }
+
+        private void SublassCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void FeatureName_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            //on click save character
+        }
+
+        private void SubRaceCombo_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] SubracesItems = new string[] { "item1", "item2", "item3", "item4", "item5" };
+            List<string> Subraces = new List<string>();
+
+            foreach (string subrace in SubracesItems)
+            {
+                SubRaceCombo.Items.Add(subrace);
+            }
+
+        }
+
+        private void SpecificationComo_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] SpecificationItems = new string[] { "item1", "item2", "item3", "item4", "item5" };
+            List<string> Specifications = new List<string>();
+
+            foreach (string specification in SpecificationItems)
+            {
+                SpecificationComo.Items.Add(specification);
+            }
+
+
+
         }
     }
     
