@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Race.cs" />
     <Compile Include="SecondWindow1.xaml.cs">
       <DependentUpon>SecondWindow1.xaml</DependentUpon>
     </Compile>
@@ -101,6 +102,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

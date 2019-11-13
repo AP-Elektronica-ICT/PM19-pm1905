@@ -21,16 +21,21 @@ namespace DnD_NPC_Creator
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
             
         }
-        public string lol;
-        private void ComboBoxRace_Loaded(object sender, RoutedEventArgs e)
+
+       
+        
+        private void ComboBoxRace_Loaded(object sender, RoutedEventArgs e )
         {
+            ComboBoxRace.Text = "";
+
             List<string> races = new List<string>();
-            races.Add(" ");
+            races.Add("race ");
             races.Add("Dwarf");
             races.Add("Elf");
             races.Add("Halfling");
@@ -41,14 +46,17 @@ namespace DnD_NPC_Creator
             races.Add("Half-Orc");
             races.Add("Tiefling");
 
+            
+
             var race = sender as ComboBox;
             race.ItemsSource = races;
             race.SelectedIndex = 0;
             
         }
-
+        
         private void ComboBoxClass_Loaded(object sender, RoutedEventArgs e)
         {
+          
             List<string> Classes = new List<string>();
             Classes.Add(" ");
             Classes.Add("Barbarian");
@@ -65,8 +73,105 @@ namespace DnD_NPC_Creator
             var Class = sender as ComboBox;
             Class.ItemsSource = Classes;
             Class.SelectedIndex = 0;
+            
+        }
+        private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+            string[] SubBarb = new string[] {"item1", "item1", "item1", "item1", "item1"};
+            string[] SubCleric = new string[] { "item2", "item2", "item2", "item2", "item2" };
+            string[] SubDruid = new string[] { "item3", "item3", "item3", "item3", "item3" };
+            string[] SubFighter = new string[] { "item4", "item4", "item4", "item4", "item4" };
+            string[] SubHunter = new string[] { "item5", "item5", "item5", "item5", "item5" };
+            string[] SubMonk = new string[] { "item6", "item6", "item6", "item6", "item6" };
+            string[] SubPaladin = new string[] { "item7", "item7", "item7", "item7", "item7" };
+            string[] SubSorcorer = new string[] { "item8", "item8", "item8", "item8", "item8" };
+            string[] SubWarlock = new string[] { "item9", "item9", "item9", "item9", "item9" };
+            string[] SubWizard = new string[] { "item10", "item10", "item10", "item10", "item10" };
+
+            
+            SublassCombo.Items.Clear();
+            switch (Convert.ToString(ComboClass.SelectedItem))
+            {
+                case "Barbarian":
+
+                    for (int i = 0; i < SubBarb.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubBarb[i]);
+                    }
+                   
+                    break;
+
+                case "Cleric":
+                    for (int i = 0; i < SubCleric.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubCleric[i]);
+                    }
+                    break;
+
+                case "Druid":
+                    for (int i = 0; i < SubDruid.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubDruid[i]);
+                    }
+                    break;
+
+                case "Fighter":
+                    for (int i = 0; i < SubFighter.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubFighter[i]);
+                    }
+                    break;
+
+                case "Hunter":
+                    for (int i = 0; i < SubHunter.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubHunter[i]);
+                    }
+                    break;
+                case "Monk":
+                    for (int i = 0; i < SubMonk.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubMonk[i]);
+                    }
+                    break;
+                case "Paladin":
+                    for (int i = 0; i < SubPaladin.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubPaladin[i]);
+                    }
+                    break;
+                case "Sorcorer":
+                    for (int i = 0; i < SubSorcorer.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubSorcorer[i]);
+                    }
+                    break;
+                case "Warlock":
+                    for (int i = 0; i < SubWarlock.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubWarlock[i]);
+                    }
+                    break;
+                case "Wizard":
+                    for (int i = 0; i < SubWizard.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubWizard[i]);
+                    }
+                    break;
+
+                default:
+                    break;
+            }
+
         }
 
+        private void ComboBoxSubClass_Loaded(object sender, RoutedEventArgs e)
+        {
+
+           
+            
+        }
         private void ComboBoxBackground_Loaded(object sender, RoutedEventArgs e)
         {
             List<string> Backgrounds = new List<string>();
@@ -135,11 +240,35 @@ namespace DnD_NPC_Creator
 
         private void OpenWidow(object sender, RoutedEventArgs e)
         {
-            // todo: geselecteerde dada in nieuw tabalad zien 
+            
 
-
+           //example, nog af te maken
+            SecondWindow1 next  = new SecondWindow1();
+            
+            
             // openen van nieuw tablad
+            
             SecondWindow1 objsecondwindow = new SecondWindow1();
+            objsecondwindow.RaceSecond.Content = Convert.ToString(ComboBoxRace.SelectedItem);
+            objsecondwindow.Namesecond.Content = Convert.ToString(NameInput.Text);
+            objsecondwindow.StrengthSecond.Content = Convert.ToString(StrengthBox.Text + "" + StrengthLabel.Content);
+            objsecondwindow.DexSecond.Content = Convert.ToString(Dexteritybox.Text + DexterityLabel.Content);
+            objsecondwindow.ConSecond.Content = Convert.ToString(Constitutiorbox.Text + ConstitutionLabel.Content);
+            objsecondwindow.Intsecond.Content = Convert.ToString(Intelligencebox.Text + IntelligenceLabel.Content);
+            objsecondwindow.WisSecond.Content = Convert.ToString(Wisdombox.Text + WisdomLabel.Content);
+            objsecondwindow.ChaSecond.Content = Convert.ToString(Charismabox.Text + CharismaLabel.Content);
+            objsecondwindow.FeatureNameSecond.Content = Convert.ToString(FeatureName.Text);
+            
+            objsecondwindow.ClassSecond.Content = Convert.ToString(ComboClass.SelectedItem);
+            objsecondwindow.SubClassSecond.Content = Convert.ToString(SublassCombo.SelectedItem);
+            objsecondwindow.PersonalSecond.Text = Convert.ToString(PersonalBox.Text);
+            objsecondwindow.IdealsSecond.Text = Convert.ToString(IdealsBox.Text);
+            objsecondwindow.BondsSecond.Text = Convert.ToString(BondsBox.Text);
+            objsecondwindow.FlawsSecond.Text = Convert.ToString(FlawsBox.Text);
+            objsecondwindow.ToolsSecond.Content = Convert.ToString(ToolsCombobox.SelectedItem);
+            objsecondwindow.InstrumentsSecond.Content = Convert.ToString(InstrumentsCombobox.SelectedItem);
+
+
             this.Visibility = Visibility.Hidden;
             objsecondwindow.Show();
         }
@@ -175,5 +304,155 @@ namespace DnD_NPC_Creator
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
 
         }
+
+        private void Strength_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal; 
+
+            if (e.Key == Key.Enter)
+            {
+                
+                getal = int.Parse(StrengthBox.Text);
+                //schrijf hier berkening voor +points
+                StrengthLabel.Content = "+"+getal;
+            }
+        }
+
+        private void Dexterity_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Dexteritybox.Text);
+                DexterityLabel.Content = "+"+getal;
+
+                
+            }
+        }
+
+        private void Constitution_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Constitutiorbox.Text);
+                ConstitutionLabel.Content = "+" + getal;
+
+
+            }
+        }
+
+        private void Intelligence_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Intelligencebox.Text);
+                IntelligenceLabel.Content = "+" + getal;
+
+
+            }
+        }
+
+        private void Wisdom_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Wisdombox.Text);
+                WisdomLabel.Content = "+" + getal;
+
+
+            }
+
+        }
+
+        private void Charisma_KeyDown(object sender, KeyEventArgs e)
+        {
+            int getal;
+
+            if (e.Key == Key.Enter)
+            {
+                getal = int.Parse(Charismabox.Text);
+                CharismaLabel.Content = "+" + getal;
+
+
+            }
+        }
+
+        private void ToolsCombobox_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] ToolItems = new string[] {"Alchemist's suplies", "Brewer's supplies", "Calligrapher's Supplies", "Carpenters's tools", "cortographer's tools", "Cobbler's tools", "Cook's utensils", "Glassblower's tools", "jeweler's tools", "leatherworker's tools", "Mason's tools", "Potter's tools", "Smith's tools", "Tinker's tools", "Weaver's tools", "Woodcarver's tools" };
+            List<string> Tools = new List<string>();
+            for (int i = 0; i < ToolItems.Length; i++)
+            {
+                ToolsCombobox.Items.Add(ToolItems[i]);
+            }
+            
+
+            /*
+
+            var Tool = sender as ComboBox;
+            Tool.ItemsSource = Tools;
+            Tool.SelectedIndex = 0;
+            */
+        }
+        
+        private void InstrumentsCombobox_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] IntsrumentsItems = new string[] { "Bagpipes", "Drum", "Dulcimer", "Flute", "Lute", "Lyre", "Horn", "Pan Flute", "Shawn", "Viol", "Navigator's tool", "Thieves' tools" };
+            List<string> Instruments = new List<string>();
+      
+            for (int i = 0; i < IntsrumentsItems.Length; i++)
+            {
+                InstrumentsCombobox.Items.Add(IntsrumentsItems[i]);
+            }
+        }
+
+        private void SublassCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void FeatureName_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            //on click save character
+        }
+
+        private void SubRaceCombo_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] SubracesItems = new string[] { "item1", "item2", "item3", "item4", "item5" };
+            List<string> Subraces = new List<string>();
+
+            foreach (string subrace in SubracesItems)
+            {
+                SubRaceCombo.Items.Add(subrace);
+            }
+
+        }
+
+        private void SpecificationComo_Loaded(object sender, RoutedEventArgs e)
+        {
+            string[] SpecificationItems = new string[] { "item1", "item2", "item3", "item4", "item5" };
+            List<string> Specifications = new List<string>();
+
+            foreach (string specification in SpecificationItems)
+            {
+                SpecificationComo.Items.Add(specification);
+            }
+
+
+
+        }
     }
+    
 }
