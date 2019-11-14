@@ -1,0 +1,8 @@
+language: csharp
+solution: DnD_NPC_Creator/DnD_NPC_Creator.sln
+mono: none
+dotnet: 3.0
+script:
+    - dotnet restore
+    - dotnet build
+    - dotnet test DnD_NPC_Creator/Business_Layer.UnitTests/Business_Layer.UnitTests.csproj
