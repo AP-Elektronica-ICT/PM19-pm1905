@@ -60,12 +60,14 @@ namespace DnD_NPC_Creator
             List<string> Classes = new List<string>();
             Classes.Add(" ");
             Classes.Add("Barbarian");
+            Classes.Add("Bard");
             Classes.Add("Cleric");
             Classes.Add("Druid");
             Classes.Add("Fighter");
-            Classes.Add("Hunter");
             Classes.Add("Monk");
             Classes.Add("Paladin");
+            Classes.Add("Ranger");
+            Classes.Add("Rogue");
             Classes.Add("Sorcorer");
             Classes.Add("Warlock");
             Classes.Add("Wizard");
@@ -78,16 +80,18 @@ namespace DnD_NPC_Creator
         private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             
-            string[] SubBarb = new string[] {"item1", "item1", "item1", "item1", "item1"};
-            string[] SubCleric = new string[] { "item2", "item2", "item2", "item2", "item2" };
-            string[] SubDruid = new string[] { "item3", "item3", "item3", "item3", "item3" };
-            string[] SubFighter = new string[] { "item4", "item4", "item4", "item4", "item4" };
-            string[] SubHunter = new string[] { "item5", "item5", "item5", "item5", "item5" };
-            string[] SubMonk = new string[] { "item6", "item6", "item6", "item6", "item6" };
-            string[] SubPaladin = new string[] { "item7", "item7", "item7", "item7", "item7" };
-            string[] SubSorcorer = new string[] { "item8", "item8", "item8", "item8", "item8" };
-            string[] SubWarlock = new string[] { "item9", "item9", "item9", "item9", "item9" };
-            string[] SubWizard = new string[] { "item10", "item10", "item10", "item10", "item10" };
+            string[] SubBarb = new string[] { "Path of the Ancestral quardian", "Path of the Battlerager", "Path of the Berserker", "Path of the Storm Herald", "Path of the Totem Warrior", "Path of the Zealot" };
+            string[] SubBard = new string[] { "College of Glamour", "College of Lore", "College of Swords", "College of Valor", "College of Whispers" };
+            string[] SubCleric = new string[] { "Arcana Domain", "Death Domain", "Forge Domain", "Grave Domain", "Knowledge Domain", "Life Domain", "Light Domain", "Nature Domain", "Order Domain", "Tempest Domain", "Trickery Domain", "War Domain" };
+            string[] SubDruid = new string[] { "Circle of Dreams", "Circle of Land", "Circle of Moon", "Circle of Shepherd", "Circle of Spores" };
+            string[] SubFighter = new string[] { "Arcane Archer", "Banneret", "Battle Master", "Cavalier", "Champion", "Eldritch Knight", "Samurai" };
+            string[] SubMonk = new string[] { "Way of the Drunken Master", "Way of the Four Elements", "Way of the Kensei", "Way of the Long Death", "Way of the Open Hand", "Way of Shadow", "Way of the Sun Soul" };
+            string[] SubPaladin = new string[] { "Oath of the Ancients", "Oath of Concuest", "Oath of the Crown", "Oath of Devotion", "Oath of Redemption", "Oath of Vengeance", "Oathbreaker" };
+            string[] SubRanger = new string[] { "Beast Master Conclave", "Gloom Stalker Conclave", "Horizon Walker Conclave", "Hunter Conclave", "Monster Slayer Conclave" };
+            string[] SubRogue = new string[] { "Arcane Trickster", "Assassin", "Inquisitive", "Mastermind", "Scout", "Swashbuckler", "Thief" };
+            string[] SubSorcorer = new string[] { "Draconic Bloodline", "Devine Soul", "Phoenix Sorcery", "Shadow Magic", "Storm Sorcery", "Wild Magic" };
+            string[] SubWarlock = new string[] { "Archfey", "Celestial", "Fiend", "Great Old One", "Hexblade", "Undying" };
+            string[] SubWizard = new string[] { "School of Abjuration", "School of Bladesinging", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutaion", "School of War Magic" };
 
             
             SublassCombo.Items.Clear();
