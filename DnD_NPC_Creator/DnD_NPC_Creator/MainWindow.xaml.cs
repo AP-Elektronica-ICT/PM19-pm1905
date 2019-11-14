@@ -128,9 +128,9 @@ namespace DnD_NPC_Creator
                     break;
 
                 case "Hunter":
-                    for (int i = 0; i < SubHunter.Length; i++)
+                    for (int i = 0; i < SubRanger.Length; i++)
                     {
-                        SublassCombo.Items.Add(SubHunter[i]);
+                        SublassCombo.Items.Add(SubRanger[i]);
                     }
                     break;
                 case "Monk":
@@ -161,6 +161,18 @@ namespace DnD_NPC_Creator
                     for (int i = 0; i < SubWizard.Length; i++)
                     {
                         SublassCombo.Items.Add(SubWizard[i]);
+                    }
+                    break;
+                case "Bard":
+                    for (int i = 0; i < SubBard.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubBard[i]);
+                    }
+                    break;
+                case "Rogue":
+                    for (int i = 0; i < SubRogue.Length; i++)
+                    {
+                        SublassCombo.Items.Add(SubRogue[i]);
                     }
                     break;
 
