@@ -97,7 +97,7 @@
         <Label Content="Survival" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,417,0,0" Width="61" Height="25"/>
         <Label Content="pro" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,135,0,0" RenderTransformOrigin="4.429,0.312"/>
         <Label Content="ex" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,134,0,0" RenderTransformOrigin="4.429,0.312" Width="22"/>
-        <ComboBox x:Name="SublassCombo" HorizontalAlignment="Left" Margin="231,40,0,0" VerticalAlignment="Top" Width="97" SelectionChanged="SublassCombo_SelectionChanged" Grid.Column="1" />
+        <ComboBox x:Name="SubclassCombo" HorizontalAlignment="Left" Margin="231,40,0,0" VerticalAlignment="Top" Width="97" SelectionChanged="SublassCombo_SelectionChanged" Grid.Column="1" />
         <Label Content="Subclass" HorizontalAlignment="Left" Margin="176,40,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label x:Name="StrengthLabel" Content="la " HorizontalAlignment="Left" Margin="63,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
         <Label x:Name="DexterityLabel" Content=" la" HorizontalAlignment="Left" Margin="63,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
