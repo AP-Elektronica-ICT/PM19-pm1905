@@ -103,8 +103,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Business_Layer\Business_Layer.csproj">
-      <Project>{02a71424-d25c-4d05-978b-8f9bc99b1a5d}</Project>
+    <ProjectReference Include="..\Business_Layer%28dotnetFramework%29\Business_Layer.csproj">
+      <Project>{b0bc9dbf-2549-481e-8910-ca771b7012ba}</Project>
       <Name>Business_Layer</Name>
     </ProjectReference>
   </ItemGroup>

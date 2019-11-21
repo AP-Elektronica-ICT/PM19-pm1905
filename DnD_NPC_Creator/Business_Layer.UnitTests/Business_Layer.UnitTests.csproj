@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Business_Layer\Business_Layer.csproj" />
+    <ProjectReference Include="..\Business_Layer(dotnetFramework)\Business_Layer.csproj" />
   </ItemGroup>
 
 </Project>

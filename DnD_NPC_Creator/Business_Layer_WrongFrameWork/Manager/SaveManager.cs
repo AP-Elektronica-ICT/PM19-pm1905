@@ -1,19 +1,19 @@
-﻿using System;
+﻿using Business_Layer.Model;
+using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Business_Layer_dotnetFramework_.Manager
+namespace Business_Layer.Manager
 {
     class SaveManager
     {
         private string _saveFolder = @"\Characters";
         public List<string> GetSelectCharacters()
         {
-            if (Directory.Exists(GetSaveFolderPath() + _saveFolder))
+            if (Directory.Exists(GetSaveFolderPath()+_saveFolder))
             {
-                return new List<string>(Directory.GetFiles(GetSaveFolderPath() + _saveFolder));
+                return new List<string>(Directory.GetFiles(GetSaveFolderPath()+_saveFolder));
             }
             else
             {
@@ -24,7 +24,7 @@ namespace Business_Layer_dotnetFramework_.Manager
         {
             if (!Directory.Exists(Environment.CurrentDirectory + _saveFolder))
                 CreateSaveFolder(Environment.CurrentDirectory + _saveFolder);
-            return Environment.CurrentDirectory + _saveFolder;
+            return Environment.CurrentDirectory+_saveFolder;
         }
         public void CreateSaveFolder(string path)
         {
@@ -51,7 +51,7 @@ namespace Business_Layer_dotnetFramework_.Manager
                     sw.Write(skill.Name + " " + skill.HasProficiency + " " + skill.HasExpertise + " ");
                 }
                 sw.WriteLine();
-
+                
                 //Close the file
                 sw.Close();
             }
