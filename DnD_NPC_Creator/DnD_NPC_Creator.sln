@@ -1,15 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnD_NPC_Creator", "DnD_NPC_Creator\DnD_NPC_Creator.csproj", "{939A7FDB-CE1C-4E77-ABA1-D20C7150975D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{02A71424-D25C-4D05-978B-8F9BC99B1A5D} = {02A71424-D25C-4D05-978B-8F9BC99B1A5D}
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business_Layer", "Business_Layer\Business_Layer.csproj", "{02A71424-D25C-4D05-978B-8F9BC99B1A5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business_Layer_WrongFrameWork", "Business_Layer_WrongFrameWork\Business_Layer_WrongFrameWork.csproj", "{02A71424-D25C-4D05-978B-8F9BC99B1A5D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data_Layer", "Data_Layer\Data_Layer.csproj", "{652B8904-0B4E-4216-A81B-FF9F8A3B0078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business_Layer.UnitTests", "Business_Layer.UnitTests\Business_Layer.UnitTests.csproj", "{86E79FDD-8410-46A6-B30C-082FFF6E1834}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business_Layer.UnitTests", "Business_Layer.UnitTests\Business_Layer.UnitTests.csproj", "{86E79FDD-8410-46A6-B30C-082FFF6E1834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business_Layer", "Business_Layer\Business_Layer.csproj", "{B0BC9DBF-2549-481E-8910-CA771B7012BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +38,10 @@ Global
 		{86E79FDD-8410-46A6-B30C-082FFF6E1834}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86E79FDD-8410-46A6-B30C-082FFF6E1834}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86E79FDD-8410-46A6-B30C-082FFF6E1834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0BC9DBF-2549-481E-8910-CA771B7012BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BC9DBF-2549-481E-8910-CA771B7012BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BC9DBF-2549-481E-8910-CA771B7012BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BC9DBF-2549-481E-8910-CA771B7012BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

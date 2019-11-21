@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Business_Layer.Model
 {
@@ -52,11 +50,11 @@ namespace Business_Layer.Model
                     skill.StatModifier = stats[0].StatModifier;
                 else if (skill.RelatedStat == "dex")
                     skill.StatModifier = stats[1].StatModifier;
-                else if (skill.RelatedStat == "int")
+                else if(skill.RelatedStat == "int")
                     skill.StatModifier = stats[3].StatModifier;
                 else if (skill.RelatedStat == "wis")
                     skill.StatModifier = stats[4].StatModifier;
-                else if (skill.RelatedStat == "cha")
+                else if(skill.RelatedStat == "cha")
                     skill.StatModifier = stats[5].StatModifier;
             }
         }
@@ -121,7 +119,7 @@ namespace Business_Layer.Model
             skill.HasExpertise = hasExpertise;
         }
 
-
+        
         public Skill GetSkill(string skillName)
         {
             skillName = skillName.ToLower();
