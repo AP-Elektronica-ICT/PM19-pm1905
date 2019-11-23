@@ -1,21 +1,19 @@
-﻿using System;
+﻿using Business_Layer.Model;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Business_Layer.Model;
 
 namespace Business_Layer.Manager
 {
     public class ApplicationManager
     {
-        //LoadManager loadManager;
+        LoadManager loadManager;
         SaveManager saveManager;
-        Character character;
+        Character character; 
         //ContentLoader contentLoader;
         public ApplicationManager()
         {
-            //loadManager = new LoadManager();
+            loadManager = new LoadManager();
             saveManager = new SaveManager();
             character = new Character();
         }

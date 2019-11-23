@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business_Layer.Manager;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace DnD_NPC_Creator
 {
     /// <summary>
@@ -21,8 +23,10 @@ namespace DnD_NPC_Creator
     /// </summary>
     public partial class MainWindow : Window
     {
+        ApplicationManager applicationManager;
         public MainWindow()
         {
+            applicationManager = new ApplicationManager();
             InitializeComponent();
         }
 
