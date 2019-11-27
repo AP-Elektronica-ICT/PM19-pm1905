@@ -29,7 +29,7 @@ namespace Business_Layer.Model
             Skills.Add(new Skill("animal handling", "wis"));    //1
             Skills.Add(new Skill("arcana", "int"));             //2
             Skills.Add(new Skill("athletics", "str"));          //3
-            Skills.Add(new Skill("deceptions", "cha"));         //4
+            Skills.Add(new Skill("deception", "cha"));         //4
             Skills.Add(new Skill("history", "int"));            //5
             Skills.Add(new Skill("insight", "wis"));            //6
             Skills.Add(new Skill("intimidation", "cha"));       //7

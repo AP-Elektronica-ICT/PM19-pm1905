@@ -9,27 +9,28 @@ namespace Business_Layer.Manager
 {
     public class ApplicationManager
     {
-        //LoadManager loadManager;
         SaveManager saveManager;
-        Character character;
-        //ContentLoader contentLoader;
         public ApplicationManager()
         {
-            //loadManager = new LoadManager();
             saveManager = new SaveManager();
-            character = new Character();
         }
-        public void SaveCharacter()
+        public void SaveCharacter(Character character)
         {
             saveManager.SaveCharacter(character);
         }
-        public void LoadCharacter(string characterDocName)
+        public Character LoadCharacter(string character)
         {
-            InitialiseCharacter(saveManager.LoadCharacter(characterDocName));
+            return saveManager.LoadCharacter(character);
         }
-        public void InitialiseCharacter(List<string> charInfo)
+        public List<string> GetSavedCharacters()
         {
+            return saveManager.GetSavedCharacters();
+        }
+        //public Character InitialiseCharacter(List<string> charInfo)
+        //{
+        //    Character character = new Character();
 
-        }
+        //    return character;
+        //}
     }
 }

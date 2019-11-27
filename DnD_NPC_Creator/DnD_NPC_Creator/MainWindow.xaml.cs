@@ -1,6 +1,8 @@
 ﻿using Business_Layer.Manager;
+using Business_Layer.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -24,9 +26,11 @@ namespace DnD_NPC_Creator
     public partial class MainWindow : Window
     {
         ApplicationManager applicationManager;
+        Character character;
         public MainWindow()
         {
             applicationManager = new ApplicationManager();
+            character = new Character();
             InitializeComponent();
         }
 
@@ -41,11 +45,11 @@ namespace DnD_NPC_Creator
             objsecondwindow.Namesecond.Content = Convert.ToString(NameInput.Text);
             objsecondwindow.StrengthSecond.Content = Convert.ToString(StrengthBox.Text + "" + StrengthLabel.Content);
             objsecondwindow.DexSecond.Content = Convert.ToString(Dexteritybox.Text + DexterityLabel.Content);
-            objsecondwindow.ConSecond.Content = Convert.ToString(Constitutiorbox.Text + ConstitutionLabel.Content);
+            objsecondwindow.ConSecond.Content = Convert.ToString(Constitutionbox.Text + ConstitutionLabel.Content);
             objsecondwindow.Intsecond.Content = Convert.ToString(Intelligencebox.Text + IntelligenceLabel.Content);
             objsecondwindow.WisSecond.Content = Convert.ToString(Wisdombox.Text + WisdomLabel.Content);
             objsecondwindow.ChaSecond.Content = Convert.ToString(Charismabox.Text + CharismaLabel.Content);
-            objsecondwindow.FeatureNameSecond.Content = Convert.ToString(FeatureName.Text);
+            objsecondwindow.FeatureNameSecond.Content = Convert.ToString(BackgroundCombobox.Text);
 
             objsecondwindow.ClassSecond.Content = Convert.ToString(ComboClass.SelectedItem);
             objsecondwindow.SubClassSecond.Content = Convert.ToString(SubclassCombo.SelectedItem);
@@ -59,7 +63,108 @@ namespace DnD_NPC_Creator
             this.Visibility = Visibility.Hidden;
             objsecondwindow.Show();
         }
-
+        public void InitializeCharacter()
+        {
+            //All comboboxes need to be implemented diffrently
+            //Name
+            NameInput.Text = character.Name;
+            //HP
+            HPTextBox.Text = character.HP.ToString();
+            //Speed
+            SpeedTextBox.Text = character.Speed.ToString();
+            //Level
+            LevelTextBox.Text = character.GetLevel().ToString();
+            //Stats
+            StrengthBox.Text = character.Stats[0].TotalStat.ToString();
+            StrengthLabel.Content = character.Stats[0].StatModifier.ToString();
+            Dexteritybox.Text = character.Stats[1].TotalStat.ToString();
+            DexterityLabel.Content = character.Stats[1].StatModifier.ToString();
+            Constitutionbox.Text = character.Stats[2].TotalStat.ToString();
+            ConstitutionLabel.Content = character.Stats[2].StatModifier.ToString();
+            Intelligencebox.Text = character.Stats[3].TotalStat.ToString();
+            IntelligenceLabel.Content = character.Stats[3].StatModifier.ToString();
+            Wisdombox.Text = character.Stats[4].TotalStat.ToString();
+            WisdomLabel.Content = character.Stats[4].StatModifier.ToString();
+            Charismabox.Text = character.Stats[5].TotalStat.ToString();
+            CharismaLabel.Content = character.Stats[5].StatModifier.ToString();
+            //Skills
+            //Proficiencies
+            Prof_Acrobatics.IsChecked = character.Skills.Skills[0].HasProficiency;
+            Prof_Animal_Handling.IsChecked = character.Skills.Skills[1].HasProficiency;
+            Prof_Arcana.IsChecked = character.Skills.Skills[2].HasProficiency; ;
+            Prof_Athletics.IsChecked = character.Skills.Skills[3].HasProficiency;
+            Prof_Deception.IsChecked = character.Skills.Skills[4].HasProficiency;
+            Prof_History.IsChecked = character.Skills.Skills[5].HasProficiency;
+            Prof_Insight.IsChecked = character.Skills.Skills[6].HasProficiency;
+            Prof_Intimidation.IsChecked = character.Skills.Skills[7].HasProficiency;
+            Prof_Investigation.IsChecked = character.Skills.Skills[8].HasProficiency;
+            Prof_Medicine.IsChecked = character.Skills.Skills[9].HasProficiency; ;
+            Prof_Nature.IsChecked = character.Skills.Skills[10].HasProficiency;
+            Prof_Perception.IsChecked = character.Skills.Skills[11].HasProficiency;
+            Prof_Performance.IsChecked = character.Skills.Skills[12].HasProficiency;
+            Prof_Persuation.IsChecked = character.Skills.Skills[13].HasProficiency;
+            Prof_Religion.IsChecked = character.Skills.Skills[14].HasProficiency;
+            Prof_Sleight_Of_Hand.IsChecked = character.Skills.Skills[15].HasProficiency;
+            Prof_Stealth.IsChecked = character.Skills.Skills[16].HasProficiency;
+            Prof_Survival.IsChecked = character.Skills.Skills[17].HasProficiency;
+            //Expertise
+            Ex_Acrobatics.IsChecked = character.Skills.Skills[0].HasExpertise;
+            Ex_Animal_Handling.IsChecked = character.Skills.Skills[1].HasExpertise;
+            Ex_Arcana.IsChecked = character.Skills.Skills[2].HasExpertise;
+            Ex_Athletics.IsChecked = character.Skills.Skills[3].HasExpertise;
+            Ex_Deception.IsChecked = character.Skills.Skills[4].HasExpertise;
+            Ex_History.IsChecked = character.Skills.Skills[5].HasExpertise;
+            Ex_Insight.IsChecked = character.Skills.Skills[6].HasExpertise;
+            Ex_Intimidation.IsChecked = character.Skills.Skills[7].HasExpertise;
+            Ex_Investigation.IsChecked = character.Skills.Skills[8].HasExpertise;
+            Ex_Medicine.IsChecked = character.Skills.Skills[9].HasExpertise;
+            Ex_Nature.IsChecked = character.Skills.Skills[10].HasExpertise;
+            Ex_Perception.IsChecked = character.Skills.Skills[11].HasExpertise;
+            Ex_Performance.IsChecked = character.Skills.Skills[12].HasExpertise;
+            Ex_Persuation.IsChecked = character.Skills.Skills[13].HasExpertise;
+            Ex_Religion.IsChecked = character.Skills.Skills[14].HasExpertise;
+            Ex_Sleight_Of_Hand.IsChecked = character.Skills.Skills[15].HasExpertise;
+            Ex_Stealth.IsChecked = character.Skills.Skills[16].HasExpertise;
+            Ex_Survival.IsChecked = character.Skills.Skills[17].HasExpertise;
+            //Armor
+            LightCheck.IsChecked = character.ArmorProficiencies[0].HasExpertise;
+            MediumCheck.IsChecked = character.ArmorProficiencies[1].HasExpertise;
+            HeavyCheck.IsChecked = character.ArmorProficiencies[2].HasExpertise;
+            ShieldsCheck.IsChecked = character.ArmorProficiencies[3].HasExpertise;
+            //Weapons
+            SimpleCheck.IsChecked = character.WeaponProficiencies[0].HasExpertise;
+            MartialCheck.IsChecked = character.WeaponProficiencies[1].HasExpertise;
+            WeaponsTextBox.Text = character.OtherWeaponProficiencies;
+            //Languages
+            LangTextBox1.Text = character.LanguageProficiencies[0];
+            LangTextBox2.Text = character.LanguageProficiencies[1];
+            LangTextBox3.Text = character.LanguageProficiencies[2];
+            LangTextBox4.Text = character.LanguageProficiencies[3];
+            //Tools
+            ToolsTextBox1.Text = character.ToolProficiencies[0];
+            ToolsTextBox2.Text = character.ToolProficiencies[1];
+            ToolsTextBox3.Text = character.ToolProficiencies[2];
+            ToolsTextBox4.Text = character.ToolProficiencies[3];
+            //Personality
+            PersonalBox.Text = character.Personality;
+            //Ideals
+            IdealsBox.Text = character.Ideals;
+            //Bonds
+            BondsBox.Text = character.Bonds;
+            //Flaws
+            FlawsBox.Text = character.Flaws;
+            //Character Info
+            CharInfoTextBox.Text = character.CharacterInfo;
+            //Character Items
+            CharItemsTextBox1.Text = character.Inventory[0];
+            CharItemsTextBox2.Text = character.Inventory[1];
+            CharItemsTextBox3.Text = character.Inventory[2];
+            CharItemsTextBox4.Text = character.Inventory[3];
+            CharItemsTextBox5.Text = character.Inventory[4];
+            CharItemsTextBox6.Text = character.Inventory[5];
+            CharItemsTextBox7.Text = character.Inventory[6];
+            CharItemsTextBox8.Text = character.Inventory[7];
+        }
 
         #region ComboBox Loaded classes
         private void ComboBoxRace_Loaded(object sender, RoutedEventArgs e) //Done
@@ -148,6 +253,16 @@ namespace DnD_NPC_Creator
             var Background = sender as ComboBox;
             Background.ItemsSource = Backgrounds;
         }
+
+        private void LoadBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<string> characters = applicationManager.GetSavedCharacters();
+
+            var character = sender as ComboBox;
+            character.ItemsSource = characters;
+        }
+
+
         private void ToolsCombobox_Loaded(object sender, RoutedEventArgs e) //Done?
         {
             string[] ToolItems = new string[] { "Alchemist's suplies", "Brewer's supplies", "Calligrapher's Supplies", "Carpenters's tools", "cortographer's tools", "Cobbler's tools", "Cook's utensils", "Glassblower's tools", "jeweler's tools", "leatherworker's tools", "Mason's tools", "Potter's tools", "Smith's tools", "Tinker's tools", "Weaver's tools", "Woodcarver's tools" };
@@ -178,6 +293,12 @@ namespace DnD_NPC_Creator
         private void SpecificationComo_Loaded(object sender, RoutedEventArgs e) //In Progress
         {
 
+            foreach (string specification in SpecificationItems)
+            {
+                SpecificationCombobox.Items.Add(specification);
+            }
+
+            
         }
         private void SubRaceCombo_Loaded(object sender, RoutedEventArgs e) //Empty
         {
@@ -188,9 +309,10 @@ namespace DnD_NPC_Creator
         #region Combobox Selection Changed
         private void SublassCombo_SelectionChanged(object sender, SelectionChangedEventArgs e) //Empty
         {
-
+            character.SubClass = SublassCombo.SelectedItem.ToString();
         }
-        private void FeatureName_SelectionChanged(object sender, SelectionChangedEventArgs e) //Empty
+
+        private void BackgroundCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             string[] SpecCriminal = new string[] { "Blackmailer", "Burglar", "Enforcer", "Fence", "Highway robber", "Hired killer", "Pickpocket", "Smuggler", };
             string[] SpecEntertainer = new string[] { "Actor", "Dancer", "Fire-eater", "Jester", "Juggler", "Instrumentalist", "Poet", "Singer", "Storyteller", "Tumbler" };
@@ -248,6 +370,7 @@ namespace DnD_NPC_Creator
                 default:
                     break;
             }
+            character.Background = BackgroundCombobox.SelectedItem.ToString();
         }
         private void Race_SelectionChanged(object sender, SelectionChangedEventArgs e) //Done
         {
@@ -321,6 +444,7 @@ namespace DnD_NPC_Creator
                 default:
                     break;
             }
+            character.Race = ComboBoxRace.SelectedItem.ToString();
         }
         private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e) //Done
         {
@@ -417,27 +541,57 @@ namespace DnD_NPC_Creator
                     break;
             }
 
+            character.Class = ComboClass.SelectedItem.ToString();
+
+        }
+        private void LoadBox_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+            //Debug.WriteLine(LoadBox.SelectedItem.ToString());
+            character = applicationManager.LoadCharacter(LoadBox.SelectedItem.ToString());
+            InitializeCharacter();
+        }
+        private void SpecificationCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            character.Specification = SpecificationCombobox.SelectedItem.ToString();
         }
         #endregion
 
         #region Button Click
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            //on click save character
+             Debug.WriteLine("Saving named character");
+            applicationManager.SaveCharacter(character);
+
+             List<string> characters = applicationManager.GetSavedCharacters();
+
+            var loadbox = LoadBox as ComboBox;
+            loadbox.ItemsSource = characters;
         }
         #endregion
 
         #region Keydown classes
+
+        private bool PressedTab(KeyEventArgs e)
+        {
+            return (e.Key == Key.Tab);
+        }
+        private bool PressedEnter(KeyEventArgs e)
+        {
+            return (e.Key == Key.Enter);
+        }
         private void Strength_KeyDown(object sender, KeyEventArgs e)
         {
             int getal;
 
-            if (e.Key == Key.Enter)
+            if (PressedEnter(e))
             {
-
                 getal = int.Parse(StrengthBox.Text);
+                character.Stats[0].TotalStat = getal;
                 //schrijf hier berkening voor +points
-                StrengthLabel.Content = "+" + getal;
+                if (character.Stats[0].StatModifier < 0)
+                    StrengthLabel.Content = character.Stats[0].StatModifier;
+                else
+                    StrengthLabel.Content = "+" + character.Stats[0].StatModifier;
             }
         }
 
@@ -445,12 +599,14 @@ namespace DnD_NPC_Creator
         {
             int getal;
 
-            if (e.Key == Key.Enter)
+            if (PressedEnter(e))
             {
                 getal = int.Parse(Dexteritybox.Text);
-                DexterityLabel.Content = "+" + getal;
-
-
+                character.Stats[1].TotalStat = getal;
+                if (character.Stats[1].StatModifier < 0)
+                    DexterityLabel.Content = character.Stats[1].StatModifier;
+                else
+                    DexterityLabel.Content = "+" + character.Stats[1].StatModifier;
             }
         }
 
@@ -458,12 +614,14 @@ namespace DnD_NPC_Creator
         {
             int getal;
 
-            if (e.Key == Key.Enter)
+            if (PressedEnter(e))
             {
-                getal = int.Parse(Constitutiorbox.Text);
-                ConstitutionLabel.Content = "+" + getal;
-
-
+                getal = int.Parse(Constitutionbox.Text);
+                character.Stats[2].TotalStat = getal;
+                if (character.Stats[2].StatModifier < 0)
+                    ConstitutionLabel.Content = character.Stats[2].StatModifier;
+                else
+                    ConstitutionLabel.Content = "+" + character.Stats[2].StatModifier;
             }
         }
 
@@ -471,11 +629,14 @@ namespace DnD_NPC_Creator
         {
             int getal;
 
-            if (e.Key == Key.Enter)
+            if (PressedEnter(e))
             {
                 getal = int.Parse(Intelligencebox.Text);
-                IntelligenceLabel.Content = "+" + getal;
-
+                character.Stats[3].TotalStat = getal;
+                if(character.Stats[3].StatModifier<0)
+                    IntelligenceLabel.Content = character.Stats[3].StatModifier;
+                else
+                    IntelligenceLabel.Content = "+" + character.Stats[3].StatModifier;
 
             }
         }
@@ -484,10 +645,14 @@ namespace DnD_NPC_Creator
         {
             int getal;
 
-            if (e.Key == Key.Enter)
+            if (PressedEnter(e))
             {
                 getal = int.Parse(Wisdombox.Text);
-                WisdomLabel.Content = "+" + getal;
+                character.Stats[4].TotalStat = getal;
+                if (character.Stats[4].StatModifier < 0)
+                    WisdomLabel.Content = character.Stats[4].StatModifier;
+                else
+                    WisdomLabel.Content = "+" + character.Stats[4].StatModifier;
 
 
             }
@@ -498,11 +663,14 @@ namespace DnD_NPC_Creator
         {
             int getal;
 
-            if (e.Key == Key.Enter)
+            if (PressedEnter(e))
             {
                 getal = int.Parse(Charismabox.Text);
-                CharismaLabel.Content = "+" + getal;
-
+                character.Stats[5].TotalStat = getal;
+                if (character.Stats[5].StatModifier < 0)
+                    CharismaLabel.Content = character.Stats[5].StatModifier;
+                else
+                    CharismaLabel.Content = "+" + character.Stats[5].StatModifier;
 
             }
         }
@@ -519,7 +687,7 @@ namespace DnD_NPC_Creator
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
 
-        private void Constitutiorbox_previewTextBox(object sender, TextCompositionEventArgs e)
+        private void Constitutionbox_previewTextBox(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
         }
@@ -540,7 +708,234 @@ namespace DnD_NPC_Creator
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
 
         }
+        private void LevelTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void HPTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void SpeedTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
         #endregion
 
+        #region LostKeyboardFocus
+        private void NameInput_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.Name = NameInput.Text;
+        }
+
+        private void PersonalBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.Personality = PersonalBox.Text;
+        }
+
+        private void IdealsBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.Ideals = IdealsBox.Text;
+        }
+
+        private void BondsBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.Bonds = BondsBox.Text;
+        }
+
+        private void FlawsBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.Flaws = FlawsBox.Text;
+        }
+
+        private void HPTextBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+        
+            try 
+	        {
+                character.HP = Convert.ToInt32(HPTextBox.Text);	
+	        }
+	        catch (global::System.Exception)
+	        {
+                HPTextBox.Text = "Invalid";
+	        }
+        }
+
+        private void SpeedTextBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                character.Speed = Convert.ToInt32(SpeedTextBox.Text);
+            }
+            catch (global::System.Exception)
+            {
+                SpeedTextBox.Text = "Invalid";
+            }
+        }
+
+        private void CharacterInfo_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.CharacterInfo = CharInfoTextBox.Text;
+        }
+
+        private void CharItemTextBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.Inventory[0] = CharItemsTextBox1.Text;
+            character.Inventory[1] = CharItemsTextBox2.Text;
+            character.Inventory[2] = CharItemsTextBox3.Text;
+            character.Inventory[3] = CharItemsTextBox4.Text;
+            character.Inventory[4] = CharItemsTextBox5.Text;
+            character.Inventory[5] = CharItemsTextBox6.Text;
+            character.Inventory[6] = CharItemsTextBox7.Text;
+            character.Inventory[7] = CharItemsTextBox8.Text;
+        }
+
+        private void WeaponsTextBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.OtherWeaponProficiencies = WeaponsTextBox.Text;
+        }
+
+        private void ToolTextBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.ToolProficiencies[0] = ToolsTextBox1.Text;
+            character.ToolProficiencies[1] = ToolsTextBox2.Text;
+            character.ToolProficiencies[2] = ToolsTextBox3.Text;
+            character.ToolProficiencies[3] = ToolsTextBox4.Text;
+        }
+
+        private void LanguangeTextBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            character.LanguageProficiencies[0] = LangTextBox1.Text;
+            character.LanguageProficiencies[1] = LangTextBox2.Text;
+            character.LanguageProficiencies[2] = LangTextBox3.Text;
+            character.LanguageProficiencies[3] = LangTextBox4.Text;
+        }
+
+        private void LevelTextBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            int speed = 0;
+            try
+            {
+                speed = Convert.ToInt32(LevelTextBox.Text);
+            }
+            catch (global::System.Exception)
+            {
+                LevelTextBox.Text = "Invalid";
+            }
+
+            if (!character.SetLevel(speed))
+                LevelTextBox.Text = "Invalid";
+        }
+        private void StrengthBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            int getal = int.Parse(StrengthBox.Text);
+            character.Stats[0].TotalStat = getal;
+            if (character.Stats[0].StatModifier < 0)
+                StrengthLabel.Content = character.Stats[0].StatModifier;
+            else
+                StrengthLabel.Content = "+" + character.Stats[0].StatModifier;
+        }
+
+        private void DexterityBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            int getal = int.Parse(Dexteritybox.Text);
+            character.Stats[1].TotalStat = getal;
+            if (character.Stats[1].StatModifier < 0)
+                DexterityLabel.Content = character.Stats[1].StatModifier;
+            else
+                DexterityLabel.Content = "+" + character.Stats[1].StatModifier;
+        }
+
+        private void ConstitutionBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            int getal = int.Parse(Constitutionbox.Text);
+            character.Stats[2].TotalStat = getal;
+            if (character.Stats[2].StatModifier < 0)
+                ConstitutionLabel.Content = character.Stats[2].StatModifier;
+            else
+                ConstitutionLabel.Content = "+" + character.Stats[2].StatModifier;
+        }
+
+        private void IntelligenceBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
+        {
+            int getal = int.Parse(Intelligencebox.Text);
+            character.Stats[3].TotalStat = getal;
+            if (character.Stats[3].StatModifier < 0)
+                IntelligenceLabel.Content = character.Stats[3].StatModifier;
+            else
+                IntelligenceLabel.Content = "+" + character.Stats[3].StatModifier;
+        }
+
+        private void WindowBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            int getal = int.Parse(Wisdombox.Text);
+            character.Stats[4].TotalStat = getal;
+            if (character.Stats[4].StatModifier < 0)
+                WisdomLabel.Content = character.Stats[4].StatModifier;
+            else
+                WisdomLabel.Content = "+" + character.Stats[4].StatModifier;
+        }
+
+        private void CharismaBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            int getal = int.Parse(Charismabox.Text);
+            character.Stats[5].TotalStat = getal;
+            if (character.Stats[5].StatModifier < 0)
+                CharismaLabel.Content = character.Stats[5].StatModifier;
+            else
+                CharismaLabel.Content = "+" + character.Stats[5].StatModifier;
+        }
+        #endregion
+
+        #region Changed
+        private void Expertise_Changed(object sender, RoutedEventArgs e)
+        {
+            character.Skills.UpdateSkillProficiency(Ex_Acrobatics.IsChecked == true, "acrobatics");
+            character.Skills.UpdateSkillProficiency(Ex_Animal_Handling.IsChecked == true, "animal handling");
+            character.Skills.UpdateSkillProficiency(Ex_Arcana.IsChecked == true, "arcana");
+            character.Skills.UpdateSkillProficiency(Ex_Athletics.IsChecked == true, "athletics");
+            character.Skills.UpdateSkillProficiency(Ex_Deception.IsChecked == true, "deception");
+            character.Skills.UpdateSkillProficiency(Ex_History.IsChecked == true, "history");
+            character.Skills.UpdateSkillProficiency(Ex_Insight.IsChecked == true, "insight");
+            character.Skills.UpdateSkillProficiency(Ex_Intimidation.IsChecked == true, "intimidation");
+            character.Skills.UpdateSkillProficiency(Ex_Investigation.IsChecked == true, "investigation");
+            character.Skills.UpdateSkillProficiency(Ex_Medicine.IsChecked == true, "medicine");
+            character.Skills.UpdateSkillProficiency(Ex_Nature.IsChecked == true, "nature");
+            character.Skills.UpdateSkillProficiency(Ex_Perception.IsChecked == true, "perception");
+            character.Skills.UpdateSkillProficiency(Ex_Performance.IsChecked == true, "performance");
+            character.Skills.UpdateSkillProficiency(Ex_Persuation.IsChecked == true, "persuation");
+            character.Skills.UpdateSkillProficiency(Ex_Religion.IsChecked == true, "religion");
+            character.Skills.UpdateSkillProficiency(Ex_Sleight_Of_Hand.IsChecked == true, "sleight of hand");
+            character.Skills.UpdateSkillProficiency(Ex_Stealth.IsChecked == true, "stealth");
+            character.Skills.UpdateSkillProficiency(Ex_Survival.IsChecked == true, "survival");
+        }
+
+        private void Prof_Changed(object sender, RoutedEventArgs e)
+        {
+            character.Skills.UpdateSkillProficiency(Prof_Acrobatics.IsChecked == true, "acrobatics");
+            character.Skills.UpdateSkillProficiency(Prof_Animal_Handling.IsChecked == true, "animal handling");
+            character.Skills.UpdateSkillProficiency(Prof_Arcana.IsChecked == true, "arcana");
+            character.Skills.UpdateSkillProficiency(Prof_Athletics.IsChecked == true, "athletics");
+            character.Skills.UpdateSkillProficiency(Prof_Deception.IsChecked == true, "deception");
+            character.Skills.UpdateSkillProficiency(Prof_History.IsChecked == true, "history");
+            character.Skills.UpdateSkillProficiency(Prof_Insight.IsChecked == true, "insight");
+            character.Skills.UpdateSkillProficiency(Prof_Intimidation.IsChecked == true, "intimidation");
+            character.Skills.UpdateSkillProficiency(Prof_Investigation.IsChecked == true, "investigation");
+            character.Skills.UpdateSkillProficiency(Prof_Medicine.IsChecked == true, "medicine");
+            character.Skills.UpdateSkillProficiency(Prof_Nature.IsChecked == true, "nature");
+            character.Skills.UpdateSkillProficiency(Prof_Perception.IsChecked == true, "perception");
+            character.Skills.UpdateSkillProficiency(Prof_Performance.IsChecked == true, "performance");
+            character.Skills.UpdateSkillProficiency(Prof_Persuation.IsChecked == true, "persuation");
+            character.Skills.UpdateSkillProficiency(Prof_Religion.IsChecked == true, "religion");
+            character.Skills.UpdateSkillProficiency(Prof_Sleight_Of_Hand.IsChecked == true, "sleight of hand");
+            character.Skills.UpdateSkillProficiency(Prof_Stealth.IsChecked == true, "stealth");
+            character.Skills.UpdateSkillProficiency(Prof_Survival.IsChecked == true, "survival");
+        }
+
+        #endregion
+
+        
     }
 }
