@@ -33,16 +33,13 @@ namespace DnD_NPC_Creator
             character = new Character();
             InitializeComponent();
         }
+
         private void OpenWidow(object sender, RoutedEventArgs e)
         {
-
-
             //example, nog af te maken
             SecondWindow1 next = new SecondWindow1();
 
-
             // openen van nieuw tablad
-
             SecondWindow1 objsecondwindow = new SecondWindow1();
             objsecondwindow.RaceSecond.Content = Convert.ToString(ComboBoxRace.SelectedItem);
             objsecondwindow.Namesecond.Content = Convert.ToString(NameInput.Text);
@@ -55,14 +52,13 @@ namespace DnD_NPC_Creator
             objsecondwindow.FeatureNameSecond.Content = Convert.ToString(BackgroundCombobox.Text);
 
             objsecondwindow.ClassSecond.Content = Convert.ToString(ComboClass.SelectedItem);
-            objsecondwindow.SubClassSecond.Content = Convert.ToString(SublassCombo.SelectedItem);
+            objsecondwindow.SubClassSecond.Content = Convert.ToString(SubclassCombo.SelectedItem);
             objsecondwindow.PersonalSecond.Text = Convert.ToString(PersonalBox.Text);
             objsecondwindow.IdealsSecond.Text = Convert.ToString(IdealsBox.Text);
             objsecondwindow.BondsSecond.Text = Convert.ToString(BondsBox.Text);
             objsecondwindow.FlawsSecond.Text = Convert.ToString(FlawsBox.Text);
             objsecondwindow.ToolsSecond.Content = Convert.ToString(ToolsCombobox.SelectedItem);
             objsecondwindow.InstrumentsSecond.Content = Convert.ToString(InstrumentsCombobox.SelectedItem);
-
 
             this.Visibility = Visibility.Hidden;
             objsecondwindow.Show();
@@ -171,35 +167,29 @@ namespace DnD_NPC_Creator
         }
 
         #region ComboBox Loaded classes
-        private void ComboBoxRace_Loaded(object sender, RoutedEventArgs e)
+        private void ComboBoxRace_Loaded(object sender, RoutedEventArgs e) //Done
         {
-            ComboBoxRace.Text = "";
+            ComboBoxRace.Text = " ";
 
-            List<string> races = new List<string>();
-            races.Add("race ");
-            races.Add("Dwarf");
-            races.Add("Elf");
-            races.Add("Halfling");
-            races.Add("Human");
-            races.Add("Dragonborn");
-            races.Add("Gnome");
-            races.Add("Half-Elf");
-            races.Add("Half-Orc");
-            races.Add("Tiefling");
+            List<string> Races = new List<string>();
+            Races.Add("Dragonborn");
+            Races.Add("Dwarf");
+            Races.Add("Elf");
+            Races.Add("Gnome");
+            Races.Add("Half-Elf");
+            Races.Add("Half-Orc");
+            Races.Add("Halfling");
+            Races.Add("Human");
+            Races.Add("Tiefling");
 
-
-
-            var race = sender as ComboBox;
-            race.ItemsSource = races;
-            race.SelectedIndex = 0;
-
+            var Race = sender as ComboBox;
+            Race.ItemsSource = Races;
         }
-
-        private void ComboBoxClass_Loaded(object sender, RoutedEventArgs e)
+        private void ComboBoxClass_Loaded(object sender, RoutedEventArgs e) //Done
         {
+            ComboClass.Text = "";
 
             List<string> Classes = new List<string>();
-            Classes.Add(" ");
             Classes.Add("Barbarian");
             Classes.Add("Bard");
             Classes.Add("Cleric");
@@ -215,78 +205,53 @@ namespace DnD_NPC_Creator
 
             var Class = sender as ComboBox;
             Class.ItemsSource = Classes;
-            Class.SelectedIndex = 0;
-
         }
-
-        private void ComboBoxSubClass_Loaded(object sender, RoutedEventArgs e)
+        private void ComboBoxSubClass_Loaded(object sender, RoutedEventArgs e) //Empty
         {
 
-
-
         }
-        private void ComboBoxBackground_Loaded(object sender, RoutedEventArgs e)
+        private void ComboBoxBackground_Loaded(object sender, RoutedEventArgs e) //Done
         {
+            FeatureName.Text = " ";
+
             List<string> Backgrounds = new List<string>();
-            Backgrounds.Add(" ");
-            Backgrounds.Add("Adept linguist");
-            Backgrounds.Add("All eyes on You");
-            Backgrounds.Add("Are you entertained?");
-            Backgrounds.Add("At home in the wild");
-            Backgrounds.Add("Bad reputation");
-            Backgrounds.Add("Black-Market Breeder");
-            Backgrounds.Add("By popular demand");
-            Backgrounds.Add("City secrets");
-            Backgrounds.Add("Court Functionary");
-            Backgrounds.Add("Criminal contact");
-            Backgrounds.Add("Cult of the dragon infiltrator");
-            Backgrounds.Add("Deep delver");
-            Backgrounds.Add("Deep miner");
-            Backgrounds.Add("Discovery");
-            Backgrounds.Add("Double agent");
-            Backgrounds.Add("Dragon scholar");
-            Backgrounds.Add("Dragonscarred");
-            Backgrounds.Add("Ear to the ground");
-            Backgrounds.Add("Ex-convict");
-            Backgrounds.Add("Factor");
-            Backgrounds.Add("False identity");
-            Backgrounds.Add("Guerilla");
-            Backgrounds.Add("Guild Membership");
-            Backgrounds.Add("Harborfolk");
-            Backgrounds.Add("Heart of the darkness");
-            Backgrounds.Add("Highborn");
-            Backgrounds.Add("Historical knowledge");
-            Backgrounds.Add("Inheritance");
-            Backgrounds.Add("Investigative Services");
-            Backgrounds.Add("Kept in style");
-            Backgrounds.Add("Knightly regard");
-            Backgrounds.Add("Library Access");
-            Backgrounds.Add("Mercenary life");
-            Backgrounds.Add("Military rank");
-            Backgrounds.Add("Phlan survivor");
-            Backgrounds.Add("Position of privilege");
-            Backgrounds.Add("Red plume and mage guild Contacts");
-            Backgrounds.Add("Researcher");
-            Backgrounds.Add("Respect of the stout folk");
-            Backgrounds.Add("Retainers");
-            Backgrounds.Add("Rustic hospitality");
-            Backgrounds.Add("Safe haven");
-            Backgrounds.Add("Secret identity");
-            Backgrounds.Add("Secret passage");
-            Backgrounds.Add("Secret society");
-            Backgrounds.Add("Shelter of the Elven Clergy");
-            Backgrounds.Add("Shelter of faithfull");
-            Backgrounds.Add("Ship's passage");
-            Backgrounds.Add("Trade contact");
-            Backgrounds.Add("Underdark experience");
-            Backgrounds.Add("Uthgardt Heritage");
-            Backgrounds.Add("Wagonmaster");
-            Backgrounds.Add("Wanderer");
-            Backgrounds.Add("Watcher's eye");
-
+            Backgrounds.Add("Acolyte");
+            Backgrounds.Add("Anthropologist");
+            Backgrounds.Add("Archeologist");
+            Backgrounds.Add("Charlatan");
+            Backgrounds.Add("City Watch");
+            Backgrounds.Add("Clan Crafter");
+            Backgrounds.Add("Cloistered Scholar");
+            Backgrounds.Add("Courtier");
+            Backgrounds.Add("Criminal");
+            Backgrounds.Add("Entertainer");
+            Backgrounds.Add("Faction Agent");
+            Backgrounds.Add("Far Traveler");
+            Backgrounds.Add("Folk Hero");
+            Backgrounds.Add("Gladiator (Entertainer)");
+            Backgrounds.Add("Guild Artisan");
+            Backgrounds.Add("Guild Merchant (Guild Artisan)");
+            Backgrounds.Add("Haunted one");
+            Backgrounds.Add("Hermit");
+            Backgrounds.Add("Inheritor");
+            Backgrounds.Add("Investigator (City Watch)");
+            Backgrounds.Add("Knight (Noble)");
+            Backgrounds.Add("Knight of the Order");
+            Backgrounds.Add("Mercenary Veteran");
+            Backgrounds.Add("Noble");
+            Backgrounds.Add("Outlander");
+            Backgrounds.Add("Pirate (Sailor)");
+            Backgrounds.Add("Sage");
+            Backgrounds.Add("Sailor");
+            Backgrounds.Add("Soldier");
+            Backgrounds.Add("Spy (Criminal)");
+            Backgrounds.Add("Urban Bounty Hunter");
+            Backgrounds.Add("Urchin");
+            Backgrounds.Add("Uthgardt Tribe Member");
+            Backgrounds.Add("Waterdhavian Noble");
+            
             var Background = sender as ComboBox;
             Background.ItemsSource = Backgrounds;
-            Background.SelectedIndex = 0;
         }
 
         private void LoadBox_Loaded(object sender, RoutedEventArgs e)
@@ -298,7 +263,7 @@ namespace DnD_NPC_Creator
         }
 
 
-        private void ToolsCombobox_Loaded(object sender, RoutedEventArgs e)
+        private void ToolsCombobox_Loaded(object sender, RoutedEventArgs e) //Done?
         {
             string[] ToolItems = new string[] { "Alchemist's suplies", "Brewer's supplies", "Calligrapher's Supplies", "Carpenters's tools", "cortographer's tools", "Cobbler's tools", "Cook's utensils", "Glassblower's tools", "jeweler's tools", "leatherworker's tools", "Mason's tools", "Potter's tools", "Smith's tools", "Tinker's tools", "Weaver's tools", "Woodcarver's tools" };
             List<string> Tools = new List<string>();
@@ -315,21 +280,18 @@ namespace DnD_NPC_Creator
             Tool.SelectedIndex = 0;
             */
         }
-
-        private void InstrumentsCombobox_Loaded(object sender, RoutedEventArgs e)
+        private void InstrumentsCombobox_Loaded(object sender, RoutedEventArgs e) //Done
         {
-            string[] IntsrumentsItems = new string[] { "Bagpipes", "Drum", "Dulcimer", "Flute", "Lute", "Lyre", "Horn", "Pan Flute", "Shawn", "Viol", "Navigator's tool", "Thieves' tools" };
+            string[] InstrumentsItems = new string[] { "Bagpipes", "Drum", "Dulcimer", "Flute", "Lute", "Lyre", "Horn", "Pan Flute", "Shawn", "Viol", "Navigator's tool", "Thieves' tools" };
             List<string> Instruments = new List<string>();
 
-            for (int i = 0; i < IntsrumentsItems.Length; i++)
+            foreach (string instrument in InstrumentsItems)
             {
-                InstrumentsCombobox.Items.Add(IntsrumentsItems[i]);
+                InstrumentsCombobox.Items.Add(instrument);
             }
         }
-        private void SpecificationCombobox_Loaded(object sender, RoutedEventArgs e)
+        private void SpecificationComo_Loaded(object sender, RoutedEventArgs e) //In Progress
         {
-            string[] SpecificationItems = new string[] { "item1", "item2", "item3", "item4", "item5" };
-            List<string> Specifications = new List<string>();
 
             foreach (string specification in SpecificationItems)
             {
@@ -338,37 +300,155 @@ namespace DnD_NPC_Creator
 
             
         }
-        private void SubRaceCombo_Loaded(object sender, RoutedEventArgs e)
+        private void SubRaceCombo_Loaded(object sender, RoutedEventArgs e) //Empty
         {
-            string[] SubracesItems = new string[] { "item1", "item2", "item3", "item4", "item5" };
-            List<string> Subraces = new List<string>();
-
-            foreach (string subrace in SubracesItems)
-            {
-                SubRaceCombo.Items.Add(subrace);
-            }
 
         }
         #endregion
 
         #region Combobox Selection Changed
-        private void SublassCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void SublassCombo_SelectionChanged(object sender, SelectionChangedEventArgs e) //Empty
         {
             character.SubClass = SublassCombo.SelectedItem.ToString();
         }
 
         private void BackgroundCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            string[] SpecCriminal = new string[] { "Blackmailer", "Burglar", "Enforcer", "Fence", "Highway robber", "Hired killer", "Pickpocket", "Smuggler", };
+            string[] SpecEntertainer = new string[] { "Actor", "Dancer", "Fire-eater", "Jester", "Juggler", "Instrumentalist", "Poet", "Singer", "Storyteller", "Tumbler" };
+            string[] SpecFarTraveler = new string[] { "Emissary", "Exile", "Fugitive", "Pilgrim", "Sightseer", "Wanderer" };
+            string[] SpecGuildArtisan = new string[] {"Alchemists and apothecaries", "Armorers, locksmiths, and finesmiths", "Brewers, distillers, and vintners", "Calligraphers, scribes, and scriveners", "Carpenters, roofers, and plasterers", "Cartographers, surveyors, and chart-makers", "Cobblers and shoemakers", "Cooks and bakers", "Glassblowers and glaziers", "Jewelers and gemcutters", "Leatherworkers, skinners, and tanners", "Masons and stonecutters", "Painters, limners, and sign-makers", "Potters and tile-makers", "Shipwrights and sailmakers", "Smiths and metal-forgers", "Tinkers, pewterers, and casters", "Wagon-makers and wheelwrights", "Weavers and dyers", "Woodcarvers, coopers, and bowyers" };
+            string[] SpecOutlander = new string[] { "Forester", "Trapper", "Homesteader", "Guide", "Exile or outcast", "Bounty hunter", "Pilgrim", "Tribal nomad", "Hunter-gatherer", "Tribal marauder" };
+            string[] SpecSage = new string[] { "Alchemist", "Astronomer", "Discredited academic", "Librarian", "Professor", "Researcher", "Wizard's apprentice", "Scribe" };
+            string[] SpecSoldier = new string[] { "Officer", "Scout", "Infantry", "Cavalry", "Healer", "Quartermaster", "Standard bearer", "Support staff (cook, blacksmith, or the like)" };
+
+            SpecificationComo.Items.Clear();
+            switch (Convert.ToString(FeatureName.SelectedItem))
+            {
+                case "Criminal":
+                    foreach (string criminal in SpecCriminal)
+                    {
+                        SpecificationComo.Items.Add(criminal);
+                    }
+                    break;
+                case "Entertainer":
+                    foreach (string entertainer in SpecEntertainer)
+                    {
+                        SpecificationComo.Items.Add(entertainer);
+                    }
+                    break;
+                case "Far Traveler":
+                    foreach (string farTraveler in SpecFarTraveler)
+                    {
+                        SpecificationComo.Items.Add(farTraveler);
+                    }
+                    break;
+                case "Guild Artisan":
+                    foreach (string guildArtisan in SpecGuildArtisan)
+                    {
+                        SpecificationComo.Items.Add(guildArtisan);
+                    }
+                    break;
+                case "Outlander":
+                    foreach (string outlander in SpecOutlander)
+                    {
+                        SpecificationComo.Items.Add(outlander);
+                    }
+                    break;
+                case "Sage":
+                    foreach (string sage in SpecSage)
+                    {
+                        SpecificationComo.Items.Add(sage);
+                    }
+                    break;
+                case "Soldier":
+                    foreach (string soldier in SpecSoldier)
+                    {
+                        SpecificationComo.Items.Add(soldier);
+                    }
+                    break;
+                default:
+                    break;
+            }
             character.Background = BackgroundCombobox.SelectedItem.ToString();
         }
-        private void Race_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Race_SelectionChanged(object sender, SelectionChangedEventArgs e) //Done
         {
+            string[] SubDragonborn = new string[] { "Black", "Blue", "Brass", "Bronze", "Copper", "Gold", "Green", "Red", "Silver", "White" };
+            string[] SubDwarf = new string[] { "Hill Dwarf", "Mountain Dwarf", "Underdark Dwarf" };
+            string[] SubElf = new string[] { "Dark Elf", "Eladrin", "High Elf", "Sea Elf", "Shadar-Kai", "Wood Elf" };
+            string[] SubGnome = new string[] { "Forest Gnome", "Rock Gnome", "Svirfneblin" };
+            string[] SubHalfElf = new string[] { };
+            string[] SubHalfOrc = new string[] { };
+            string[] SubHalfling = new string[] { "Lightfoot Halfling", "Stout Halfling", "Ghostwise Halfling" };
+            string[] SubHuman = new string[] { "Standard Human", "Variant Human" };
+            string[] SubTiefling = new string[] { "Bloodline of Asmodeus", "Bloodline of Baalzebul", "Devil's Tongue Bloodline", "Bloodline of Dispater", "Bloodline of Fierna", "Bloodline of Glasya", "Bloodline of Levistus", "Bloodline of Mammon", "Bloodline of Mephistopheles", "Winged Bloodline", "Bloodline of Zariel" };
+
+            SubRaceCombo.Items.Clear();
+            switch (Convert.ToString(ComboBoxRace.SelectedItem))
+            {
+                case "Dragonborn":
+                    foreach (string dragonborn in SubDragonborn)
+                    {                 
+                        SubRaceCombo.Items.Add(dragonborn);
+                    }
+                    break;
+                case "Dwarf":
+                    foreach (string dwarf in SubDwarf)
+                    {
+                        SubRaceCombo.Items.Add(dwarf);
+                    }
+                    break;
+                case "Elf":
+                    foreach (string elf in SubElf)
+                    {
+                        SubRaceCombo.Items.Add(elf);
+                    }
+                    break;
+                case "Gnome":
+                    foreach (string gnome in SubGnome)
+                    {
+                        SubRaceCombo.Items.Add(gnome);
+                    }
+                    break;
+                case "Half-Elf":
+                    foreach (string halfElf in SubHalfElf)
+                    {
+                        SubRaceCombo.Items.Add(halfElf);
+                    }
+                    break;
+                case "Half-Orc":
+                    foreach (string halfOrc in SubHalfOrc)
+                    {
+                        SubRaceCombo.Items.Add(halfOrc);
+                    }
+                    break;
+                case "Halfling":
+                    foreach (string halfling in SubHalfling)
+                    {
+                        SubRaceCombo.Items.Add(halfling);
+                    }
+                    break;
+                case "Human":
+                    foreach (string human in SubHuman)
+                    {
+                        SubRaceCombo.Items.Add(human);
+                    }
+                    break;
+                case "Tiefling":
+                    foreach (string tiefling in SubTiefling)
+                    {
+                        SubRaceCombo.Items.Add(tiefling);
+                    }
+                    break;
+                default:
+                    break;
+            }
             character.Race = ComboBoxRace.SelectedItem.ToString();
         }
-        private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e) //Done
         {
-
-            string[] SubBarb = new string[] { "Path of the Ancestral quardian", "Path of the Battlerager", "Path of the Berserker", "Path of the Storm Herald", "Path of the Totem Warrior", "Path of the Zealot" };
+            string[] SubBarbarian = new string[] { "Path of the Ancestral quardian", "Path of the Battlerager", "Path of the Berserker", "Path of the Storm Herald", "Path of the Totem Warrior", "Path of the Zealot" };
             string[] SubBard = new string[] { "College of Glamour", "College of Lore", "College of Swords", "College of Valor", "College of Whispers" };
             string[] SubCleric = new string[] { "Arcana Domain", "Death Domain", "Forge Domain", "Grave Domain", "Knowledge Domain", "Life Domain", "Light Domain", "Nature Domain", "Order Domain", "Tempest Domain", "Trickery Domain", "War Domain" };
             string[] SubDruid = new string[] { "Circle of Dreams", "Circle of Land", "Circle of Moon", "Circle of Shepherd", "Circle of Spores" };
@@ -382,88 +462,81 @@ namespace DnD_NPC_Creator
             string[] SubWizard = new string[] { "School of Abjuration", "School of Bladesinging", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutaion", "School of War Magic" };
 
 
-            SublassCombo.Items.Clear();
+            SubclassCombo.Items.Clear();
             switch (Convert.ToString(ComboClass.SelectedItem))
             {
                 case "Barbarian":
-
-                    for (int i = 0; i < SubBarb.Length; i++)
+                    foreach (string barbarian in SubBarbarian)
                     {
-                        SublassCombo.Items.Add(SubBarb[i]);
-                    }
-
-                    break;
-
-                case "Cleric":
-                    for (int i = 0; i < SubCleric.Length; i++)
-                    {
-                        SublassCombo.Items.Add(SubCleric[i]);
-                    }
-                    break;
-
-                case "Druid":
-                    for (int i = 0; i < SubDruid.Length; i++)
-                    {
-                        SublassCombo.Items.Add(SubDruid[i]);
-                    }
-                    break;
-
-                case "Fighter":
-                    for (int i = 0; i < SubFighter.Length; i++)
-                    {
-                        SublassCombo.Items.Add(SubFighter[i]);
-                    }
-                    break;
-
-                case "Hunter":
-                    for (int i = 0; i < SubRanger.Length; i++)
-                    {
-                        SublassCombo.Items.Add(SubRanger[i]);
-                    }
-                    break;
-                case "Monk":
-                    for (int i = 0; i < SubMonk.Length; i++)
-                    {
-                        SublassCombo.Items.Add(SubMonk[i]);
-                    }
-                    break;
-                case "Paladin":
-                    for (int i = 0; i < SubPaladin.Length; i++)
-                    {
-                        SublassCombo.Items.Add(SubPaladin[i]);
-                    }
-                    break;
-                case "Sorcorer":
-                    for (int i = 0; i < SubSorcorer.Length; i++)
-                    {
-                        SublassCombo.Items.Add(SubSorcorer[i]);
-                    }
-                    break;
-                case "Warlock":
-                    for (int i = 0; i < SubWarlock.Length; i++)
-                    {
-                        SublassCombo.Items.Add(SubWarlock[i]);
-                    }
-                    break;
-                case "Wizard":
-                    for (int i = 0; i < SubWizard.Length; i++)
-                    {
-                        SublassCombo.Items.Add(SubWizard[i]);
+                        SubclassCombo.Items.Add(barbarian);
                     }
                     break;
                 case "Bard":
-                    for (int i = 0; i < SubBard.Length; i++)
+                    foreach (string bard in SubBard)
                     {
-                        SublassCombo.Items.Add(SubBard[i]);
+                        SubclassCombo.Items.Add(bard);
+                    }
+                    break;
+                case "Cleric":
+                    foreach (string cleric in SubCleric)
+                    {
+                        SubclassCombo.Items.Add(cleric);
+                    }
+                    break;
+                case "Druid":
+                    foreach (string druid in SubDruid)
+                    {
+                        SubclassCombo.Items.Add(druid);
+                    }
+                    break;
+                case "Fighter":
+                    foreach (string fighter in SubFighter)
+                    {
+                        SubclassCombo.Items.Add(fighter);
+                    }
+                    break;
+                case "Monk":
+                    foreach (string monk in SubMonk)
+                    {
+                        SubclassCombo.Items.Add(monk);
+                    }
+                    break;
+                case "Paladin":
+                    foreach (string paladin in SubPaladin)
+                    {
+                        SubclassCombo.Items.Add(paladin);
+                    }
+                    break;
+                case "Ranger":
+                    foreach (string ranger in SubRanger)
+                    {
+                        SubclassCombo.Items.Add(ranger);
                     }
                     break;
                 case "Rogue":
-                    for (int i = 0; i < SubRogue.Length; i++)
+                    foreach (string rogue in SubRogue)
                     {
-                        SublassCombo.Items.Add(SubRogue[i]);
+                        SubclassCombo.Items.Add(rogue);
                     }
                     break;
-
+                case "Sorcorer":
+                    foreach (string sorcorer in SubSorcorer)
+                    {
+                        SubclassCombo.Items.Add(sorcorer);
+                    }
+                    break;
+                case "Warlock":
+                    foreach (string warlock in SubWarlock)
+                    {
+                        SubclassCombo.Items.Add(warlock);
+                    }
+                    break;
+                case "Wizard":
+                    foreach (string wizard in SubWizard)
+                    {
+                        SubclassCombo.Items.Add(wizard);
+                    }
+                    break;
                 default:
                     break;
             }
