@@ -14,6 +14,10 @@ namespace Business_Layer.Model
             RelatedStat = relatedStat;
             StatModifier = statBonus;
         }
+        public Skill(string name)
+        {
+            Name = name;
+        }
 
         public string Name;
         public bool HasProficiency { get; set; }
