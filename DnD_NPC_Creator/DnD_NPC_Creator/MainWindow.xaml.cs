@@ -212,7 +212,7 @@ namespace DnD_NPC_Creator
         }
         private void ComboBoxBackground_Loaded(object sender, RoutedEventArgs e) //Done
         {
-            FeatureName.Text = " ";
+            BackgroundCombobox.Text = " ";
 
             List<string> Backgrounds = new List<string>();
             Backgrounds.Add("Acolyte");
@@ -290,13 +290,13 @@ namespace DnD_NPC_Creator
                 InstrumentsCombobox.Items.Add(instrument);
             }
         }
-        private void SpecificationComo_Loaded(object sender, RoutedEventArgs e) //In Progress
+        private void SpecificationCombobox_Loaded(object sender, RoutedEventArgs e) //In Progress
         {
 
-            foreach (string specification in SpecificationItems)
-            {
-                SpecificationCombobox.Items.Add(specification);
-            }
+            //foreach (string specification in SpecificationItems)
+            //{
+            //    SpecificationCombobox.Items.Add(specification);
+            //}
 
             
         }
@@ -309,7 +309,7 @@ namespace DnD_NPC_Creator
         #region Combobox Selection Changed
         private void SublassCombo_SelectionChanged(object sender, SelectionChangedEventArgs e) //Empty
         {
-            character.SubClass = SublassCombo.SelectedItem.ToString();
+            character.SubClass = SubclassCombo.SelectedItem.ToString();
         }
 
         private void BackgroundCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -322,49 +322,49 @@ namespace DnD_NPC_Creator
             string[] SpecSage = new string[] { "Alchemist", "Astronomer", "Discredited academic", "Librarian", "Professor", "Researcher", "Wizard's apprentice", "Scribe" };
             string[] SpecSoldier = new string[] { "Officer", "Scout", "Infantry", "Cavalry", "Healer", "Quartermaster", "Standard bearer", "Support staff (cook, blacksmith, or the like)" };
 
-            SpecificationComo.Items.Clear();
-            switch (Convert.ToString(FeatureName.SelectedItem))
+            SpecificationCombobox.Items.Clear();
+            switch (Convert.ToString(BackgroundCombobox.SelectedItem))
             {
                 case "Criminal":
                     foreach (string criminal in SpecCriminal)
                     {
-                        SpecificationComo.Items.Add(criminal);
+                        SpecificationCombobox.Items.Add(criminal);
                     }
                     break;
                 case "Entertainer":
                     foreach (string entertainer in SpecEntertainer)
                     {
-                        SpecificationComo.Items.Add(entertainer);
+                        SpecificationCombobox.Items.Add(entertainer);
                     }
                     break;
                 case "Far Traveler":
                     foreach (string farTraveler in SpecFarTraveler)
                     {
-                        SpecificationComo.Items.Add(farTraveler);
+                        SpecificationCombobox.Items.Add(farTraveler);
                     }
                     break;
                 case "Guild Artisan":
                     foreach (string guildArtisan in SpecGuildArtisan)
                     {
-                        SpecificationComo.Items.Add(guildArtisan);
+                        SpecificationCombobox.Items.Add(guildArtisan);
                     }
                     break;
                 case "Outlander":
                     foreach (string outlander in SpecOutlander)
                     {
-                        SpecificationComo.Items.Add(outlander);
+                        SpecificationCombobox.Items.Add(outlander);
                     }
                     break;
                 case "Sage":
                     foreach (string sage in SpecSage)
                     {
-                        SpecificationComo.Items.Add(sage);
+                        SpecificationCombobox.Items.Add(sage);
                     }
                     break;
                 case "Soldier":
                     foreach (string soldier in SpecSoldier)
                     {
-                        SpecificationComo.Items.Add(soldier);
+                        SpecificationCombobox.Items.Add(soldier);
                     }
                     break;
                 default:
