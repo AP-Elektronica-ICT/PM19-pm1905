@@ -1,6 +1,6 @@
 language: csharp
 solution: DnD_NPC_Creator/DnD_NPC_Creator.sln
-mono: none
+mono: latest
 dotnet: 3.0
 script:
     - dotnet restore
