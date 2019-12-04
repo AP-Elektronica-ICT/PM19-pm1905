@@ -9,4 +9,5 @@ default:
         - cd DnD_NPC_Creator
         - dotnet restore
         - dotnet build
-        - dotnet test DnD_NPC_Creator/Business_Layer.UnitTests/Business_Layer.UnitTests.csproj
+        - cd Business_Layer.UnitTests
+        - dotnet test Business_Layer.UnitTests.csproj
