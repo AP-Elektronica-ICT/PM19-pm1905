@@ -4,7 +4,6 @@ mono: none
 dotnet: 3.0
 
 default:
-    -step:
         script:
         - cd DnD_NPC_Creator
         - dotnet restore
