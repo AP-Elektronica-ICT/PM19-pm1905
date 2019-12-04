@@ -2,8 +2,11 @@ language: csharp
 solution: DnD_NPC_Creator/DnD_NPC_Creator.sln
 mono: none
 dotnet: 3.0
+before_install:
+  - sudo apt-get -y install libxml2-dev
 script:
         - cd DnD_NPC_Creator
         - dotnet restore
         - dotnet build
-        - dotnet test Business_Layer.UnitTests/Business_Layer.UnitTests.csproj
+        - cd Business_Layer.UnitTests
+        - dotnet test Business_Layer.UnitTests.csproj
