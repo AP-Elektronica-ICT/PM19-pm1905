@@ -2,20 +2,10 @@ language: csharp
 solution: DnD_NPC_Creator/DnD_NPC_Creator.sln
 mono: none
 dotnet: 3.0
-
 script:
-   - wget -q https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
-  - sudo dpkg -i packages-microsoft-prod.deb
-  - wget -q http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.4_amd64.deb
-  - sudo dpkg -i libicu55_55.1-7ubuntu0.4_amd64.deb
-  - sudo apt-get install apt-transport-https
-  - sudo apt-get install -y libicu55
-  - sudo apt-get install dotnet-runtime-deps-2.1
-  - sudo apt-get install dotnet-runtime-2.1
-  - sudo apt-get install aspnetcore-runtime-2.1
-  - sudo apt-get install dotnet-sdk-2.1
-  - cd DnD_NPC_Creator
-  - dotnet restore
-  - msbuild /p:Configuration=Release -f net45
-  - cd Business_Layer.UnitTests
-  - dotnet test Business_Layer.UnitTests.csproj
+        - dotnet run -f netcoreapp2.1
+        - cd DnD_NPC_Creator
+        - dotnet restore
+        - dotnet build
+        - cd Business_Layer.UnitTests
+        - dotnet test Business_Layer.UnitTests.csproj
