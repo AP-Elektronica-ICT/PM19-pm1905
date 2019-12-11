@@ -15,7 +15,7 @@ namespace Business_Layer.Model
         public string Class;
         public string SubClass;
         public string Background;
-        public string Specification;
+        public string Occupation;
         public string Race;
         public string Subrace;
         public int Speed;

@@ -127,13 +127,13 @@ namespace DnD_NPC_Creator
             Ex_Stealth.IsChecked = character.Skills.Skills[16].HasExpertise;
             Ex_Survival.IsChecked = character.Skills.Skills[17].HasExpertise;
             //Armor
-            LightCheck.IsChecked = character.ArmorProficiencies[0].HasExpertise;
-            MediumCheck.IsChecked = character.ArmorProficiencies[1].HasExpertise;
-            HeavyCheck.IsChecked = character.ArmorProficiencies[2].HasExpertise;
-            ShieldsCheck.IsChecked = character.ArmorProficiencies[3].HasExpertise;
+            LightCheck.IsChecked = character.ArmorProficiencies[0].HasProficiency;
+            MediumCheck.IsChecked = character.ArmorProficiencies[1].HasProficiency;
+            HeavyCheck.IsChecked = character.ArmorProficiencies[2].HasProficiency;
+            ShieldsCheck.IsChecked = character.ArmorProficiencies[3].HasProficiency;
             //Weapons
-            SimpleCheck.IsChecked = character.WeaponProficiencies[0].HasExpertise;
-            MartialCheck.IsChecked = character.WeaponProficiencies[1].HasExpertise;
+            SimpleCheck.IsChecked = character.WeaponProficiencies[0].HasProficiency;
+            MartialCheck.IsChecked = character.WeaponProficiencies[1].HasProficiency;
             WeaponsTextBox.Text = character.OtherWeaponProficiencies;
             //Languages
             LangTextBox1.Text = character.LanguageProficiencies[0];
@@ -164,6 +164,32 @@ namespace DnD_NPC_Creator
             CharItemsTextBox6.Text = character.Inventory[5];
             CharItemsTextBox7.Text = character.Inventory[6];
             CharItemsTextBox8.Text = character.Inventory[7];
+            //Ocupasion
+            OccupationTextBox.Text = character.Occupation;
+            //Class
+            //foreach (var item in ComboClass.ItemsSource)
+            //{
+            //    if (character.Class == item.ToString())
+            //        ComboClass.SelectedItem = item;
+
+            //}
+            for (int i = 0; i < ComboClass.Items.Count; i++)
+            {
+                Debug.Write(ComboClass.Items[i].ToString());
+                if (character.Class == ComboClass.Items[i].ToString())
+                    ComboClass.SelectedIndex = i;
+            }
+            //Subclass
+            LoadSubClassComboBox();
+            for (int i = 0; i < SubclassCombo.Items.Count; i++)
+            {
+                Debug.Write(SubclassCombo.Items[i].ToString());
+                if (character.SubClass == SubclassCombo.Items[i].ToString())
+                    SubclassCombo.SelectedIndex = i;
+            }
+            //SubRace
+            LoadSubRaceComboBox();
+
         }
 
         #region ComboBox Loaded classes
@@ -299,6 +325,7 @@ namespace DnD_NPC_Creator
         #region Combobox Selection Changed
         private void SublassCombo_SelectionChanged(object sender, SelectionChangedEventArgs e) //Empty
         {
+            if(SubclassCombo.SelectedItem != null)
             character.SubClass = SubclassCombo.SelectedItem.ToString();
         }
 
@@ -657,6 +684,10 @@ namespace DnD_NPC_Creator
             else
                 CharismaLabel.Content = "+" + character.Stats[5].StatModifier;
         }
+        private void OccupationTextBox_LostKeyBoardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            character.Occupation = OccupationTextBox.Text;
+        }
         #endregion
 
         #region Changed
@@ -875,9 +906,6 @@ namespace DnD_NPC_Creator
             }
         }
 
-        private void OccupationTextBox_LostKeyBoardFocus(object sender, KeyboardFocusChangedEventArgs e)
-        {
-            character.Specification = OccupationTextBox.Text;
-        }
+        
     }
 }
