@@ -2,6 +2,11 @@ language: csharp
 solution: DnD_NPC_Creator/DnD_NPC_Creator.sln
 mono: none
 dotnet: 3.0
+install:
+
+  # workaround for missing .net 4.5 targing pack
+
+  - export FrameworkPathOverride=$(dirname $(which mono))/../lib/mono/4.5/
 script:
         - dotnet run -f netcoreapp2.1
         - cd DnD_NPC_Creator
