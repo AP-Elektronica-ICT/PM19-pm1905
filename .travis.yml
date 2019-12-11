@@ -3,6 +3,9 @@ solution: DnD_NPC_Creator/DnD_NPC_Creator.sln
 mono: latest
 dotnet: 3.0
 script:
-    - dotnet restore
-    - dotnet build
-    - dotnet test DnD_NPC_Creator/Business_Layer.UnitTests/Business_Layer.UnitTests.csproj
+        - dotnet run -f netcoreapp2.1
+        - cd DnD_NPC_Creator
+        - dotnet restore
+        - dotnet build
+        - cd Business_Layer.UnitTests
+        - dotnet test Business_Layer.UnitTests.csproj
