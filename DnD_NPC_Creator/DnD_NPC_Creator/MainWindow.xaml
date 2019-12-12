@@ -6,49 +6,53 @@
         
         xmlns:local="clr-namespace:DnD_NPC_Creator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="910">
+        Title="MainWindow" Height="500
+        " Width="910">
     <Grid Loaded="ComboBoxSubClass_Loaded">
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="266.4"/>
             <ColumnDefinition Width="272.8"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label Content="Race" HorizontalAlignment="Left" Margin="255,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.446,1.216" Grid.ColumnSpan="2"/>
+        <Image Grid.ColumnSpan="3" Margin="-4,-27,-0.222,-0.111" Source="dndBackground.jpg" Stretch="UniformToFill"/>
+
+        <Label Foreground="White" Content="Race" HorizontalAlignment="Left" Margin="255,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.446,1.216" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="ComboBoxRace"  Loaded="ComboBoxRace_Loaded" HorizontalAlignment="Left" Margin="28.6,41,0,0" VerticalAlignment="Top" Width="97" SelectionChanged="Race_SelectionChanged" Grid.Column="1"  />
         <ComboBox x:Name="ComboClass" Loaded="ComboBoxClass_Loaded" HorizontalAlignment="Left" Margin="72.8,40,0,0" VerticalAlignment="Top" Width="97" SelectionChanged="Class_SelectionChanged" Grid.Column="2"/>
-        <Label x:Name="ClassLabel" Content="Class" HorizontalAlignment="Left" Margin="35.8,38,0,0" VerticalAlignment="Top" Grid.Column="2"/>
-        <Label Content="Background" HorizontalAlignment="Left" Margin="222,69,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Foreground="White" x:Name="ClassLabel" Content="Class" HorizontalAlignment="Left" Margin="35.8,38,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label Foreground="White" Content="Background" HorizontalAlignment="Left" Margin="222,69,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="BackgroundCombobox" Loaded="ComboBoxBackground_Loaded" HorizontalAlignment="Left" Margin="28.6,69,0,0" VerticalAlignment="Top" Width="97" SelectionChanged="BackgroundCombobox_SelectionChanged" Grid.Column="1"/>
-        <Button  Content="Generate" HorizontalAlignment="Left" Margin="166.8,405,0,0" VerticalAlignment="Top" Width="117" Click="OpenWidow" Height="32" Grid.Column="2"/>
-        <Label Content="Strength" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,114,0,0" Height="24" Width="61"/>
-        <Label Content="Dexterity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,163,0,0" Width="79" Height="25"/>
-        <Label Content="Constitution" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-4,218,0,0" Width="79" Height="25"/>
-        <Label Content="Intelligence" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-4,265,0,0" Width="79" Height="27"/>
-        <Label Content="Wisdom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,320,0,0" Width="56" RenderTransformOrigin="0.66,-0.483" Height="24"/>
-        <Label Content="Charisma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,371,0,0" Width="79" Height="25"/>
+        <Button  Content="Generate" HorizontalAlignment="Left" Margin="166.889,405,0,0" VerticalAlignment="Top" Width="148" Click="OpenWidow" Height="33" Grid.Column="2"/>
+        <Label Foreground="White" Content="Strength" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,114,0,0" Height="24" Width="61"/>
+        <Label Foreground="White" Content="Dexterity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,163,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Constitution" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,217,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Intelligence" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,264,0,0" Width="79" Height="27"/>
+        <Label Foreground="White" Content="Wisdom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,320,0,0" Width="56" RenderTransformOrigin="0.66,-0.483" Height="24"/>
+        <Label Foreground="White" Content="Charisma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,373,0,0" Width="79" Height="25"/>
         <TextBox x:Name="StrengthBox" MaxLength="2" HorizontalAlignment="Left" Height="21" Margin="17,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" PreviewTextInput="Scorebox_previewTextInput" RenderTransformOrigin="-3.5,-1.351" KeyDown="Strength_KeyDown" LostKeyboardFocus="StrengthBox_LostKeyboardFocus"/>
         <TextBox x:Name="Dexteritybox" MaxLength="2" HorizontalAlignment="Left" Height="21" Margin="17,192,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Dexteriybox_previewTextInput" KeyDown="Dexterity_KeyDown" LostKeyboardFocus="DexterityBox_LostKeyboardFocus"/>
         <TextBox x:Name="Constitutionbox" MaxLength="2" HorizontalAlignment="Left" Height="22" Margin="17,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" PreviewTextInput="Constitutionbox_previewTextBox" KeyDown="Constitution_KeyDown" LostKeyboardFocus="ConstitutionBox_LostKeyboardFocus"/>
         <TextBox x:Name="Intelligencebox"  MaxLength="2" HorizontalAlignment="Left" Height="23" Margin="17,292,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Intelligencebox_PreviewTextInput" KeyDown="Intelligence_KeyDown" RenderTransformOrigin="0.053,-0.213" LostFocus="IntelligenceBox_LostKeyboardFocus"/>
         <TextBox x:Name="Wisdombox" MaxLength="2" HorizontalAlignment="Left" Height="24" Margin="17,344,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Wisdombox_PreviewTextInput" KeyDown="Wisdom_KeyDown" LostKeyboardFocus="WindowBox_LostKeyboardFocus"/>
         <TextBox  x:Name="Charismabox" MaxLength="2" HorizontalAlignment="Left" Height="22" Margin="17,402,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Charisma_PreviewTextInput" KeyDown="Charisma_KeyDown" LostKeyboardFocus="CharismaBox_LostKeyboardFocus"/>
-        <Label Content="Character name:" HorizontalAlignment="Left" Margin="4,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.647,-0.696"/>
+        <Label Foreground="White" Content="Character name:" HorizontalAlignment="Left" Margin="4,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.647,-0.696"/>
         <TextBox x:Name="NameInput" HorizontalAlignment="Left" Height="23" Margin="100,44,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.752,1.541" LostKeyboardFocus="NameInput_LostKeyboardFocus"  />
-        <Label Content="Personality" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10.8,115,0,0" RenderTransformOrigin="4.429,0.312" Grid.Column="2"/>
+        <Label Foreground="White" Content="Personality" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10.8,115,0,0" RenderTransformOrigin="4.429,0.312" Grid.Column="2"/>
         <TextBox x:Name="PersonalBox" HorizontalAlignment="Left" Height="60" Margin="237.6,137,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" LostKeyboardFocus="PersonalBox_LostKeyboardFocus" Grid.Column="1"/>
-        <Label Content="Ideals" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17.8,190,0,0" RenderTransformOrigin="4.429,0.312" Grid.Column="2"/>
+        <Label Foreground="White" Content="Ideals" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17.8,190,0,0" RenderTransformOrigin="4.429,0.312" Grid.Column="2"/>
         <TextBox x:Name="IdealsBox" HorizontalAlignment="Left" Height="60" Margin="237.6,212,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" LostKeyboardFocus="IdealsBox_LostKeyboardFocus" Grid.Column="1"/>
         <TextBox x:Name="BondsBox" HorizontalAlignment="Left" Height="60" Margin="237.6,291,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" LostKeyboardFocus="BondsBox_LostKeyboardFocus" Grid.Column="1"/>
-        <Label Content="Bonds" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17.8,270,0,0" RenderTransformOrigin="4.429,0.312" Grid.Column="2"/>
+        <Label Foreground="White" Content="Bonds" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17.8,270,0,0" RenderTransformOrigin="4.429,0.312" Grid.Column="2"/>
         <TextBox x:Name="FlawsBox" HorizontalAlignment="Left" Height="60" Margin="237.6,368,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" LostKeyboardFocus="FlawsBox_LostKeyboardFocus" Grid.Column="1"/>
-        <Label Content="Flaws" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20.8,348,0,0" RenderTransformOrigin="4.429,0.312" Grid.Column="2"/>
+        <Label  Foreground="White" Content="Flaws" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20.8,348,0,0" RenderTransformOrigin="4.429,0.312" Grid.Column="2"/>
         <CheckBox x:Name="Prof_Acrobatics" HorizontalAlignment="Left" Margin="119,160,0,0" VerticalAlignment="Top" Checked="Prof_Changed" Unchecked="Prof_Changed"/>
-        <Label Content="Acrobatics" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,151,0,0" Height="26" Width="61"/>
-        <Label Content="Animal Handling" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,172,0,0" Width="79" Height="25"/>
-        <Label Content="Arcana" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="153,186,0,0" Width="79" Height="25"/>
-        <Label Content="Athletics" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,202,0,0" Width="79" Height="22"/>
-        <Label Content="Deception" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,220,0,0" Width="79" RenderTransformOrigin="0.66,-0.483" Height="23"/>
-        <Label Content="History" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,234,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Acrobatics" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,151,0,0" Height="26" Width="61"/>
+        <Label Foreground="White" Content="Animal Handling" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,172,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Arcana" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="153,186,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Athletics" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,202,0,0" Width="79" Height="22"/>
+        <Label Foreground="White" Content="Deception" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,220,0,0" Width="79" RenderTransformOrigin="0.66,-0.483" Height="23"/>
+        <Label Foreground="White" Content="History" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,234,0,0" Width="79" Height="25"/>
         <CheckBox x:Name="Prof_Animal_Handling" HorizontalAlignment="Left" Margin="119,176,0,0" VerticalAlignment="Top" RenderTransformOrigin="10.201,3.662" Checked="Prof_Changed"  Unchecked="Prof_Changed"/>
         <CheckBox x:Name="Prof_Arcana" HorizontalAlignment="Left" Margin="119,192,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.59,-0.191" Checked="Prof_Changed"  Unchecked="Prof_Changed"/>
         <CheckBox x:Name="Prof_Athletics" HorizontalAlignment="Left" Margin="119,208,0,0" VerticalAlignment="Top" Checked="Prof_Changed"  Unchecked="Prof_Changed"/>
@@ -84,45 +88,39 @@
         <CheckBox x:Name="Ex_Survival" HorizontalAlignment="Left" Margin="137,423,0,0" VerticalAlignment="Top" Checked="Expertise_Changed" Unchecked="Expertise_Changed"/>
         <CheckBox x:Name="Ex_Stealth" HorizontalAlignment="Left" Margin="137,408,0,0" VerticalAlignment="Top" Checked="Expertise_Changed" Unchecked="Expertise_Changed"/>
         <CheckBox x:Name="Ex_Sleight_Of_Hand" HorizontalAlignment="Left" Margin="137,393,0,0" VerticalAlignment="Top" Checked="Expertise_Changed" Unchecked="Expertise_Changed"/>
-        <Label Content="Insight" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,251,0,0" Height="24" Width="61"/>
-        <Label Content="Intimidation" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,267,0,0" Width="79" Height="25" RenderTransformOrigin="0.451,-0.311"/>
-        <Label Content="Investigation" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,280,0,0" Width="79" Height="25"/>
-        <Label Content="Medicine" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,297,0,0" Width="79" Height="27"/>
-        <Label Content="Nature" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,314,0,0" Width="79" RenderTransformOrigin="0.66,-0.483" Height="24"/>
-        <Label Content="Perception" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,328,0,0" Width="79" Height="25"/>
-        <Label Content="Performance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,343,0,0" Height="24" Width="79"/>
-        <Label Content="Persuation Handling" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,358,0,0" Width="120" Height="25" Grid.ColumnSpan="2"/>
-        <Label Content="Religion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,375,0,0" Width="79" Height="25"/>
-        <Label Content="Sleight of Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,390,0,0" Width="97" Height="27"/>
-        <Label Content="Stealth" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,404,0,0" Width="79" RenderTransformOrigin="0.66,-0.483" Height="24"/>
-        <Label Content="Survival" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,417,0,0" Width="61" Height="25"/>
-        <Label Content="pro" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,135,0,0" RenderTransformOrigin="4.429,0.312"/>
-        <Label Content="ex" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,134,0,0" RenderTransformOrigin="4.429,0.312" Width="22"/>
+        <Label Foreground="White" Content="Insight" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,251,0,0" Height="24" Width="61"/>
+        <Label Foreground="White" Content="Intimidation" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,267,0,0" Width="79" Height="25" RenderTransformOrigin="0.451,-0.311"/>
+        <Label Foreground="White" Content="Investigation" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,280,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Medicine" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,297,0,0" Width="79" Height="27"/>
+        <Label Foreground="White" Content="Nature" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,314,0,0" Width="79" RenderTransformOrigin="0.66,-0.483" Height="24"/>
+        <Label Foreground="White" Content="Perception" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,328,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Performance" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,343,0,0" Height="24" Width="79"/>
+        <Label Foreground="White" Content="Persuation Handling" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,358,0,0" Width="120" Height="25" Grid.ColumnSpan="2"/>
+        <Label Foreground="White" Content="Religion" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,375,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Sleight of Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,390,0,0" Width="97" Height="27"/>
+        <Label Foreground="White" Content="Stealth" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,404,0,0" Width="79" RenderTransformOrigin="0.66,-0.483" Height="24"/>
+        <Label Foreground="White" Content="Survival" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,417,0,0" Width="61" Height="25"/>
+        <Label Foreground="White" Content="pro" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,135,0,0" RenderTransformOrigin="4.429,0.312"/>
+        <Label Foreground="White" Content="ex" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,134,0,0" RenderTransformOrigin="4.429,0.312" Width="22"/>
         <ComboBox x:Name="SubclassCombo" HorizontalAlignment="Left" Margin="230.8,40,0,0" VerticalAlignment="Top" Width="97" SelectionChanged="SublassCombo_SelectionChanged" Grid.Column="2" />
-        <Label Content="Subclass" HorizontalAlignment="Left" Margin="175.8,40,0,0" VerticalAlignment="Top" Grid.Column="2"/>
-        <Label x:Name="StrengthLabel" Content="la " HorizontalAlignment="Left" Margin="63,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
-        <Label x:Name="DexterityLabel" Content=" la" HorizontalAlignment="Left" Margin="63,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
-        <Label x:Name="ConstitutionLabel" Content="la " HorizontalAlignment="Left" Margin="67,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
-        <Label x:Name="IntelligenceLabel" Content=" la" HorizontalAlignment="Left" Margin="63,290,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
-        <Label x:Name="WisdomLabel" Content=" la" HorizontalAlignment="Left" Margin="65,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
-        <Label x:Name="CharismaLabel" Content="la " HorizontalAlignment="Left" Margin="68,402,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
-        <Label Content="Proficiencies:" HorizontalAlignment="Left" Margin="152.6,547,0,0" VerticalAlignment="Top" FontSize="14" Grid.Column="1"/>
-        <ComboBox x:Name="ToolsCombobox"  HorizontalAlignment="Left" Margin="152.6,588,0,0" VerticalAlignment="Top" Width="120" Loaded="ToolsCombobox_Loaded" RenderTransformOrigin="0.594,-0.012" Grid.Column="1"/>
-        <Label Content="Tools:" HorizontalAlignment="Left" Margin="76.6,584,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Instruments:" HorizontalAlignment="Left" Margin="40.6,621,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,2.457" Grid.Column="1"/>
-        <ComboBox x:Name="InstrumentsCombobox" HorizontalAlignment="Left" Margin="152.6,625,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.237,-0.03" Loaded="InstrumentsCombobox_Loaded" Grid.Column="1" />
-        <Label Content="DD Character Creator " HorizontalAlignment="Left" Margin="9,0,0,0" VerticalAlignment="Top" Width="149" FontWeight="Bold"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="0,112,0,0" VerticalAlignment="Top" Width="90"/>
-        <Label Content="Skills" HorizontalAlignment="Left" Margin="122,112,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="White" Content="Subclass" HorizontalAlignment="Left" Margin="175.8,40,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label Foreground="White" x:Name="StrengthLabel" Content="la " HorizontalAlignment="Left" Margin="63,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label Foreground="White" x:Name="DexterityLabel" Content=" la" HorizontalAlignment="Left" Margin="63,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label Foreground="White" x:Name="ConstitutionLabel" Content="la " HorizontalAlignment="Left" Margin="67,242,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label Foreground="White" x:Name="IntelligenceLabel" Content=" la" HorizontalAlignment="Left" Margin="63,290,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label Foreground="White" x:Name="WisdomLabel" Content=" la" HorizontalAlignment="Left" Margin="65,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label Foreground="White" x:Name="CharismaLabel" Content="la " HorizontalAlignment="Left" Margin="68,402,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
+        <Label Foreground="White" Content="DD Character Creator " HorizontalAlignment="Left" Margin="9,0,0,0" VerticalAlignment="Top" Width="149" FontWeight="Bold"/>
+        <Label Foreground="White" Content="Skills" HorizontalAlignment="Left" Margin="122,112,0,0" VerticalAlignment="Top"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="95,112,0,0" VerticalAlignment="Top" Width="174" Grid.ColumnSpan="2"/>
-        <Label Content="HP:" HorizontalAlignment="Left" Margin="6,69,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="White" Content="HP:" HorizontalAlignment="Left" Margin="6,69,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="HPTextBox" HorizontalAlignment="Left" Height="23" Margin="31,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="69" LostKeyboardFocus="HPTextBox_LostKeyboardFocus" PreviewTextInput="HPTextBox_PreviewTextInput" />
-        <Label Content="Speed:" HorizontalAlignment="Left" Margin="100,72,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="White" Content="Speed:" HorizontalAlignment="Left" Margin="100,72,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="SpeedTextBox" HorizontalAlignment="Left" Height="23" Margin="143,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77" LostKeyboardFocus="SpeedTextBox_LostKeyboardFocus" PreviewTextInput="SpeedTextBox_PreviewTextInput"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="225.6,113,0,0" VerticalAlignment="Top" Width="171" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <Label Content="Character info" HorizontalAlignment="Left" Margin="143.8,115,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label Foreground="White" Content="Character info" HorizontalAlignment="Left" Margin="143.8,115,0,0" VerticalAlignment="Top" Grid.Column="2"/>
         <TextBox x:Name="CharInfoTextBox" HorizontalAlignment="Left" Height="75" Margin="143.8,137,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="205" Grid.Column="2" LostKeyboardFocus="CharacterInfo_LostKeyboardFocus" />
-        <Label Content="Charactes Items" HorizontalAlignment="Left" Margin="136.8,239,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label Foreground="White" Content="Charactes Items" HorizontalAlignment="Left" Margin="136.8,239,0,0" VerticalAlignment="Top" Grid.Column="2"/>
         <TextBox x:Name="CharItemsTextBox1" HorizontalAlignment="Left" Height="23" Margin="143.8,273,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Grid.Column="2" LostKeyboardFocus="CharItemTextBox_LostKeyboardFocus"/>
         <TextBox x:Name="CharItemsTextBox2" HorizontalAlignment="Left" Height="23" Margin="143.8,301,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Grid.Column="2" LostKeyboardFocus="CharItemTextBox_LostKeyboardFocus"/>
         <TextBox x:Name="CharItemsTextBox3" HorizontalAlignment="Left" Height="23" Margin="248.8,273,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Grid.Column="2" LostKeyboardFocus="CharItemTextBox_LostKeyboardFocus"/>
@@ -134,22 +132,22 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="143" Margin="136.8,241,0,0" VerticalAlignment="Top" Width="220" Grid.Column="2"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="111" Margin="136.8,113,0,0" VerticalAlignment="Top" Width="220" Grid.Column="2"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="69" Margin="0,38,0,0" VerticalAlignment="Top" Width="896" Grid.ColumnSpan="3"/>
-        <Button x:Name="SaveButton" Content="+Save" HorizontalAlignment="Left" Margin="90.8,5,0,0" VerticalAlignment="Top" Width="79" Click="SaveButton_Click" Grid.Column="2"/>
+        <Button x:Name="SaveButton" Content="+Save" HorizontalAlignment="Left" Margin="99.889,7,0,0" VerticalAlignment="Top" Width="79" Click="SaveButton_Click" Grid.Column="2"/>
         <ComboBox x:Name ="LoadBox" HorizontalAlignment="Left" Margin="240.8,4,0,0" VerticalAlignment="Top" Width="87" Grid.Column="2" SelectionChanged="LoadBox_SelectionChanged" Loaded="LoadBox_Loaded" />
-        <Label Content="Proficiencies" HorizontalAlignment="Left" Margin="23.6,115,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Armor" HorizontalAlignment="Left" Margin="36.6,137,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="LightCheck" Content="Light" HorizontalAlignment="Left" Margin="23.6,160,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="MediumCheck" Content="Medium" HorizontalAlignment="Left" Margin="23.6,174,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="HeavyCheck" Content="Heavy" HorizontalAlignment="Left" Margin="23.6,189,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="ShieldsCheck" Content="Shields" HorizontalAlignment="Left" Margin="23.6,203,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Weapons" HorizontalAlignment="Left" Margin="28.6,221,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="SimpleCheck" Content="Simple" HorizontalAlignment="Left" Margin="23.6,240,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="MartialCheck" Content="Martial" HorizontalAlignment="Left" Margin="23.6,255,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="OtherCheck" Content="other:" HorizontalAlignment="Left" Margin="23.6,270,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Foreground="White" Content="Proficiencies" HorizontalAlignment="Left" Margin="23.6,115,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Foreground="White" Content="Armor" HorizontalAlignment="Left" Margin="36.6,137,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="LightCheck" Content="Light" HorizontalAlignment="Left" Margin="23.6,160,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="MediumCheck" Content="Medium" HorizontalAlignment="Left" Margin="23.6,174,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="HeavyCheck" Content="Heavy" HorizontalAlignment="Left" Margin="23.6,189,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="ShieldsCheck" Content="Shields" HorizontalAlignment="Left" Margin="23.6,203,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Foreground="White" Content="Weapons" HorizontalAlignment="Left" Margin="28.6,221,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="SimpleCheck" Content="Simple" HorizontalAlignment="Left" Margin="23.6,240,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="MartialCheck" Content="Martial" HorizontalAlignment="Left" Margin="23.6,255,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="OtherCheck" Content="other:" HorizontalAlignment="Left" Margin="23.6,270,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBox x:Name="WeaponsTextBox" HorizontalAlignment="Left" Height="23" Margin="22.6,287,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" LostKeyboardFocus="WeaponsTextBox_LostKeyboardFocus" Grid.Column="1"/>
-        <Label Content="Languages" HorizontalAlignment="Left" Margin="22.6,302,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label  Foreground="White" Content="Languages" HorizontalAlignment="Left" Margin="22.6,302,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBox x:Name="LangTextBox1" HorizontalAlignment="Left" Height="23" Margin="22.6,324,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" Grid.Column="1"/>
-        <Label Content="Tools" HorizontalAlignment="Left" Margin="142.6,306,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Foreground="White" Content="Tools" HorizontalAlignment="Left" Margin="142.6,306,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBox x:Name="ToolsTextBox1" HorizontalAlignment="Left" Height="23" Margin="121.6,324,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" LostKeyboardFocus="ToolTextBox_LostKeyboardFocus" Grid.Column="1"/>
         <TextBox x:Name="LangTextBox2" HorizontalAlignment="Left" Height="23" Margin="22.6,352,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" LostKeyboardFocus="LanguangeTextBox_LostKeyboardFocus" Grid.Column="1"/>
         <TextBox x:Name="ToolsTextBox2" HorizontalAlignment="Left" Height="23" Margin="121.6,352,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" LostKeyboardFocus="ToolTextBox_LostKeyboardFocus" Grid.Column="1"/>
@@ -158,12 +156,15 @@
         <TextBox x:Name="LangTextBox4" HorizontalAlignment="Left" Height="23" Margin="22.6,408,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" LostKeyboardFocus="LanguangeTextBox_LostKeyboardFocus" Grid.Column="1"/>
         <TextBox x:Name="ToolsTextBox4" HorizontalAlignment="Left" Height="23" Margin="121.6,408,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" LostKeyboardFocus="ToolTextBox_LostKeyboardFocus" Grid.Column="1"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="7.6,112,0,0" VerticalAlignment="Top" Width="213" Grid.Column="1"/>
-        <ComboBox x:Name="SubRaceCombo" HorizontalAlignment="Left" Margin="207.6,40,0,0" VerticalAlignment="Top" Width="97" Loaded="SubRaceCombo_Loaded" RenderTransformOrigin="0.765,0.61" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <ComboBox Background="Transparent" x:Name="SubRaceCombo" HorizontalAlignment="Left" Margin="207.6,40,0,0" VerticalAlignment="Top" Width="97" Loaded="SubRaceCombo_Loaded" RenderTransformOrigin="0.765,0.61" Grid.ColumnSpan="2" Grid.Column="1"/>
         <ComboBox x:Name="SpecificationCombobox" HorizontalAlignment="Left" Margin="207.6,67,0,0" VerticalAlignment="Top" Width="97" Loaded="SpecificationCombobox_Loaded" Grid.ColumnSpan="2" Grid.Column="1" SelectionChanged="SpecificationCombobox_SelectionChanged"/>
-        <Label Content="SubRace" HorizontalAlignment="Left" Margin="152.6,40,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Specification" HorizontalAlignment="Left" Margin="130.6,66,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Label Content="Level" Grid.Column="2" HorizontalAlignment="Left" Margin="35.8,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.036,0.241"/>
+        <Label Foreground="White" Content="SubRace" HorizontalAlignment="Left" Margin="152.6,40,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Foreground="White" Content="Specification" HorizontalAlignment="Left" Margin="130.6,66,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label Foreground="White" Content="Level" Grid.Column="2" HorizontalAlignment="Left" Margin="35.8,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.036,0.241"/>
         <TextBox x:Name="LevelTextBox" HorizontalAlignment="Left" Height="23" Margin="72.8,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="61" LostKeyboardFocus="LevelTextBox_LostKeyboardFocus" Grid.Column="2" PreviewTextInput="LevelTextBox_PreviewTextInput"/>
-        <Label Content="Load" Grid.Column="2" HorizontalAlignment="Left" Margin="199.8,4,0,0" VerticalAlignment="Top"/>
+        <Label  Foreground="White" Content="Load" Grid.Column="2" HorizontalAlignment="Left" Margin="199.8,4,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="0,112,0,0" VerticalAlignment="Top" Width="90"/>
+
+
     </Grid>
 </Window>
