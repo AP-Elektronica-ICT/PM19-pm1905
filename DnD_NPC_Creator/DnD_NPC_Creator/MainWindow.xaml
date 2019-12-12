@@ -26,10 +26,10 @@
         <Button  Content="Generate" HorizontalAlignment="Left" Margin="166.889,405,0,0" VerticalAlignment="Top" Width="148" Click="OpenWidow" Height="33" Grid.Column="2"/>
         <Label Foreground="White" Content="Strength" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,114,0,0" Height="24" Width="61"/>
         <Label Foreground="White" Content="Dexterity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,163,0,0" Width="79" Height="25"/>
-        <Label Foreground="White" Content="Constitution" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-4,218,0,0" Width="79" Height="25"/>
-        <Label Foreground="White" Content="Intelligence" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-4,265,0,0" Width="79" Height="27"/>
+        <Label Foreground="White" Content="Constitution" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,217,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Intelligence" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,264,0,0" Width="79" Height="27"/>
         <Label Foreground="White" Content="Wisdom" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,320,0,0" Width="56" RenderTransformOrigin="0.66,-0.483" Height="24"/>
-        <Label Foreground="White" Content="Charisma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,371,0,0" Width="79" Height="25"/>
+        <Label Foreground="White" Content="Charisma" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,373,0,0" Width="79" Height="25"/>
         <TextBox x:Name="StrengthBox" MaxLength="2" HorizontalAlignment="Left" Height="21" Margin="17,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" PreviewTextInput="Scorebox_previewTextInput" RenderTransformOrigin="-3.5,-1.351" KeyDown="Strength_KeyDown" LostKeyboardFocus="StrengthBox_LostKeyboardFocus"/>
         <TextBox x:Name="Dexteritybox" MaxLength="2" HorizontalAlignment="Left" Height="21" Margin="17,192,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="46" PreviewTextInput="Dexteriybox_previewTextInput" KeyDown="Dexterity_KeyDown" LostKeyboardFocus="DexterityBox_LostKeyboardFocus"/>
         <TextBox x:Name="Constitutionbox" MaxLength="2" HorizontalAlignment="Left" Height="22" Margin="17,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" PreviewTextInput="Constitutionbox_previewTextBox" KeyDown="Constitution_KeyDown" LostKeyboardFocus="ConstitutionBox_LostKeyboardFocus"/>
@@ -111,7 +111,6 @@
         <Label Foreground="White" x:Name="WisdomLabel" Content=" la" HorizontalAlignment="Left" Margin="65,346,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
         <Label Foreground="White" x:Name="CharismaLabel" Content="la " HorizontalAlignment="Left" Margin="68,402,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.578,-3.244" Height="25"/>
         <Label Foreground="White" Content="DD Character Creator " HorizontalAlignment="Left" Margin="9,0,0,0" VerticalAlignment="Top" Width="149" FontWeight="Bold"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="0,112,0,0" VerticalAlignment="Top" Width="90"/>
         <Label Foreground="White" Content="Skills" HorizontalAlignment="Left" Margin="122,112,0,0" VerticalAlignment="Top"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="95,112,0,0" VerticalAlignment="Top" Width="174" Grid.ColumnSpan="2"/>
         <Label Foreground="White" Content="HP:" HorizontalAlignment="Left" Margin="6,69,0,0" VerticalAlignment="Top"/>
@@ -137,14 +136,14 @@
         <ComboBox x:Name ="LoadBox" HorizontalAlignment="Left" Margin="240.8,4,0,0" VerticalAlignment="Top" Width="87" Grid.Column="2" SelectionChanged="LoadBox_SelectionChanged" Loaded="LoadBox_Loaded" />
         <Label Foreground="White" Content="Proficiencies" HorizontalAlignment="Left" Margin="23.6,115,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Foreground="White" Content="Armor" HorizontalAlignment="Left" Margin="36.6,137,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="LightCheck" Content="Light" HorizontalAlignment="Left" Margin="23.6,160,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="MediumCheck" Content="Medium" HorizontalAlignment="Left" Margin="23.6,174,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="HeavyCheck" Content="Heavy" HorizontalAlignment="Left" Margin="23.6,189,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="ShieldsCheck" Content="Shields" HorizontalAlignment="Left" Margin="23.6,203,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="LightCheck" Content="Light" HorizontalAlignment="Left" Margin="23.6,160,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="MediumCheck" Content="Medium" HorizontalAlignment="Left" Margin="23.6,174,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="HeavyCheck" Content="Heavy" HorizontalAlignment="Left" Margin="23.6,189,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="ShieldsCheck" Content="Shields" HorizontalAlignment="Left" Margin="23.6,203,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Foreground="White" Content="Weapons" HorizontalAlignment="Left" Margin="28.6,221,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="SimpleCheck" Content="Simple" HorizontalAlignment="Left" Margin="23.6,240,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="MartialCheck" Content="Martial" HorizontalAlignment="Left" Margin="23.6,255,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <CheckBox x:Name="OtherCheck" Content="other:" HorizontalAlignment="Left" Margin="23.6,270,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="SimpleCheck" Content="Simple" HorizontalAlignment="Left" Margin="23.6,240,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="MartialCheck" Content="Martial" HorizontalAlignment="Left" Margin="23.6,255,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <CheckBox Foreground="White" x:Name="OtherCheck" Content="other:" HorizontalAlignment="Left" Margin="23.6,270,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBox x:Name="WeaponsTextBox" HorizontalAlignment="Left" Height="23" Margin="22.6,287,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" LostKeyboardFocus="WeaponsTextBox_LostKeyboardFocus" Grid.Column="1"/>
         <Label  Foreground="White" Content="Languages" HorizontalAlignment="Left" Margin="22.6,302,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBox x:Name="LangTextBox1" HorizontalAlignment="Left" Height="23" Margin="22.6,324,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" Grid.Column="1"/>
@@ -164,6 +163,7 @@
         <Label Foreground="White" Content="Level" Grid.Column="2" HorizontalAlignment="Left" Margin="35.8,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.036,0.241"/>
         <TextBox x:Name="LevelTextBox" HorizontalAlignment="Left" Height="23" Margin="72.8,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="61" LostKeyboardFocus="LevelTextBox_LostKeyboardFocus" Grid.Column="2" PreviewTextInput="LevelTextBox_PreviewTextInput"/>
         <Label  Foreground="White" Content="Load" Grid.Column="2" HorizontalAlignment="Left" Margin="199.8,4,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="0,112,0,0" VerticalAlignment="Top" Width="90"/>
 
 
     </Grid>
