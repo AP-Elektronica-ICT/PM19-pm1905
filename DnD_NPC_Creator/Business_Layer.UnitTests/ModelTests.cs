@@ -116,7 +116,7 @@ namespace Business_Layer.UnitTests
             //Assert
             Assert.AreEqual(result, 6);
         }
-            [TestMethod]
+        [TestMethod]
         public void TestSkillListSetAllBonusses()
         {
             //Arrange

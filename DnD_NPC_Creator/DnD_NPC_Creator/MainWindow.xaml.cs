@@ -126,13 +126,13 @@ namespace DnD_NPC_Creator
             Ex_Stealth.IsChecked = character.Skills.Skills[16].HasExpertise;
             Ex_Survival.IsChecked = character.Skills.Skills[17].HasExpertise;
             //Armor
-            LightCheck.IsChecked = character.ArmorProficiencies[0].HasExpertise;
-            MediumCheck.IsChecked = character.ArmorProficiencies[1].HasExpertise;
-            HeavyCheck.IsChecked = character.ArmorProficiencies[2].HasExpertise;
-            ShieldsCheck.IsChecked = character.ArmorProficiencies[3].HasExpertise;
+            LightCheck.IsChecked = character.ArmorProficiencies[0].HasProficiency;
+            MediumCheck.IsChecked = character.ArmorProficiencies[1].HasProficiency;
+            HeavyCheck.IsChecked = character.ArmorProficiencies[2].HasProficiency;
+            ShieldsCheck.IsChecked = character.ArmorProficiencies[3].HasProficiency;
             //Weapons
-            SimpleCheck.IsChecked = character.WeaponProficiencies[0].HasExpertise;
-            MartialCheck.IsChecked = character.WeaponProficiencies[1].HasExpertise;
+            SimpleCheck.IsChecked = character.WeaponProficiencies[0].HasProficiency;
+            MartialCheck.IsChecked = character.WeaponProficiencies[1].HasProficiency;
             WeaponsTextBox.Text = character.OtherWeaponProficiencies;
             //Languages
             LangTextBox1.Text = character.LanguageProficiencies[0];
@@ -163,6 +163,35 @@ namespace DnD_NPC_Creator
             CharItemsTextBox6.Text = character.Inventory[5];
             CharItemsTextBox7.Text = character.Inventory[6];
             CharItemsTextBox8.Text = character.Inventory[7];
+            //Ocupasion
+            OccupationTextBox.Text = character.Occupation;
+            //Class
+            for (int i = 0; i < ComboClass.Items.Count; i++)
+            {
+                if (character.Class == ComboClass.Items[i].ToString())
+                    ComboClass.SelectedIndex = i;
+            }
+            //Subclass
+            LoadSubClassComboBox();
+            for (int i = 0; i < SubclassCombo.Items.Count; i++)
+            {
+                if (character.SubClass == SubclassCombo.Items[i].ToString())
+                    SubclassCombo.SelectedIndex = i;
+            }
+            //Race
+            for (int i = 0; i < ComboBoxRace.Items.Count; i++)
+            {
+                if (character.Race == ComboBoxRace.Items[i].ToString())
+                    ComboBoxRace.SelectedIndex = i;
+            }
+            //SubRace
+            LoadSubRaceComboBox();
+            for (int i = 0; i < SubRaceCombo.Items.Count; i++)
+            {
+                if (character.Subrace == SubRaceCombo.Items[i].ToString())
+                    SubRaceCombo.SelectedIndex = i;
+            }
+
         }
 
         #region ComboBox Loaded classes
@@ -262,18 +291,33 @@ namespace DnD_NPC_Creator
         }
 
 
-      
-       
-        private void SpecificationCombobox_Loaded(object sender, RoutedEventArgs e) //In Progress
-        {
+        //private void ToolsCombobox_Loaded(object sender, RoutedEventArgs e) //Done?
+        //{
+        //    string[] ToolItems = new string[] { "Alchemist's suplies", "Brewer's supplies", "Calligrapher's Supplies", "Carpenters's tools", "cortographer's tools", "Cobbler's tools", "Cook's utensils", "Glassblower's tools", "jeweler's tools", "leatherworker's tools", "Mason's tools", "Potter's tools", "Smith's tools", "Tinker's tools", "Weaver's tools", "Woodcarver's tools" };
+        //    List<string> Tools = new List<string>();
+        //    for (int i = 0; i < ToolItems.Length; i++)
+        //    {
+        //        ToolsCombobox.Items.Add(ToolItems[i]);
+        //    }
 
-            //foreach (string specification in SpecificationItems)
-            //{
-            //    SpecificationCombobox.Items.Add(specification);
-            //}
 
-            
-        }
+        //    /*
+
+        //    var Tool = sender as ComboBox;
+        //    Tool.ItemsSource = Tools;
+        //    Tool.SelectedIndex = 0;
+        //    */
+        //}
+        //private void InstrumentsCombobox_Loaded(object sender, RoutedEventArgs e) //Done
+        //{
+        //    string[] InstrumentsItems = new string[] { "Bagpipes", "Drum", "Dulcimer", "Flute", "Lute", "Lyre", "Horn", "Pan Flute", "Shawn", "Viol", "Navigator's tool", "Thieves' tools" };
+        //    List<string> Instruments = new List<string>();
+
+        //    foreach (string instrument in InstrumentsItems)
+        //    {
+        //        InstrumentsCombobox.Items.Add(instrument);
+        //    }
+        //}
         private void SubRaceCombo_Loaded(object sender, RoutedEventArgs e) //Empty
         {
 
@@ -283,237 +327,26 @@ namespace DnD_NPC_Creator
         #region Combobox Selection Changed
         private void SublassCombo_SelectionChanged(object sender, SelectionChangedEventArgs e) //Empty
         {
+            if(SubclassCombo.SelectedItem != null)
             character.SubClass = SubclassCombo.SelectedItem.ToString();
         }
 
         private void BackgroundCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string[] SpecCriminal = new string[] { "Blackmailer", "Burglar", "Enforcer", "Fence", "Highway robber", "Hired killer", "Pickpocket", "Smuggler", };
-            string[] SpecEntertainer = new string[] { "Actor", "Dancer", "Fire-eater", "Jester", "Juggler", "Instrumentalist", "Poet", "Singer", "Storyteller", "Tumbler" };
-            string[] SpecFarTraveler = new string[] { "Emissary", "Exile", "Fugitive", "Pilgrim", "Sightseer", "Wanderer" };
-            string[] SpecGuildArtisan = new string[] {"Alchemists and apothecaries", "Armorers, locksmiths, and finesmiths", "Brewers, distillers, and vintners", "Calligraphers, scribes, and scriveners", "Carpenters, roofers, and plasterers", "Cartographers, surveyors, and chart-makers", "Cobblers and shoemakers", "Cooks and bakers", "Glassblowers and glaziers", "Jewelers and gemcutters", "Leatherworkers, skinners, and tanners", "Masons and stonecutters", "Painters, limners, and sign-makers", "Potters and tile-makers", "Shipwrights and sailmakers", "Smiths and metal-forgers", "Tinkers, pewterers, and casters", "Wagon-makers and wheelwrights", "Weavers and dyers", "Woodcarvers, coopers, and bowyers" };
-            string[] SpecOutlander = new string[] { "Forester", "Trapper", "Homesteader", "Guide", "Exile or outcast", "Bounty hunter", "Pilgrim", "Tribal nomad", "Hunter-gatherer", "Tribal marauder" };
-            string[] SpecSage = new string[] { "Alchemist", "Astronomer", "Discredited academic", "Librarian", "Professor", "Researcher", "Wizard's apprentice", "Scribe" };
-            string[] SpecSoldier = new string[] { "Officer", "Scout", "Infantry", "Cavalry", "Healer", "Quartermaster", "Standard bearer", "Support staff (cook, blacksmith, or the like)" };
-
-            SpecificationCombobox.Items.Clear();
-            switch (Convert.ToString(BackgroundCombobox.SelectedItem))
-            {
-                case "Criminal":
-                    foreach (string criminal in SpecCriminal)
-                    {
-                        SpecificationCombobox.Items.Add(criminal);
-                    }
-                    break;
-                case "Entertainer":
-                    foreach (string entertainer in SpecEntertainer)
-                    {
-                        SpecificationCombobox.Items.Add(entertainer);
-                    }
-                    break;
-                case "Far Traveler":
-                    foreach (string farTraveler in SpecFarTraveler)
-                    {
-                        SpecificationCombobox.Items.Add(farTraveler);
-                    }
-                    break;
-                case "Guild Artisan":
-                    foreach (string guildArtisan in SpecGuildArtisan)
-                    {
-                        SpecificationCombobox.Items.Add(guildArtisan);
-                    }
-                    break;
-                case "Outlander":
-                    foreach (string outlander in SpecOutlander)
-                    {
-                        SpecificationCombobox.Items.Add(outlander);
-                    }
-                    break;
-                case "Sage":
-                    foreach (string sage in SpecSage)
-                    {
-                        SpecificationCombobox.Items.Add(sage);
-                    }
-                    break;
-                case "Soldier":
-                    foreach (string soldier in SpecSoldier)
-                    {
-                        SpecificationCombobox.Items.Add(soldier);
-                    }
-                    break;
-                default:
-                    break;
-            }
             character.Background = BackgroundCombobox.SelectedItem.ToString();
         }
         private void Race_SelectionChanged(object sender, SelectionChangedEventArgs e) //Done
         {
-            string[] SubDragonborn = new string[] { "Black", "Blue", "Brass", "Bronze", "Copper", "Gold", "Green", "Red", "Silver", "White" };
-            string[] SubDwarf = new string[] { "Hill Dwarf", "Mountain Dwarf", "Underdark Dwarf" };
-            string[] SubElf = new string[] { "Dark Elf", "Eladrin", "High Elf", "Sea Elf", "Shadar-Kai", "Wood Elf" };
-            string[] SubGnome = new string[] { "Forest Gnome", "Rock Gnome", "Svirfneblin" };
-            string[] SubHalfElf = new string[] { };
-            string[] SubHalfOrc = new string[] { };
-            string[] SubHalfling = new string[] { "Lightfoot Halfling", "Stout Halfling", "Ghostwise Halfling" };
-            string[] SubHuman = new string[] { "Standard Human", "Variant Human" };
-            string[] SubTiefling = new string[] { "Bloodline of Asmodeus", "Bloodline of Baalzebul", "Devil's Tongue Bloodline", "Bloodline of Dispater", "Bloodline of Fierna", "Bloodline of Glasya", "Bloodline of Levistus", "Bloodline of Mammon", "Bloodline of Mephistopheles", "Winged Bloodline", "Bloodline of Zariel" };
-
-            SubRaceCombo.Items.Clear();
-            switch (Convert.ToString(ComboBoxRace.SelectedItem))
-            {
-                case "Dragonborn":
-                    foreach (string dragonborn in SubDragonborn)
-                    {                 
-                        SubRaceCombo.Items.Add(dragonborn);
-                    }
-                    break;
-                case "Dwarf":
-                    foreach (string dwarf in SubDwarf)
-                    {
-                        SubRaceCombo.Items.Add(dwarf);
-                    }
-                    break;
-                case "Elf":
-                    foreach (string elf in SubElf)
-                    {
-                        SubRaceCombo.Items.Add(elf);
-                    }
-                    break;
-                case "Gnome":
-                    foreach (string gnome in SubGnome)
-                    {
-                        SubRaceCombo.Items.Add(gnome);
-                    }
-                    break;
-                case "Half-Elf":
-                    foreach (string halfElf in SubHalfElf)
-                    {
-                        SubRaceCombo.Items.Add(halfElf);
-                    }
-                    break;
-                case "Half-Orc":
-                    foreach (string halfOrc in SubHalfOrc)
-                    {
-                        SubRaceCombo.Items.Add(halfOrc);
-                    }
-                    break;
-                case "Halfling":
-                    foreach (string halfling in SubHalfling)
-                    {
-                        SubRaceCombo.Items.Add(halfling);
-                    }
-                    break;
-                case "Human":
-                    foreach (string human in SubHuman)
-                    {
-                        SubRaceCombo.Items.Add(human);
-                    }
-                    break;
-                case "Tiefling":
-                    foreach (string tiefling in SubTiefling)
-                    {
-                        SubRaceCombo.Items.Add(tiefling);
-                    }
-                    break;
-                default:
-                    break;
-            }
+            LoadSubRaceComboBox();
             character.Race = ComboBoxRace.SelectedItem.ToString();
+        }
+        private void SubRaceCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            character.Subrace = SubRaceCombo.SelectedItem.ToString();
         }
         private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e) //Done
         {
-            string[] SubBarbarian = new string[] { "Path of the Ancestral quardian", "Path of the Battlerager", "Path of the Berserker", "Path of the Storm Herald", "Path of the Totem Warrior", "Path of the Zealot" };
-            string[] SubBard = new string[] { "College of Glamour", "College of Lore", "College of Swords", "College of Valor", "College of Whispers" };
-            string[] SubCleric = new string[] { "Arcana Domain", "Death Domain", "Forge Domain", "Grave Domain", "Knowledge Domain", "Life Domain", "Light Domain", "Nature Domain", "Order Domain", "Tempest Domain", "Trickery Domain", "War Domain" };
-            string[] SubDruid = new string[] { "Circle of Dreams", "Circle of Land", "Circle of Moon", "Circle of Shepherd", "Circle of Spores" };
-            string[] SubFighter = new string[] { "Arcane Archer", "Banneret", "Battle Master", "Cavalier", "Champion", "Eldritch Knight", "Samurai" };
-            string[] SubMonk = new string[] { "Way of the Drunken Master", "Way of the Four Elements", "Way of the Kensei", "Way of the Long Death", "Way of the Open Hand", "Way of Shadow", "Way of the Sun Soul" };
-            string[] SubPaladin = new string[] { "Oath of the Ancients", "Oath of Concuest", "Oath of the Crown", "Oath of Devotion", "Oath of Redemption", "Oath of Vengeance", "Oathbreaker" };
-            string[] SubRanger = new string[] { "Beast Master Conclave", "Gloom Stalker Conclave", "Horizon Walker Conclave", "Hunter Conclave", "Monster Slayer Conclave" };
-            string[] SubRogue = new string[] { "Arcane Trickster", "Assassin", "Inquisitive", "Mastermind", "Scout", "Swashbuckler", "Thief" };
-            string[] SubSorcorer = new string[] { "Draconic Bloodline", "Devine Soul", "Phoenix Sorcery", "Shadow Magic", "Storm Sorcery", "Wild Magic" };
-            string[] SubWarlock = new string[] { "Archfey", "Celestial", "Fiend", "Great Old One", "Hexblade", "Undying" };
-            string[] SubWizard = new string[] { "School of Abjuration", "School of Bladesinging", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutaion", "School of War Magic" };
-
-
-            SubclassCombo.Items.Clear();
-            switch (Convert.ToString(ComboClass.SelectedItem))
-            {
-                case "Barbarian":
-                    foreach (string barbarian in SubBarbarian)
-                    {
-                        SubclassCombo.Items.Add(barbarian);
-                    }
-                    break;
-                case "Bard":
-                    foreach (string bard in SubBard)
-                    {
-                        SubclassCombo.Items.Add(bard);
-                    }
-                    break;
-                case "Cleric":
-                    foreach (string cleric in SubCleric)
-                    {
-                        SubclassCombo.Items.Add(cleric);
-                    }
-                    break;
-                case "Druid":
-                    foreach (string druid in SubDruid)
-                    {
-                        SubclassCombo.Items.Add(druid);
-                    }
-                    break;
-                case "Fighter":
-                    foreach (string fighter in SubFighter)
-                    {
-                        SubclassCombo.Items.Add(fighter);
-                    }
-                    break;
-                case "Monk":
-                    foreach (string monk in SubMonk)
-                    {
-                        SubclassCombo.Items.Add(monk);
-                    }
-                    break;
-                case "Paladin":
-                    foreach (string paladin in SubPaladin)
-                    {
-                        SubclassCombo.Items.Add(paladin);
-                    }
-                    break;
-                case "Ranger":
-                    foreach (string ranger in SubRanger)
-                    {
-                        SubclassCombo.Items.Add(ranger);
-                    }
-                    break;
-                case "Rogue":
-                    foreach (string rogue in SubRogue)
-                    {
-                        SubclassCombo.Items.Add(rogue);
-                    }
-                    break;
-                case "Sorcorer":
-                    foreach (string sorcorer in SubSorcorer)
-                    {
-                        SubclassCombo.Items.Add(sorcorer);
-                    }
-                    break;
-                case "Warlock":
-                    foreach (string warlock in SubWarlock)
-                    {
-                        SubclassCombo.Items.Add(warlock);
-                    }
-                    break;
-                case "Wizard":
-                    foreach (string wizard in SubWizard)
-                    {
-                        SubclassCombo.Items.Add(wizard);
-                    }
-                    break;
-                default:
-                    break;
-            }
+            LoadSubClassComboBox();
 
             character.Class = ComboClass.SelectedItem.ToString();
 
@@ -523,10 +356,6 @@ namespace DnD_NPC_Creator
             //Debug.WriteLine(LoadBox.SelectedItem.ToString());
             character = applicationManager.LoadCharacter(LoadBox.SelectedItem.ToString());
             InitializeCharacter();
-        }
-        private void SpecificationCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            character.Specification = SpecificationCombobox.SelectedItem.ToString();
         }
         #endregion
 
@@ -540,6 +369,13 @@ namespace DnD_NPC_Creator
 
             var loadbox = LoadBox as ComboBox;
             loadbox.ItemsSource = characters;
+        }
+        private void NewButton_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("Ceating new character");
+
+            character = new Character();
+            InitializeCharacter();
         }
         #endregion
 
@@ -804,62 +640,86 @@ namespace DnD_NPC_Creator
         }
         private void StrengthBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(StrengthBox.Text);
-            character.Stats[0].TotalStat = getal;
-            if (character.Stats[0].StatModifier < 0)
-                StrengthLabel.Content = character.Stats[0].StatModifier;
-            else
-                StrengthLabel.Content = "+" + character.Stats[0].StatModifier;
+            if (StrengthBox.Text != "")
+            {
+                int getal = int.Parse(StrengthBox.Text);
+                character.Stats[0].TotalStat = getal;
+                if (character.Stats[0].StatModifier < 0)
+                    StrengthLabel.Content = character.Stats[0].StatModifier;
+                else
+                    StrengthLabel.Content = "+" + character.Stats[0].StatModifier;
+            }
         }
 
         private void DexterityBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(Dexteritybox.Text);
-            character.Stats[1].TotalStat = getal;
-            if (character.Stats[1].StatModifier < 0)
-                DexterityLabel.Content = character.Stats[1].StatModifier;
-            else
-                DexterityLabel.Content = "+" + character.Stats[1].StatModifier;
+            if (Dexteritybox.Text != "")
+            {
+                int getal = int.Parse(Dexteritybox.Text);
+                character.Stats[1].TotalStat = getal;
+                if (character.Stats[1].StatModifier < 0)
+                    DexterityLabel.Content = character.Stats[1].StatModifier;
+                else
+                    DexterityLabel.Content = "+" + character.Stats[1].StatModifier;
+            }
         }
 
         private void ConstitutionBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(Constitutionbox.Text);
-            character.Stats[2].TotalStat = getal;
-            if (character.Stats[2].StatModifier < 0)
-                ConstitutionLabel.Content = character.Stats[2].StatModifier;
-            else
-                ConstitutionLabel.Content = "+" + character.Stats[2].StatModifier;
+            if (Constitutionbox.Text != "")
+            {
+                int getal = int.Parse(Constitutionbox.Text);
+                character.Stats[2].TotalStat = getal;
+                if (character.Stats[2].StatModifier < 0)
+                    ConstitutionLabel.Content = character.Stats[2].StatModifier;
+                else
+                    ConstitutionLabel.Content = "+" + character.Stats[2].StatModifier;
+            }
         }
 
         private void IntelligenceBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
         {
-            int getal = int.Parse(Intelligencebox.Text);
-            character.Stats[3].TotalStat = getal;
-            if (character.Stats[3].StatModifier < 0)
-                IntelligenceLabel.Content = character.Stats[3].StatModifier;
-            else
-                IntelligenceLabel.Content = "+" + character.Stats[3].StatModifier;
+            if(Intelligencebox.Text != "")
+            {
+
+                int getal = int.Parse(Intelligencebox.Text);
+                character.Stats[3].TotalStat = getal;
+                if (character.Stats[3].StatModifier < 0)
+                    IntelligenceLabel.Content = character.Stats[3].StatModifier;
+                else
+                    IntelligenceLabel.Content = "+" + character.Stats[3].StatModifier;
+
+            }
         }
 
         private void WindowBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(Wisdombox.Text);
-            character.Stats[4].TotalStat = getal;
-            if (character.Stats[4].StatModifier < 0)
-                WisdomLabel.Content = character.Stats[4].StatModifier;
-            else
-                WisdomLabel.Content = "+" + character.Stats[4].StatModifier;
+            if (Wisdombox.Text != "")
+            {
+                int getal = int.Parse(Wisdombox.Text);
+                character.Stats[4].TotalStat = getal;
+                if (character.Stats[4].StatModifier < 0)
+                    WisdomLabel.Content = character.Stats[4].StatModifier;
+                else
+                    WisdomLabel.Content = "+" + character.Stats[4].StatModifier;
+            }
         }
 
         private void CharismaBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(Charismabox.Text);
-            character.Stats[5].TotalStat = getal;
-            if (character.Stats[5].StatModifier < 0)
-                CharismaLabel.Content = character.Stats[5].StatModifier;
-            else
-                CharismaLabel.Content = "+" + character.Stats[5].StatModifier;
+            if (Charismabox.Text != "")
+            {
+                int getal = int.Parse(Charismabox.Text);
+                character.Stats[5].TotalStat = getal;
+                if (character.Stats[5].StatModifier < 0)
+                    CharismaLabel.Content = character.Stats[5].StatModifier;
+                else
+                    CharismaLabel.Content = "+" + character.Stats[5].StatModifier;
+            }
+        }
+        private void OccupationTextBox_LostKeyBoardFocus(object sender, KeyboardFocusChangedEventArgs e)
+        {
+            character.Occupation = OccupationTextBox.Text;
         }
         #endregion
 
@@ -909,6 +769,175 @@ namespace DnD_NPC_Creator
         }
 
         #endregion
+
+        private void LoadSubRaceComboBox()
+        {
+            string[] SubDragonborn = new string[] { "Black", "Blue", "Brass", "Bronze", "Copper", "Gold", "Green", "Red", "Silver", "White" };
+            string[] SubDwarf = new string[] { "Hill Dwarf", "Mountain Dwarf", "Underdark Dwarf" };
+            string[] SubElf = new string[] { "Dark Elf", "Eladrin", "High Elf", "Sea Elf", "Shadar-Kai", "Wood Elf" };
+            string[] SubGnome = new string[] { "Forest Gnome", "Rock Gnome", "Svirfneblin" };
+            string[] SubHalfElf = new string[] { };
+            string[] SubHalfOrc = new string[] { };
+            string[] SubHalfling = new string[] { "Lightfoot Halfling", "Stout Halfling", "Ghostwise Halfling" };
+            string[] SubHuman = new string[] { "Standard Human", "Variant Human" };
+            string[] SubTiefling = new string[] { "Bloodline of Asmodeus", "Bloodline of Baalzebul", "Devil's Tongue Bloodline", "Bloodline of Dispater", "Bloodline of Fierna", "Bloodline of Glasya", "Bloodline of Levistus", "Bloodline of Mammon", "Bloodline of Mephistopheles", "Winged Bloodline", "Bloodline of Zariel" };
+
+            SubRaceCombo.Items.Clear();
+            switch (Convert.ToString(ComboBoxRace.SelectedItem))
+            {
+                case "Dragonborn":
+                    foreach (string dragonborn in SubDragonborn)
+                    {
+                        SubRaceCombo.Items.Add(dragonborn);
+                    }
+                    break;
+                case "Dwarf":
+                    foreach (string dwarf in SubDwarf)
+                    {
+                        SubRaceCombo.Items.Add(dwarf);
+                    }
+                    break;
+                case "Elf":
+                    foreach (string elf in SubElf)
+                    {
+                        SubRaceCombo.Items.Add(elf);
+                    }
+                    break;
+                case "Gnome":
+                    foreach (string gnome in SubGnome)
+                    {
+                        SubRaceCombo.Items.Add(gnome);
+                    }
+                    break;
+                case "Half-Elf":
+                    foreach (string halfElf in SubHalfElf)
+                    {
+                        SubRaceCombo.Items.Add(halfElf);
+                    }
+                    break;
+                case "Half-Orc":
+                    foreach (string halfOrc in SubHalfOrc)
+                    {
+                        SubRaceCombo.Items.Add(halfOrc);
+                    }
+                    break;
+                case "Halfling":
+                    foreach (string halfling in SubHalfling)
+                    {
+                        SubRaceCombo.Items.Add(halfling);
+                    }
+                    break;
+                case "Human":
+                    foreach (string human in SubHuman)
+                    {
+                        SubRaceCombo.Items.Add(human);
+                    }
+                    break;
+                case "Tiefling":
+                    foreach (string tiefling in SubTiefling)
+                    {
+                        SubRaceCombo.Items.Add(tiefling);
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        private void LoadSubClassComboBox()
+        {
+            string[] SubBarbarian = new string[] { "Path of the Ancestral quardian", "Path of the Battlerager", "Path of the Berserker", "Path of the Storm Herald", "Path of the Totem Warrior", "Path of the Zealot" };
+            string[] SubBard = new string[] { "College of Glamour", "College of Lore", "College of Swords", "College of Valor", "College of Whispers" };
+            string[] SubCleric = new string[] { "Arcana Domain", "Death Domain", "Forge Domain", "Grave Domain", "Knowledge Domain", "Life Domain", "Light Domain", "Nature Domain", "Order Domain", "Tempest Domain", "Trickery Domain", "War Domain" };
+            string[] SubDruid = new string[] { "Circle of Dreams", "Circle of Land", "Circle of Moon", "Circle of Shepherd", "Circle of Spores" };
+            string[] SubFighter = new string[] { "Arcane Archer", "Banneret", "Battle Master", "Cavalier", "Champion", "Eldritch Knight", "Samurai" };
+            string[] SubMonk = new string[] { "Way of the Drunken Master", "Way of the Four Elements", "Way of the Kensei", "Way of the Long Death", "Way of the Open Hand", "Way of Shadow", "Way of the Sun Soul" };
+            string[] SubPaladin = new string[] { "Oath of the Ancients", "Oath of Concuest", "Oath of the Crown", "Oath of Devotion", "Oath of Redemption", "Oath of Vengeance", "Oathbreaker" };
+            string[] SubRanger = new string[] { "Beast Master Conclave", "Gloom Stalker Conclave", "Horizon Walker Conclave", "Hunter Conclave", "Monster Slayer Conclave" };
+            string[] SubRogue = new string[] { "Arcane Trickster", "Assassin", "Inquisitive", "Mastermind", "Scout", "Swashbuckler", "Thief" };
+            string[] SubSorcorer = new string[] { "Draconic Bloodline", "Devine Soul", "Phoenix Sorcery", "Shadow Magic", "Storm Sorcery", "Wild Magic" };
+            string[] SubWarlock = new string[] { "Archfey", "Celestial", "Fiend", "Great Old One", "Hexblade", "Undying" };
+            string[] SubWizard = new string[] { "School of Abjuration", "School of Bladesinging", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutaion", "School of War Magic" };
+
+
+            SubclassCombo.Items.Clear();
+            switch (Convert.ToString(ComboClass.SelectedItem))
+            {
+                case "Barbarian":
+                    foreach (string barbarian in SubBarbarian)
+                    {
+                        SubclassCombo.Items.Add(barbarian);
+                    }
+                    break;
+                case "Bard":
+                    foreach (string bard in SubBard)
+                    {
+                        SubclassCombo.Items.Add(bard);
+                    }
+                    break;
+                case "Cleric":
+                    foreach (string cleric in SubCleric)
+                    {
+                        SubclassCombo.Items.Add(cleric);
+                    }
+                    break;
+                case "Druid":
+                    foreach (string druid in SubDruid)
+                    {
+                        SubclassCombo.Items.Add(druid);
+                    }
+                    break;
+                case "Fighter":
+                    foreach (string fighter in SubFighter)
+                    {
+                        SubclassCombo.Items.Add(fighter);
+                    }
+                    break;
+                case "Monk":
+                    foreach (string monk in SubMonk)
+                    {
+                        SubclassCombo.Items.Add(monk);
+                    }
+                    break;
+                case "Paladin":
+                    foreach (string paladin in SubPaladin)
+                    {
+                        SubclassCombo.Items.Add(paladin);
+                    }
+                    break;
+                case "Ranger":
+                    foreach (string ranger in SubRanger)
+                    {
+                        SubclassCombo.Items.Add(ranger);
+                    }
+                    break;
+                case "Rogue":
+                    foreach (string rogue in SubRogue)
+                    {
+                        SubclassCombo.Items.Add(rogue);
+                    }
+                    break;
+                case "Sorcorer":
+                    foreach (string sorcorer in SubSorcorer)
+                    {
+                        SubclassCombo.Items.Add(sorcorer);
+                    }
+                    break;
+                case "Warlock":
+                    foreach (string warlock in SubWarlock)
+                    {
+                        SubclassCombo.Items.Add(warlock);
+                    }
+                    break;
+                case "Wizard":
+                    foreach (string wizard in SubWizard)
+                    {
+                        SubclassCombo.Items.Add(wizard);
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
 
         
     }

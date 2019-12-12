@@ -132,6 +132,7 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="143" Margin="136.8,241,0,0" VerticalAlignment="Top" Width="220" Grid.Column="2"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="111" Margin="136.8,113,0,0" VerticalAlignment="Top" Width="220" Grid.Column="2"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="69" Margin="0,38,0,0" VerticalAlignment="Top" Width="896" Grid.ColumnSpan="3"/>
+        <Button x:Name="SaveButton_Copy" Content="New" HorizontalAlignment="Left" Margin="272.6,6,0,0" VerticalAlignment="Top" Width="79" Click="NewButton_Click" Grid.Column="1" Grid.ColumnSpan="2"/>
         <Button x:Name="SaveButton" Content="+Save" HorizontalAlignment="Left" Margin="99.889,7,0,0" VerticalAlignment="Top" Width="79" Click="SaveButton_Click" Grid.Column="2"/>
         <ComboBox x:Name ="LoadBox" HorizontalAlignment="Left" Margin="240.8,4,0,0" VerticalAlignment="Top" Width="87" Grid.Column="2" SelectionChanged="LoadBox_SelectionChanged" Loaded="LoadBox_Loaded" />
         <Label Foreground="White" Content="Proficiencies" HorizontalAlignment="Left" Margin="23.6,115,0,0" VerticalAlignment="Top" Grid.Column="1"/>
@@ -157,10 +158,10 @@
         <TextBox x:Name="ToolsTextBox4" HorizontalAlignment="Left" Height="23" Margin="121.6,408,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" LostKeyboardFocus="ToolTextBox_LostKeyboardFocus" Grid.Column="1"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="7.6,112,0,0" VerticalAlignment="Top" Width="213" Grid.Column="1"/>
         <ComboBox Background="Transparent" x:Name="SubRaceCombo" HorizontalAlignment="Left" Margin="207.6,40,0,0" VerticalAlignment="Top" Width="97" Loaded="SubRaceCombo_Loaded" RenderTransformOrigin="0.765,0.61" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <ComboBox x:Name="SpecificationCombobox" HorizontalAlignment="Left" Margin="207.6,67,0,0" VerticalAlignment="Top" Width="97" Loaded="SpecificationCombobox_Loaded" Grid.ColumnSpan="2" Grid.Column="1" SelectionChanged="SpecificationCombobox_SelectionChanged"/>
         <Label Foreground="White" Content="SubRace" HorizontalAlignment="Left" Margin="152.6,40,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Foreground="White" Content="Specification" HorizontalAlignment="Left" Margin="130.6,66,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Foreground="White" Content="Level" Grid.Column="2" HorizontalAlignment="Left" Margin="35.8,64,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.036,0.241"/>
+        <TextBox x:Name="OccupationTextBox" HorizontalAlignment="Left" Margin="207.6,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="97" Grid.ColumnSpan="2" Grid.Column="1" LostKeyboardFocus="OccupationTextBox_LostKeyBoardFocus" />
         <TextBox x:Name="LevelTextBox" HorizontalAlignment="Left" Height="23" Margin="72.8,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="61" LostKeyboardFocus="LevelTextBox_LostKeyboardFocus" Grid.Column="2" PreviewTextInput="LevelTextBox_PreviewTextInput"/>
         <Label  Foreground="White" Content="Load" Grid.Column="2" HorizontalAlignment="Left" Margin="199.8,4,0,0" VerticalAlignment="Top"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="0,112,0,0" VerticalAlignment="Top" Width="90"/>
