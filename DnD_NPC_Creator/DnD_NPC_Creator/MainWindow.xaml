@@ -158,7 +158,7 @@
         <TextBox x:Name="LangTextBox4" HorizontalAlignment="Left" Height="23" Margin="22.6,408,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" LostKeyboardFocus="LanguangeTextBox_LostKeyboardFocus" Grid.Column="1"/>
         <TextBox x:Name="ToolsTextBox4" HorizontalAlignment="Left" Height="23" Margin="121.6,408,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="94" LostKeyboardFocus="ToolTextBox_LostKeyboardFocus" Grid.Column="1"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="330" Margin="7.6,112,0,0" VerticalAlignment="Top" Width="213" Grid.Column="1"/>
-        <ComboBox x:Name="SubRaceCombo" HorizontalAlignment="Left" Margin="207.6,40,0,0" VerticalAlignment="Top" Width="97" Loaded="SubRaceCombo_Loaded" RenderTransformOrigin="0.765,0.61" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <ComboBox x:Name="SubRaceCombo" HorizontalAlignment="Left" Margin="207.6,40,0,0" VerticalAlignment="Top" Width="97" Loaded="SubRaceCombo_Loaded" RenderTransformOrigin="0.765,0.61" Grid.ColumnSpan="2" Grid.Column="1" SelectionChanged="SubRaceCombo_SelectionChanged"/>
         <TextBox x:Name="OccupationTextBox" HorizontalAlignment="Left" Margin="207.6,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="23" Width="97" Grid.ColumnSpan="2" Grid.Column="1" LostKeyboardFocus="OccupationTextBox_LostKeyBoardFocus" />
         <Label Content="SubRace" HorizontalAlignment="Left" Margin="152.6,40,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Content="Occupation" HorizontalAlignment="Left" Margin="130.6,66,0,0" VerticalAlignment="Top" Grid.Column="1"/>

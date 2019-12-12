@@ -127,6 +127,8 @@ namespace Business_Layer.Manager
                 sw.WriteLine();
                 //Other weapon proficiencies
                 sw.WriteLine(character.OtherWeaponProficiencies);
+                //Race + Subrace
+                sw.WriteLine(character.Race + characterSeparator + character.Subrace);
 
                 //Close the file
                 sw.Close();
@@ -220,6 +222,12 @@ namespace Business_Layer.Manager
             }
             //Other weapon proficiencies
             character.OtherWeaponProficiencies = characterinfo[19];
+            //Race + Subrace
+            string[] r = characterinfo[20].Split(characterSeparator);
+            if (r.Length > 0)
+                character.Class = r[0];
+            if (r.Length > 1)
+                character.SubClass = r[1];
 
             return character;
         }

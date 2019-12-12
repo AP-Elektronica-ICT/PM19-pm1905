@@ -167,15 +167,8 @@ namespace DnD_NPC_Creator
             //Ocupasion
             OccupationTextBox.Text = character.Occupation;
             //Class
-            //foreach (var item in ComboClass.ItemsSource)
-            //{
-            //    if (character.Class == item.ToString())
-            //        ComboClass.SelectedItem = item;
-
-            //}
             for (int i = 0; i < ComboClass.Items.Count; i++)
             {
-                Debug.Write(ComboClass.Items[i].ToString());
                 if (character.Class == ComboClass.Items[i].ToString())
                     ComboClass.SelectedIndex = i;
             }
@@ -183,12 +176,22 @@ namespace DnD_NPC_Creator
             LoadSubClassComboBox();
             for (int i = 0; i < SubclassCombo.Items.Count; i++)
             {
-                Debug.Write(SubclassCombo.Items[i].ToString());
                 if (character.SubClass == SubclassCombo.Items[i].ToString())
                     SubclassCombo.SelectedIndex = i;
             }
+            //Race
+            for (int i = 0; i < ComboBoxRace.Items.Count; i++)
+            {
+                if (character.Race == ComboBoxRace.Items[i].ToString())
+                    ComboBoxRace.SelectedIndex = i;
+            }
             //SubRace
             LoadSubRaceComboBox();
+            for (int i = 0; i < SubRaceCombo.Items.Count; i++)
+            {
+                if (character.Subrace == SubRaceCombo.Items[i].ToString())
+                    SubRaceCombo.SelectedIndex = i;
+            }
 
         }
 
@@ -337,6 +340,10 @@ namespace DnD_NPC_Creator
         {
             LoadSubRaceComboBox();
             character.Race = ComboBoxRace.SelectedItem.ToString();
+        }
+        private void SubRaceCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            character.Subrace = SubRaceCombo.SelectedItem.ToString();
         }
         private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e) //Done
         {
@@ -627,62 +634,82 @@ namespace DnD_NPC_Creator
         }
         private void StrengthBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(StrengthBox.Text);
-            character.Stats[0].TotalStat = getal;
-            if (character.Stats[0].StatModifier < 0)
-                StrengthLabel.Content = character.Stats[0].StatModifier;
-            else
-                StrengthLabel.Content = "+" + character.Stats[0].StatModifier;
+            if (StrengthBox.Text != "")
+            {
+                int getal = int.Parse(StrengthBox.Text);
+                character.Stats[0].TotalStat = getal;
+                if (character.Stats[0].StatModifier < 0)
+                    StrengthLabel.Content = character.Stats[0].StatModifier;
+                else
+                    StrengthLabel.Content = "+" + character.Stats[0].StatModifier;
+            }
         }
 
         private void DexterityBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(Dexteritybox.Text);
-            character.Stats[1].TotalStat = getal;
-            if (character.Stats[1].StatModifier < 0)
-                DexterityLabel.Content = character.Stats[1].StatModifier;
-            else
-                DexterityLabel.Content = "+" + character.Stats[1].StatModifier;
+            if (Dexteritybox.Text != "")
+            {
+                int getal = int.Parse(Dexteritybox.Text);
+                character.Stats[1].TotalStat = getal;
+                if (character.Stats[1].StatModifier < 0)
+                    DexterityLabel.Content = character.Stats[1].StatModifier;
+                else
+                    DexterityLabel.Content = "+" + character.Stats[1].StatModifier;
+            }
         }
 
         private void ConstitutionBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(Constitutionbox.Text);
-            character.Stats[2].TotalStat = getal;
-            if (character.Stats[2].StatModifier < 0)
-                ConstitutionLabel.Content = character.Stats[2].StatModifier;
-            else
-                ConstitutionLabel.Content = "+" + character.Stats[2].StatModifier;
+            if (Constitutionbox.Text != "")
+            {
+                int getal = int.Parse(Constitutionbox.Text);
+                character.Stats[2].TotalStat = getal;
+                if (character.Stats[2].StatModifier < 0)
+                    ConstitutionLabel.Content = character.Stats[2].StatModifier;
+                else
+                    ConstitutionLabel.Content = "+" + character.Stats[2].StatModifier;
+            }
         }
 
         private void IntelligenceBox_LostKeyboardFocus(object sender, RoutedEventArgs e)
         {
-            int getal = int.Parse(Intelligencebox.Text);
-            character.Stats[3].TotalStat = getal;
-            if (character.Stats[3].StatModifier < 0)
-                IntelligenceLabel.Content = character.Stats[3].StatModifier;
-            else
-                IntelligenceLabel.Content = "+" + character.Stats[3].StatModifier;
+            if(Intelligencebox.Text != "")
+            {
+
+                int getal = int.Parse(Intelligencebox.Text);
+                character.Stats[3].TotalStat = getal;
+                if (character.Stats[3].StatModifier < 0)
+                    IntelligenceLabel.Content = character.Stats[3].StatModifier;
+                else
+                    IntelligenceLabel.Content = "+" + character.Stats[3].StatModifier;
+
+            }
         }
 
         private void WindowBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(Wisdombox.Text);
-            character.Stats[4].TotalStat = getal;
-            if (character.Stats[4].StatModifier < 0)
-                WisdomLabel.Content = character.Stats[4].StatModifier;
-            else
-                WisdomLabel.Content = "+" + character.Stats[4].StatModifier;
+            if (Wisdombox.Text != "")
+            {
+                int getal = int.Parse(Wisdombox.Text);
+                character.Stats[4].TotalStat = getal;
+                if (character.Stats[4].StatModifier < 0)
+                    WisdomLabel.Content = character.Stats[4].StatModifier;
+                else
+                    WisdomLabel.Content = "+" + character.Stats[4].StatModifier;
+            }
         }
 
         private void CharismaBox_LostKeyboardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
-            int getal = int.Parse(Charismabox.Text);
-            character.Stats[5].TotalStat = getal;
-            if (character.Stats[5].StatModifier < 0)
-                CharismaLabel.Content = character.Stats[5].StatModifier;
-            else
-                CharismaLabel.Content = "+" + character.Stats[5].StatModifier;
+            if (Charismabox.Text != "")
+            {
+                int getal = int.Parse(Charismabox.Text);
+                character.Stats[5].TotalStat = getal;
+                if (character.Stats[5].StatModifier < 0)
+                    CharismaLabel.Content = character.Stats[5].StatModifier;
+                else
+                    CharismaLabel.Content = "+" + character.Stats[5].StatModifier;
+            }
         }
         private void OccupationTextBox_LostKeyBoardFocus(object sender, KeyboardFocusChangedEventArgs e)
         {
