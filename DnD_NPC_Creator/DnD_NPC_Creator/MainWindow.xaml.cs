@@ -57,8 +57,7 @@ namespace DnD_NPC_Creator
             objsecondwindow.IdealsSecond.Text = Convert.ToString(IdealsBox.Text);
             objsecondwindow.BondsSecond.Text = Convert.ToString(BondsBox.Text);
             objsecondwindow.FlawsSecond.Text = Convert.ToString(FlawsBox.Text);
-            objsecondwindow.ToolsSecond.Content = Convert.ToString(ToolsCombobox.SelectedItem);
-            objsecondwindow.InstrumentsSecond.Content = Convert.ToString(InstrumentsCombobox.SelectedItem);
+        
 
             this.Visibility = Visibility.Hidden;
             objsecondwindow.Show();
