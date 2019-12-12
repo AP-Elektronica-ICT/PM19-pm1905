@@ -132,6 +132,7 @@
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="143" Margin="136.8,241,0,0" VerticalAlignment="Top" Width="220" Grid.Column="2"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="111" Margin="136.8,113,0,0" VerticalAlignment="Top" Width="220" Grid.Column="2"/>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="69" Margin="0,38,0,0" VerticalAlignment="Top" Width="896" Grid.ColumnSpan="3"/>
+        <Button x:Name="SaveButton_Copy" Content="New" HorizontalAlignment="Left" Margin="272.6,6,0,0" VerticalAlignment="Top" Width="79" Click="NewButton_Click" Grid.Column="1" Grid.ColumnSpan="2"/>
         <Button x:Name="SaveButton" Content="+Save" HorizontalAlignment="Left" Margin="99.889,7,0,0" VerticalAlignment="Top" Width="79" Click="SaveButton_Click" Grid.Column="2"/>
         <ComboBox x:Name ="LoadBox" HorizontalAlignment="Left" Margin="240.8,4,0,0" VerticalAlignment="Top" Width="87" Grid.Column="2" SelectionChanged="LoadBox_SelectionChanged" Loaded="LoadBox_Loaded" />
         <Label Foreground="White" Content="Proficiencies" HorizontalAlignment="Left" Margin="23.6,115,0,0" VerticalAlignment="Top" Grid.Column="1"/>
