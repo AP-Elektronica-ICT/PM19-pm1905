@@ -14,6 +14,10 @@ namespace Business_Layer.Manager
         {
             saveManager = new SaveManager();
         }
+        public ApplicationManager(SaveManager saveManager)
+        {
+            this.saveManager = saveManager;
+        }
         public void SaveCharacter(Character character)
         {
             saveManager.SaveCharacter(character);

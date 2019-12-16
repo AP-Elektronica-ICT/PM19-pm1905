@@ -11,7 +11,7 @@ namespace Business_Layer.Manager
 {
     public class SaveManager
     {
-        private char characterSeparator = ',';
+        private char characterSeparator = ';';
         private string _saveFolder = @"\Characters";
         public List<string> GetSavedCharacters()
         {
@@ -22,7 +22,7 @@ namespace Business_Layer.Manager
                 var replacements = new[]
                 {
                     new {Find=saveFolderPath+"\\", Replace=""},
-                    new {Find=".txt", Replace=""}
+                    new {Find=".csv", Replace=""}
                 };
                 for (int i = 0; i < characterSaves.Count; i++)
                 {
@@ -54,7 +54,7 @@ namespace Business_Layer.Manager
             {
 
                 //Pass the filepath and filename to the StreamWriter Constructor
-                StreamWriter sw = new StreamWriter(GetSaveFolderPath() + "\\" + character.Name + ".txt");
+                StreamWriter sw = new StreamWriter(GetSaveFolderPath() + "\\" + character.Name + ".csv");
 
                 //Writing a line to the textfile
                 //Name
@@ -128,7 +128,7 @@ namespace Business_Layer.Manager
                 //Other weapon proficiencies
                 sw.WriteLine(character.OtherWeaponProficiencies);
                 //Race + Subrace
-                sw.WriteLine(character.Race + characterSeparator + character.Subrace);
+                sw.WriteLine(character.Race + characterSeparator + character.Subrace + characterSeparator);
 
                 //Close the file
                 sw.Close();
@@ -143,7 +143,7 @@ namespace Business_Layer.Manager
             //Setup character
             Character character = new Character();
             //Loading character info
-            List<string> characterinfo = LoadTxtFile(characterName);
+            List<string> characterinfo = LoadFile(characterName);
             //Assigning character info to character
             //Name
             character.Name = characterinfo[0];
@@ -225,16 +225,16 @@ namespace Business_Layer.Manager
             //Race + Subrace
             string[] r = characterinfo[20].Split(characterSeparator);
             if (r.Length > 0)
-                character.Class = r[0];
+                character.Race = r[0];
             if (r.Length > 1)
-                character.SubClass = r[1];
+                character.Subrace = r[1];
 
             return character;
         }
-        private List<string> LoadTxtFile(string characterName)
+        private List<string> LoadFile(string characterName)
         {
-            if (!characterName.EndsWith(".txt"))
-                characterName += ".txt";
+            if (!characterName.EndsWith(".csv"))
+                characterName += ".csv";
             try
             {
                 //Pass the file path and file name to the StreamReader constructor
