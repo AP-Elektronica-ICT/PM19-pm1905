@@ -57,13 +57,16 @@ namespace DnD_NPC_Creator
             objsecondwindow.IdealsSecond.Text = Convert.ToString(IdealsBox.Text);
             objsecondwindow.BondsSecond.Text = Convert.ToString(BondsBox.Text);
             objsecondwindow.FlawsSecond.Text = Convert.ToString(FlawsBox.Text);
-        
+
+            Title.Content = "D&D Character Creator";
+            Title.Visibility = Visibility.Visible;
 
             this.Visibility = Visibility.Hidden;
             objsecondwindow.Show();
         }
         public void InitializeCharacter()
         {
+            int toSelect = -1;
             //All comboboxes need to be implemented diffrently
             //Name
             NameInput.Text = character.Name;
@@ -166,31 +169,54 @@ namespace DnD_NPC_Creator
             //Ocupasion
             OccupationTextBox.Text = character.Occupation;
             //Class
+            toSelect = -1;
             for (int i = 0; i < ComboClass.Items.Count; i++)
             {
                 if (character.Class == ComboClass.Items[i].ToString())
-                    ComboClass.SelectedIndex = i;
+                    toSelect = i;
+
             }
+            ComboClass.SelectedIndex = toSelect;
             //Subclass
             LoadSubClassComboBox();
+            toSelect = -1;
             for (int i = 0; i < SubclassCombo.Items.Count; i++)
             {
                 if (character.SubClass == SubclassCombo.Items[i].ToString())
-                    SubclassCombo.SelectedIndex = i;
+                    toSelect = i;
             }
+            SubclassCombo.SelectedIndex = toSelect;
+
             //Race
+            toSelect = -1;
             for (int i = 0; i < ComboBoxRace.Items.Count; i++)
             {
                 if (character.Race == ComboBoxRace.Items[i].ToString())
-                    ComboBoxRace.SelectedIndex = i;
+                    toSelect = i;
+
             }
+            ComboBoxRace.SelectedIndex = toSelect;
+
             //SubRace
+            toSelect = -1;
             LoadSubRaceComboBox();
             for (int i = 0; i < SubRaceCombo.Items.Count; i++)
             {
                 if (character.Subrace == SubRaceCombo.Items[i].ToString())
-                    SubRaceCombo.SelectedIndex = i;
+                    toSelect = i;
+
             }
+            SubRaceCombo.SelectedIndex = toSelect;
+
+            //Background
+            toSelect = -1;
+            for (int i = 0; i < BackgroundCombobox.Items.Count; i++)
+            {
+                if (character.Background == BackgroundCombobox.Items[i].ToString())
+                    toSelect = i;
+
+            }
+            BackgroundCombobox.SelectedIndex = toSelect;
 
         }
 
@@ -333,28 +359,33 @@ namespace DnD_NPC_Creator
 
         private void BackgroundCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            character.Background = BackgroundCombobox.SelectedItem.ToString();
+            if(BackgroundCombobox.SelectedItem != null)
+                character.Background = BackgroundCombobox.SelectedItem.ToString();
         }
         private void Race_SelectionChanged(object sender, SelectionChangedEventArgs e) //Done
         {
             LoadSubRaceComboBox();
-            character.Race = ComboBoxRace.SelectedItem.ToString();
+            if (ComboBoxRace.SelectedItem != null)
+                character.Race = ComboBoxRace.SelectedItem.ToString();
         }
         private void SubRaceCombo_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            character.Subrace = SubRaceCombo.SelectedItem.ToString();
+            if (SubRaceCombo.SelectedItem != null)
+                character.Subrace = SubRaceCombo.SelectedItem.ToString();
         }
         private void Class_SelectionChanged(object sender, SelectionChangedEventArgs e) //Done
         {
             LoadSubClassComboBox();
-
-            character.Class = ComboClass.SelectedItem.ToString();
+            
+            if(ComboClass.SelectedItem != null)
+                character.Class = ComboClass.SelectedItem.ToString();
 
         }
         private void LoadBox_SelectionChanged(object sender, RoutedEventArgs e)
         {
             //Debug.WriteLine(LoadBox.SelectedItem.ToString());
-            character = applicationManager.LoadCharacter(LoadBox.SelectedItem.ToString());
+            if(LoadBox.SelectedItem != null)
+                character = applicationManager.LoadCharacter(LoadBox.SelectedItem.ToString());
             InitializeCharacter();
         }
         #endregion
@@ -375,6 +406,8 @@ namespace DnD_NPC_Creator
             Debug.WriteLine("Ceating new character");
 
             character = new Character();
+
+            LoadBox.SelectedIndex = -1;
             InitializeCharacter();
         }
         #endregion
